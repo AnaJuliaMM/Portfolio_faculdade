@@ -8,21 +8,38 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-   <header>
+   <header id="#header">
+        <div class="camada"></div>
         <div class="faixa_superior">
-            <h1>AnaJ</h1>
-            <img src="/CSS/Images/senai_logo.png" alt="Logo da Faculdade SENAI">
+            <h1 class="logo">AnaJ</h1>
+            <!--
+                <img src="/CSS/Images/senai_logo.png" alt="Logo da Faculdade SENAI">
+            -->
+            <nav>
+                <ul>
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#main">Componentes Curriculares</a></li>
+                </ul>
+            </nav>
         </div>
         <div class = "titulo">
             <h1>Tecnólogo em Análise e Desenvolvimento de Sistemas</h1>
-            
+            <h1 class="semestre">1º SEMESTRE</h1>
+        </div>
+        <div class="botao_acesso">
+            <button><a href=#main>ACESSAR PORTIFÓLIO</a></button>
         </div>
    </header>
-   <nav>
-
-   </nav>
-   <main>
-
+   <main id="main">
+        <h1>Componentes Curriculares</h1>
+        <div class="materias">
+            <div class="cc"><a href="/HTML/linguagemProgramacao.html">Linguagem de Programação</a></div>
+            <div class="cc">Banco de Dados</div>
+            <div class="cc">Redes de computadores</div>
+            <div class="cc">Automação</div>
+            <div class="cc">Ciência de dados</div>
+        </div>
+        
    </main>
    <footer>
 
