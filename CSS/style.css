@@ -22,14 +22,14 @@ header{
     height: 550px;
 }
 .camada{
-    background: linear-gradient(90.14deg, rgba(5, 9, 50, 0.79) 25.86%, rgba(216, 39, 124, 0.547387) 98.91%, rgba(234, 16, 173, 0) 105.95%);
+    background: linear-gradient(90.14deg, rgba(2, 5, 46, 0.79) 25.86%, rgba(44, 2, 49, 0.658) 98.91%);
     
     height: 550px;
     width: 100%;
     position: absolute;
 
 }
-.faixa_superior{
+.nav_logo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,6 @@ header{
     width: 100%;
     justify-content: space-around;
     position: relative;
-    position: fixed;
 
     background: rgba(23, 21, 22, 0.44);
 }
@@ -140,8 +139,7 @@ main{
     font-size: 15px;
 
     height: 600px;
-    background: url(/CSS/Images/fundo_main2.jpg);
-    background-size: cover;
+    background: #311646;
 }
 .camada_main{
     background: linear-gradient(90.14deg, rgba(5, 9, 50, 0.85) 25.86%, rgba(163, 36, 97, 0.77) 98.91%, rgba(0, 93, 241, 0.769) 105.95%);    

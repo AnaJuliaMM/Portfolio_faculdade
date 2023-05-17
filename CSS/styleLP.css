@@ -1,4 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&family=Libre+Franklin&family=Lobster+Two&family=Red+Hat+Display:ital,wght@0,300;0,400;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=IBM+Plex+Serif:ital,wght@1,300&family=Kadwa&family=Noto+Rashi+Hebrew:wght@300&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
 body{
+    opacity: 1;
+    color: white;
+    background-color: rgb(15, 17, 48, 1);
     
-background: linear-gradient(90.27deg, #6C3A46 6.6%, rgba(25, 30, 86, 0.641765) 72.87%, rgba(21, 31, 125, 0.488197) 84.81%, rgba(21, 25, 68, 0.316727) 98.15%, rgba(17, 20, 51, 0) 99.94%);
+}
+header{
+    background-image: url(Images/fundo_main2.jpg);
+    background-size: cover;
+
+    
+    position: relative;
+    height: 550px;
+}
+.camada{
+    background: linear-gradient(90.14deg, rgba(6, 10, 52, 0.79) 25.86%, rgba(152, 9, 185, 0.547) 98.91%, rgba(92, 16, 234, 0.37) 105.95%);
+    
+    height: 550px;
+    width: 100%;
+    position: absolute;
+
+}
+.nav_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 700px;
+    height: 70px;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    position: fixed;
+
+    background: rgba(23, 21, 22, 0.44);
+}
+.logo{
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    padding: 30px;
+}
+.titulo{
+    position: absolute;
+    left: 100px;
+    top: 110px;
+    gap: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(219, 222, 232);
+
+}
+.portifolio_aluna{
+    font-size: 25px;
+}
+.disciplina{
+    padding-left: 10px;
+    padding-top: 40px;
+    padding: 10px;
+    font-size: 50px;
+}
+.curso{
+    padding-left: 400px;
+    font-size: 30px;
+}
+.semestre{
+    padding-left: 900px;
+    font-size: 30px;
+}
+.botao_acesso{
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    width: 100%;
+    height: 150px;
+    gap:100px;
+
+    top: 300px;
+}
+.botao_acesso img{
+    width: 400px;
+}
+.botao_acesso button{
+    width: 500px;
+    height: 60px;
+
+    background: linear-gradient(357.92deg, rgba(33, 32, 32, 0.44) 21.69%, rgba(57, 55, 56, 0.42) 49.94%, rgba(23, 21, 22, 0.58) 112.3%);    color: rgb(233, 233, 233);
+    border: none;
+
+    font-size: 30px;
+
+    transition: 0.5s;
+}
+.botao_acesso button:hover{
+    transform: scale(110%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.logo_senai{
+    transform: scale(50%);
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    font-style: none;
+    color: white;
+}
+nav li:hover{
+    transform: scale(110%);
+    transition: 0.5s;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    color: aliceblue;
+    gap: 40px;
+    padding: 10px;
 }
