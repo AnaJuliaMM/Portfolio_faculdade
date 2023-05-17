@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&family=Libre+Franklin&family=Lobster+Two&family=Red+Hat+Display:ital,wght@0,300;0,400;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=IBM+Plex+Serif:ital,wght@1,300&family=Kadwa&family=Noto+Rashi+Hebrew:wght@300&display=swap');
+
 *{
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -8,6 +10,8 @@
 body{
     opacity: 1;
     color: white;
+    background-color: rgb(15, 17, 48, 1);
+    
 }
 header{
     background-image: url(Images/fundoADS.jpg);
@@ -91,8 +95,7 @@ header{
     width: 500px;
     height: 60px;
 
-    background: rgba(150, 145, 145, 0.8);
-    color: rgb(233, 233, 233);
+    background: linear-gradient(357.92deg, rgba(33, 32, 32, 0.44) 21.69%, rgba(57, 55, 56, 0.42) 49.94%, rgba(23, 21, 22, 0.58) 112.3%);    color: rgb(233, 233, 233);
     border: none;
 
     font-size: 30px;
@@ -131,23 +134,29 @@ nav ul{
 
 main{
     display: flex;
-    height: 600px;
-
-    
-    background: radial-gradient(82.57% 168.18% at 33.96% 46.38%, #C2506C 25.66%, rgba(109, 6, 30, 0.842) 100%, rgba(151, 10, 45, 0.769) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-
-
-}
-
-main h1{
+    flex-direction: column;
     color: azure;
+    font-size: 15px;
+
+    height: 600px;
+    background: url(/CSS/Images/fundo_main2.jpg);
+    background-size: cover;
+}
+.camada_main{
+    background: linear-gradient(90.14deg, rgba(5, 9, 50, 0.85) 25.86%, rgba(163, 36, 97, 0.77) 98.91%, rgba(0, 93, 241, 0.769) 105.95%);    
+    height: 600px;
+    width: 100%;
+    position: absolute;
+}
+.tela{
+    position: absolute;
+
 }
 .info{
     display: flex;
     flex-direction: column;
     width: 15%;
     height: 600px;
-    background: linear-gradient(270.36deg, rgba(5, 9, 50, 0.9) -41.52%, rgba(5, 9, 50, 0.824) -23.57%, rgba(5, 9, 50, 0) 56.83%);
 }
 .professores{
     display: flex;
@@ -162,34 +171,40 @@ main h1{
 }
 .titulo_cc{
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    height: 150px;
     font-size: 20px;
 }
 .materias{
     display: flex;
     flex-direction: column;
-    gap: 2px;
-    margin-left:30px;
+    gap: 5px;
+    margin-left:150px;
+
+    border: thick #FF1083;
+
+    
 }
 .cc{
     display: flex;
     justify-content: center;
     align-items: center;
 
-    font-size: 20px;
-    border-radius: 0px 12px 12px 0px;
+    font-size: 23px;
+    font-weight: 700;
 
-    width: 500px;
-    height: 60px;
+    width: 400px;
+    height: 40px;
     padding: 10px;
-    background-color:rgba(217, 217, 217, 1);
-    color: rgb(13, 13, 13);
+    background: linear-gradient(89.91deg, #e03b8b 9.85%, rgba(250, 158, 20, 0.908897) 47.87%, rgba(41, 1, 53, 0.237) 103.06%);  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+    color: rgb(255, 254, 254);
 
     transition: 0.5s;
 }
 .cc:hover{
-    width: 550px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 500px;
 }
