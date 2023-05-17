@@ -37,7 +37,8 @@ header{
     height: 70px;
     width: 100%;
     justify-content: space-around;
-    position: absolute;
+    position: relative;
+    position: fixed;
 
     background: rgba(23, 21, 22, 0.44);
 }
