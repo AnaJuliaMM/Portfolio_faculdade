@@ -38,7 +38,6 @@ header{
     width: 100%;
     justify-content: space-around;
     position: relative;
-    position: fixed;
 
     background: rgba(23, 21, 22, 0.44);
 }
@@ -133,4 +132,53 @@ nav ul{
     color: aliceblue;
     gap: 40px;
     padding: 10px;
+}
+#introducao{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    background: linear-gradient(90.14deg, rgba(5, 9, 50, 0.85) 25.86%, rgba(216, 39, 124, 0.77) 98.91%, rgba(234, 16, 173, 0.53) 105.95%);
+}
+.titulo_introducao{
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+.titulo_introducao h1{
+    font-size: 40px;
+}
+.titulo_introducao p{
+    padding-left: 20px;
+}
+.topicos{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.topicos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #D9D9D9;
+    color: black;
+    font-size: 25px;
+    border-radius: 12px;
+    height: 50px;
+    width: 450px;
+}
+.explicacao_div{
+    margin: 30px;
+}
+.explicacao{
+    background: rgba(15, 9, 51, 0.85);   
+    border-radius: 12px;
+
+    height: 500px;
+    width: 450px;
+}
+#html{
+    height: 300px;
 }

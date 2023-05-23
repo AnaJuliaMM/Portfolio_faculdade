@@ -207,3 +207,7 @@ main{
 .cc:hover{
     width: 500px;
 }
+footer{
+    height: 100px;
+    background-color: #311646;
+}
