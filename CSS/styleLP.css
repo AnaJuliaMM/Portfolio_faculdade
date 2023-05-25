@@ -52,6 +52,8 @@ header{
     top: 110px;
     gap: 30px;
 
+    width: 1000px;
+
     display: flex;
     flex-direction: column;
 

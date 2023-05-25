@@ -81,9 +81,8 @@ header{
     transition: all 0.2s ease;
     border: none;
     background: none;
-   }
-   
-   .button:before {
+}
+.button:before {
     content: "";
     position: absolute;
     top: 0;
@@ -94,16 +93,16 @@ header{
     width: 45px;
     height: 60px;
     transition: all 0.3s ease;
-   }
- 
-   .button:hover:before {
+}
+
+.button:hover:before {
     width: 100%;
     background: #b1dae7;
-   }
-   
-   .button:active {
-    transform: scale(100%);
-   }
+}
+
+.button:active {
+transform: scale(100%);
+}
 .botao_acesso{
     position: absolute;
 
