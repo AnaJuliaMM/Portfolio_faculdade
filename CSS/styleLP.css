@@ -172,12 +172,25 @@ nav ul{
 .explicacao_div{
     margin: 30px;
 }
-.explicacao{
+#explicacao_comunicacaoWeb{
     background: rgba(15, 9, 51, 0.85);   
     border-radius: 12px;
 
     height: 500px;
     width: 450px;
+}
+#explicacao_conceito{
+    display: none; 
+    border-radius: 12px;
+
+    height: 500px;
+    width: 450px;
+
+    border-radius: 62px;
+    background: #130d68;
+    box-shadow:  19px 19px 57px #280b7a,
+             -19px -19px 57px #530651;
+
 }
 #html{
     height: 300px;
