@@ -222,6 +222,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     font-size: 23px;
     font-weight: 700;
