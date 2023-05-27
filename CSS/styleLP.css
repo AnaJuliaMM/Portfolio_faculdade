@@ -159,6 +159,7 @@ nav ul{
     gap: 5px;
     flex-direction: column;
 }
+
 .topicos div{
     display: flex;
     justify-content: center;
@@ -170,36 +171,41 @@ nav ul{
     border-radius: 12px;
     height: 50px;
     width: 450px;
+
+    transform: 0.4s;
+}
+.topicos div:hover{
+    transform: scale(105%);
+    background: #a8a6a6;
 }
 .explicacao_div{
     margin: 30px;
 }
-#explicacao_comunicacaoWeb{
+.explicacao{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-} 
-#explicacao_comunicacaoWeb img{
-    width: 450px;
+    max-width: 380px;
+    height: 300px;
+
     border-radius: 20px;
 }
-#explicacao_conceito{
+#explicacao_comunicacaoWeb{
     display: none;
-    justify-content: center;
-    align-items: center;
+}
+#explicacao_comunicacaoWeb img{
+    width: 450px;
+    
+}
+#explicacao_conceito, #explicacao_ide{
+    display: none;
     gap: 30px;
-
-    flex-direction: column;
+    border-radius: 42px;
     padding: 40px;
 
-    border-radius: 12px;
-
-    width: 400px;
-    min-height: 300px;
-
-    border-radius: 42px;
+    
     background: #b1dae7;
     box-shadow:  19px 19px 57px #0c0324,
              -19px -19px 57px #530651;
@@ -208,24 +214,34 @@ nav ul{
     padding-bottom: 10px;
     color: #0c0324;
 }
-.div_explicacaoo{
+.div_explicacao{
     display: flex;
-    gap: 15px;  
-    
+    gap: 15px;     
 }
 .div_explicacao figure{
     display: flex;
     align-items: center;
-
 }
 .div_explicacao img{
     width: 100px;
 }
-
 #explicacao_conceito p{
     padding-left: 10px;
     color:#530651 ;
 } 
 #html{
     height: 300px;
+}
+#explicacao_ide{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    color: white;
+    background: #175669;
+    box-shadow:  19px 19px 57px #0c0324,
+             -19px -19px 57px #530651;
+}
+#explicacao_ide img{
+    width: 140px;
 }
