@@ -238,7 +238,7 @@ main{
     transition: 0.5s;
 }
 .cc:hover{
-    width: 500px;
+    translate: 50px;
 }
 footer{
     height: 100px;
