@@ -4,6 +4,7 @@ var divs_explicacao = document.getElementsByClassName("explicacao");
 var id_explicacao_cW = "explicacao_comunicacaoWeb";
 var id_explicacao_c = "explicacao_conceito";
 var id_explicacao_ide = "explicacao_ide";
+var id_explicacao_github = "explicacao_github";
 
 div_comunicacaoWeb = document.getElementById("comunicacao_web");
 div_comunicacaoWeb.addEventListener("mouseover", function() {
@@ -15,9 +16,14 @@ div_conceitos.addEventListener("mouseover", function() {
     tornarDisplayFlex(id_explicacao_c);
   });
 
-div_conceitos = document.getElementById("ide");
-div_conceitos.addEventListener("mouseover", function() {
+div_conceitos_ide = document.getElementById("ide");
+div_conceitos_ide.addEventListener("mouseover", function() {
     tornarDisplayFlex(id_explicacao_ide);
+  });
+
+div_github = document.getElementById("github");
+div_github.addEventListener("mouseover", function() {
+    tornarDisplayFlex(id_explicacao_github);
   });
 
 

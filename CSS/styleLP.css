@@ -186,43 +186,48 @@ nav ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    max-width: 380px;
-    height: 300px;
-
-    border-radius: 20px;
-}
-#explicacao_comunicacaoWeb{
-    display: none;
-}
-#explicacao_comunicacaoWeb img{
-    width: 450px;
-    
-}
-#explicacao_conceito, #explicacao_ide{
-    display: none;
     gap: 30px;
     border-radius: 42px;
-    padding: 40px;
 
+
+    padding: 40px;
+    max-width: 380px;
+    height: 300px;
     
     background: #b1dae7;
     box-shadow:  19px 19px 57px #0c0324,
              -19px -19px 57px #530651;
+
 }
+#explicacao_comunicacaoWeb,#explicacao_conceito, #explicacao_ide, #explicacao_github
+{
+    display: none;
+}
+
+/* DIV COMUNICAÇÃO WEB */
+#explicacao_comunicacaoWeb{
+    color: #0c0324;
+    background: #ededeb;
+}
+#explicacao_comunicacaoWeb img{
+    height: 320px;
+    border-radius: 32px;
+}
+
+/* DIV CONCEITOS TEÓRICOS*/
 #explicacao_conceito h1{
     padding-bottom: 10px;
     color: #0c0324;
 }
-.div_explicacao{
+.div_conceito{
     display: flex;
     gap: 15px;     
 }
-.div_explicacao figure{
+.div_conceito figure {
     display: flex;
     align-items: center;
 }
-.div_explicacao img{
+.div_conceito figure img{
     width: 100px;
 }
 #explicacao_conceito p{
@@ -232,8 +237,9 @@ nav ul{
 #html{
     height: 300px;
 }
+
+/* DIV IDE*/
 #explicacao_ide{
-    display: flex;
     justify-content: center;
     gap: 20px;
 
@@ -244,4 +250,16 @@ nav ul{
 }
 #explicacao_ide img{
     width: 140px;
+}
+
+/* DIV GIT HUB*/
+#explicacao_github{
+    color: #0c0324;
+}
+#explicacao_github figure {
+    display: flex;
+    align-items: center;
+}
+#explicacao_github figure img{
+    width: 150px;
 }
