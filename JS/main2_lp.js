@@ -1,29 +1,40 @@
-//Lógica section 1 : Introdução
-var divs_explicacao = document.getElementsByClassName("explicacao");
+//Seções
+//introducao = document.getElementById("introducao");
+introducao.addEventListener("click", mudarJanela);
 
-var id_explicacao_cW = "explicacao_comunicacaoWeb";
-var id_explicacao_c = "explicacao_conceito";
-var id_explicacao_ide = "explicacao_ide";
-var id_explicacao_github = "explicacao_github";
+function mudarJanela (){
+    window.location.href = "#introducao"
+}
+
+
+
+
+
+
+
+//Lógica section 1 : Introdução
+//Array com os elementos
+var divs_explicacao = document.querySelectorAll(".explicacao");
+var ids_explicacoes = [ "explicacao_comunicacaoWeb", "explicacao_conceito", "explicacao_ide", "explicacao_github" ]
 
 div_comunicacaoWeb = document.getElementById("comunicacao_web");
 div_comunicacaoWeb.addEventListener("mouseover", function() {
-    tornarDisplayFlex(id_explicacao_cW);
+    tornarDisplayFlex(ids_explicacoes[0]);
   });
 
 div_conceitos = document.getElementById("conceitos");
 div_conceitos.addEventListener("mouseover", function() {
-    tornarDisplayFlex(id_explicacao_c);
+    tornarDisplayFlex(ids_explicacoes[1]);
   });
 
 div_conceitos_ide = document.getElementById("ide");
 div_conceitos_ide.addEventListener("mouseover", function() {
-    tornarDisplayFlex(id_explicacao_ide);
+    tornarDisplayFlex(ids_explicacoes[2]);
   });
 
 div_github = document.getElementById("github");
 div_github.addEventListener("mouseover", function() {
-    tornarDisplayFlex(id_explicacao_github);
+    tornarDisplayFlex(ids_explicacoes[3]);
   });
 
 

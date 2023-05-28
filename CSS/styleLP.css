@@ -22,8 +22,7 @@ header{
     height: 550px;
 }
 .camada{
-    background: linear-gradient(90.14deg, rgba(6, 10, 52, 0.79) 25.86%, rgba(152, 9, 185, 0.547) 98.91%, rgba(92, 16, 234, 0.37) 105.95%);
-    
+    background: linear-gradient(90.14deg, rgba(5, 9, 50, 0.85) 25.86%, rgba(216, 39, 124, 0.77) 98.91%, rgba(234, 16, 173, 0.53) 105.95%);
     height: 550px;
     width: 100%;
     position: absolute;
@@ -135,7 +134,45 @@ nav ul{
     gap: 40px;
     padding: 10px;
 }
-#introducao{
+.titulo_introducao{
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+.titulo h1{
+    font-size: 70px;
+}
+.ancora_sequencia_aprendizado{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    gap: 20px;
+    width: 100%;
+}
+.ancora_sequencia_aprendizado div{
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size:xx-large;
+
+    width: 100%;
+    height: 100px;
+
+    background: #D9D9D9;
+    color: black;
+    font-weight: 700;
+
+    transition: 0.5s;
+}
+.ancora_sequencia_aprendizado div:hover{
+    transform: scale(107%);
+    color: #530651;
+    
+}
+
+#introducao, #html{
     height: 700px;
     display: flex;
     justify-content: center;
@@ -144,22 +181,17 @@ nav ul{
 
     background: linear-gradient(90.14deg, rgba(5, 9, 50, 0.85) 25.86%, rgba(216, 39, 124, 0.77) 98.91%, rgba(234, 16, 173, 0.53) 105.95%);
 }
-.titulo_introducao{
-    padding-left: 40px;
-    padding-bottom: 30px;
-}
+
 .titulo_introducao h1{
     font-size: 40px;
 }
-.titulo_introducao p{
-    padding-left: 20px;
-}
+  
+
 .topicos{
     display: flex;
     gap: 5px;
     flex-direction: column;
 }
-
 .topicos div{
     display: flex;
     justify-content: center;
@@ -172,7 +204,7 @@ nav ul{
     height: 50px;
     width: 450px;
 
-    transform: 0.4s;
+    transition: 0.3s;
 }
 .topicos div:hover{
     transform: scale(105%);
@@ -194,10 +226,11 @@ nav ul{
     max-width: 380px;
     height: 300px;
     
-    background: #b1dae7;
+
+    background: #175669;
     box-shadow:  19px 19px 57px #0c0324,
              -19px -19px 57px #530651;
-
+    color:white;
 }
 #explicacao_comunicacaoWeb,#explicacao_conceito, #explicacao_ide, #explicacao_github
 {
@@ -206,7 +239,6 @@ nav ul{
 
 /* DIV COMUNICAÇÃO WEB */
 #explicacao_comunicacaoWeb{
-    color: #0c0324;
     background: #ededeb;
 }
 #explicacao_comunicacaoWeb img{
@@ -217,7 +249,6 @@ nav ul{
 /* DIV CONCEITOS TEÓRICOS*/
 #explicacao_conceito h1{
     padding-bottom: 10px;
-    color: #0c0324;
 }
 .div_conceito{
     display: flex;
@@ -232,12 +263,7 @@ nav ul{
 }
 #explicacao_conceito p{
     padding-left: 10px;
-    color:#530651 ;
 } 
-#html{
-    height: 300px;
-}
-
 /* DIV IDE*/
 #explicacao_ide{
     justify-content: center;
@@ -253,9 +279,7 @@ nav ul{
 }
 
 /* DIV GIT HUB*/
-#explicacao_github{
-    color: #0c0324;
-}
+
 #explicacao_github figure {
     display: flex;
     align-items: center;
@@ -263,3 +287,5 @@ nav ul{
 #explicacao_github figure img{
     width: 150px;
 }
+
+/*Section 2: HTML*/
