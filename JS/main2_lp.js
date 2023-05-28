@@ -1,16 +1,3 @@
-//Seções
-//introducao = document.getElementById("introducao");
-introducao.addEventListener("click", mudarJanela);
-
-function mudarJanela (){
-    window.location.href = "#introducao"
-}
-
-
-
-
-
-
 
 //Lógica section 1 : Introdução
 //Array com os elementos
@@ -55,5 +42,4 @@ function tornarDisplayFlex(id_elemento){
     console.log("display flex")
 
 }
-
 
