@@ -171,7 +171,7 @@ nav ul{
     transform: scale(110%);    
 }
 
-#introducao, #html{
+#introducao, #html, #css{
     height: 700px;
     display: flex;
     justify-content: center;
@@ -284,27 +284,37 @@ nav ul{
 /*Section 2: HTML*/
 #html{
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
 }
-#html h1{
-    font-size: 40px;
+
+.titulo_sessão_html{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+}
+.titulo_sessão_html h1{
+    font-size: 40px; 
 }
 .html_conteiner{
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 80px;
 }
 .html_conteudo{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
-
+    gap: 20px;
+}
+.html_conteudo p{
+    padding-left: 10px;
 }
 .projeto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 500px;
 }
 
@@ -340,4 +350,20 @@ nav ul{
     display: flex;
     align-items: center;
     height: 270px;
+}
+
+/*Sessão css*/
+#css{
+    flex-direction: column;
+}
+.faixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 200px;
+    width: 100%;
+    background: #050529;
+
+
 }
