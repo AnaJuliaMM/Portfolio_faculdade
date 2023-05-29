@@ -230,7 +230,6 @@ main{
     width: 400px;
     height: 40px;
     padding: 10px;
-    border-radius: 20px;
     background: linear-gradient(89.91deg, #e03b8b 9.85%, rgba(250, 158, 20, 0.908897) 47.87%, rgba(41, 1, 53, 0.237) 103.06%);  
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
