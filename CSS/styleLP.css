@@ -172,13 +172,12 @@ nav ul{
 }
 
 #introducao, #html, #css{
-    height: 700px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
 
-    height: 700px;
 
     background: linear-gradient(90.14deg, rgba(5, 9, 50, 0.85) 25.86%, rgba(216, 39, 124, 0.77) 98.91%, rgba(234, 16, 173, 0.53) 105.95%);
 }
@@ -187,7 +186,6 @@ nav ul{
     font-size: 40px;
 }
   
-
 .topicos{
     display: flex;
     gap: 5px;
@@ -353,6 +351,27 @@ nav ul{
 }
 
 /*Sessão css*/
+.secao_header{
+    display: flex;
+    gap: 90px;
+}
+.numeracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    background: rgba(249, 149, 0, 0.908897);
+
+    transition: 0.3s;
+    rotate: 45deg;
+
+}
+.numeracao:hover{
+    rotate: 0deg;
+}
 #css{
     flex-direction: column;
 }
@@ -363,7 +382,14 @@ nav ul{
     gap: 50px;
     height: 200px;
     width: 100%;
-    background: #050529;
+    background: #01014a;
 
-
+    position: relative;
 }
+
+.imagem_ilustrativa img{
+    width: 600px;
+}
+
+
+
