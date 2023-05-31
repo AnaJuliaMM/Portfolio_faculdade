@@ -458,14 +458,36 @@ details summary:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+
+ 
     width: 100%;
+
+   
 }
-#projeto_html5 article div{
+.apresentacao_projeto{
     display: flex;
     flex-direction: column;
+    gap: 30px;
     width: 500px;
-   
-    background: #D9D9D9;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
+    padding: 20px;
+    
+    border-radius: 42px;
+    background: #d5d4dd;
+    color: #020109;
+    box-shadow:  -6px 6px 15px #222223,
+                6px -6px 12px #020109;
 }
+#select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 20px;
+
+    background-color: rgb(245, 231, 231);
+    transition: 0.3s;
+}
+
