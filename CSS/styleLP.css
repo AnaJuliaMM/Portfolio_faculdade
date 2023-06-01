@@ -479,7 +479,7 @@ details summary:hover{
     box-shadow:  -6px 6px 15px #222223,
                 6px -6px 12px #020109;
 }
-#select{
+#select_html_semantico{
     display: flex;
     justify-content: center;
     align-items: center;
