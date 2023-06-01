@@ -459,17 +459,19 @@ details summary:hover{
     justify-content: center;
     align-items: center;
 
- 
+    gap: 40px;
+
+    font-size: 18px;
     width: 100%;
 
    
 }
-.apresentacao_projeto{
+.apresentacao_projeto, .conteudo{
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: 500px;
-    padding: 20px;
+    padding: 30px;
     
     border-radius: 42px;
     background: #d5d4dd;
