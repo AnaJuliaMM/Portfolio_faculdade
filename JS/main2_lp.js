@@ -45,10 +45,21 @@ function tornarDisplayFlex(id_elemento){
 
 
 //Lógica seção projeto html5 semântico
-item_selecionado = document.getElementById("select_html_semantico").value;
 
+lista_suspensa = document.getElementById("change", )
+
+
+item_selecionado = document.getElementById("select_html_semantico").value;
 if(item_selecionado == "tag_formulario")
-    console.log(item_selecionado)
+  console.log(item_selecionado)
+else if(item_selecionado == "html_semantico")
+  console.log(item_selecionado)
 else
-    console.log(item_selecionado)
+  console.log(item_selecionado)
+
+
+ 
+
+
+
 
