@@ -46,16 +46,26 @@ function tornarDisplayFlex(id_elemento){
 
 //Lógica seção projeto html5 semântico
 
-lista_suspensa = document.getElementById("change", )
+lista_suspensa = document.getElementById("select_html_semantico");
+lista_suspensa.addEventListener("change", controlarCartoes)
+
+//de acordo com o selecionado deixar tudo display none e mostrar só o correspondente a ele
+
+function controlarCartoes(){
+  item_selecionado = lista_suspensa.value
+  if(item_selecionado == "html_semantico"){
+    //Trocar o vídeo pela imagem
+    div =  document.getElementsByClassName("conteudo")[0]
+    video = document.getElementById("video_projeto")
+    div.removeChild(video)
 
 
-item_selecionado = document.getElementById("select_html_semantico").value;
-if(item_selecionado == "tag_formulario")
-  console.log(item_selecionado)
-else if(item_selecionado == "html_semantico")
-  console.log(item_selecionado)
-else
-  console.log(item_selecionado)
+  }
+  else
+    console.log(item_selecionado)
+
+}
+
 
 
  
