@@ -1,7 +1,9 @@
 
 //Lógica section 1 : Introdução
 //Array com os elementos
-var divs_explicacao = document.querySelectorAll(".explicacao");
+var class_introducao = ".explicacao";
+
+
 var ids_explicacoes = [ "explicacao_comunicacaoWeb", "explicacao_conceito", "explicacao_ide", "explicacao_github" ]
 
 div_comunicacaoWeb = document.getElementById("comunicacao_web");
@@ -25,16 +27,17 @@ div_github.addEventListener("mouseover", function() {
   });
 
 
+function tornarDisplayNone(class_element){
+  var divs = document.querySelectorAll(class_element);
 
-function tornarDisplayNone(){
     //Deixar todos os display invisíveis
-    for(let i=0; i< divs_explicacao.length; i++){
-        divs_explicacao[i].style.display = "none";
+    for(let i=0; i< divs.length; i++){
+        divs[i].style.display = "none";
     }   
 }
 function tornarDisplayFlex(id_elemento){
     //Tornar todos invisíveis (display= "none")
-    tornarDisplayNone()
+    tornarDisplayNone(class_introducao)
 
     //Tornar 1 display flex
     let elemento = document.getElementById(id_elemento);
@@ -46,23 +49,41 @@ function tornarDisplayFlex(id_elemento){
 
 //Lógica seção projeto html5 semântico
 
+//Video inicial
+video_projeto = document.getElementById("video_projeto").style.display = "block";
+
+//classe para criar os vetores
+var projeto_semantico = ".conteudo_projeto_html_semantico";
+
 lista_suspensa = document.getElementById("select_html_semantico");
 lista_suspensa.addEventListener("change", controlarCartoes)
 
 //de acordo com o selecionado deixar tudo display none e mostrar só o correspondente a ele
 
 function controlarCartoes(){
+  //Apagar todos os elementos da div 
+  var media = document.getElementsByClassName("conteudo_projeto_html_semantico")
   item_selecionado = lista_suspensa.value
+  if(item_selecionado == "demonstração do projeto"){
+    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    media[0].style.display = "flex"
+    console.log("aqui")
+  }
   if(item_selecionado == "html_semantico"){
-    //Trocar o vídeo pela imagem
-    div =  document.getElementsByClassName("conteudo")[0]
-    video = document.getElementById("video_projeto")
-    div.removeChild(video)
-
+    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    media[1].style.display = "flex"
+    console.log("aqui")
+  }
+  else if(item_selecionado == "tag_formulario"){
+    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    media[2].style.display = "flex"
+    console.log(item_selecionado)
+  }
+  else{
+    console.log(item_selecionado)
 
   }
-  else
-    console.log(item_selecionado)
+    
 
 }
 

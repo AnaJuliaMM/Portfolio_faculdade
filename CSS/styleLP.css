@@ -492,6 +492,7 @@ details summary:hover{
     background-color: rgb(245, 231, 231);
     transition: 0.3s;
 }
-.conteudo video{
+.conteudo_projeto_html_semantico{
+    display: none;
     width: 600px;
 }
