@@ -79,6 +79,12 @@ function controlarCartoes(){
     media[2].style.display = "flex"
     console.log(item_selecionado)
   }
+  else if(item_selecionado == "css"){
+    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    media[3].style.display = "flex"
+    media[3].style.width = "400px"
+    console.log(item_selecionado)
+  }
   else{
     console.log(item_selecionado)
 
