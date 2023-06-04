@@ -2,8 +2,6 @@
 //Lógica section 1 : Introdução
 //Array com os elementos
 var class_introducao = ".explicacao";
-
-
 var ids_explicacoes = [ "explicacao_comunicacaoWeb", "explicacao_conceito", "explicacao_ide", "explicacao_github" ]
 
 div_comunicacaoWeb = document.getElementById("comunicacao_web");
@@ -49,8 +47,9 @@ function tornarDisplayFlex(id_elemento){
 
 //Lógica seção projeto html5 semântico
 
-//Video inicial
+//Video inicial 
 video_projeto = document.getElementById("video_projeto").style.display = "block";
+
 
 //classe para criar os vetores
 var projeto_semantico = ".conteudo_projeto_html_semantico";
@@ -69,7 +68,7 @@ function controlarCartoes(){
     media[0].style.display = "flex"
     console.log("aqui")
   }
-  if(item_selecionado == "html_semantico"){
+  else if(item_selecionado == "html_semantico"){
     tornarDisplayNone(projeto_semantico) //desaparecer com o div
     media[1].style.display = "flex"
     console.log("aqui")
@@ -79,17 +78,22 @@ function controlarCartoes(){
     media[2].style.display = "flex"
     console.log(item_selecionado)
   }
-  else if(item_selecionado == "css"){
+  else if(item_selecionado == "tag_ancoragem"){
     tornarDisplayNone(projeto_semantico) //desaparecer com o div
     media[3].style.display = "flex"
-    media[3].style.width = "400px"
+    console.log(item_selecionado)
+  }
+  else if(item_selecionado == "css"){
+    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    media[4].style.display = "flex"
     console.log(item_selecionado)
   }
   else{
+    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    media[5].style.display = "flex"
+    console.log("hello")
     console.log(item_selecionado)
-
   }
-    
 
 }
 

@@ -217,18 +217,64 @@
                     <h3>Veja os conteúdos trabalhados: </h3>
                     <select id="select_html_semantico">
                         <option value="demonstração do projeto" selected>Vídeo do Projeto</option>
+                        <option value="github">GitHub</option>
                         <option value="html_semantico">Aplicação de Html semântico</option>
                         <option value="tag_formulario" >Tag de formulário</option>
                         <option value="tag_ancoragem">Tags de ancoragem</option>
                         <option value="css"> opacidade e hover (CSS)</option>
-                        <option value="githib">GitHub</option>
                     </select>
                 </div>
-                <figure>
+                <figure>           
                     <video class="conteudo_projeto_html_semantico" id="video_projeto" src="/CSS/videos/HTML5 - Google Chrome 2023-06-01 10-50-09.mp4" controls></video>
                     <img class="conteudo_projeto_html_semantico"  src="/CSS/Images/html_semantico/tags_semanticas.png" alt="Demonstração da utilização de tags semânticas">
-                    <img class="conteudo_projeto_html_semantico"  src="/CSS/Images/html_semantico/tags_formularios.png" alt="Demonstração da utilização de tags de formulário">
-                    <img class="conteudo_projeto_html_semantico"  src="/CSS/Images/html_semantico/tag_opacity.png" alt="Demonstração da utilização de tags de formulário">
+                    <figure class="conteudo_projeto_html_semantico">
+                        <nav>
+                            <a href="#page1_codigo"><button>Código</button></a>
+                            <a href="#page2_demonstracao"><button>Demonstração</button></a>
+                        </nav>
+                        <scroll-container>
+                            <scroll-page id="page1_codigo">
+                                <img src="/CSS/Images/html_semantico/tags_formularios.png" alt="Demonstração da utilização de tags de formulário">
+                            </scroll-page>
+                            <scroll-page id="page2_demonstracao">
+                                <video src="/CSS/videos/html_semantico/formulario.mp4" controls></video>
+                            </scroll-page>
+                        </scroll-container> 
+                    </figure >
+                    <figure class="conteudo_projeto_html_semantico">
+                        <nav>
+                            <a href="#page3_codigo"><button>Código</button></a>
+                            <a href="#page4_demonstracao"><button>Demonstração</button></a>
+                        </nav>
+                        <scroll-container>
+                            <scroll-page id="page3_codigo">
+                                <img src="/CSS/Images/html_semantico/tag_ancoragem.png" alt="Demonstração da utilização de tags de ancoragem">
+                            </scroll-page>
+                            <scroll-page id="page4_demonstracao">
+                                <video src="/CSS/videos/html_semantico/ancoragem.mp4" controls></video>
+                            </scroll-page>
+                        </scroll-container> 
+                    </figure>
+                    <figure class="conteudo_projeto_html_semantico">
+                        <nav>
+                            <a href="#page5_codigo"><button>Código</button></a>
+                            <a href="#page6_demonstracao"><button>Demonstração</button></a>
+                        </nav>
+                        <scroll-container>
+                            <scroll-page id="page5_codigo">
+                                <img id="img_opacity_hover" src="/CSS/Images/html_semantico/tag_opacity.png" alt="Demonstração da utilização das ferramentas de hover e opacidade do css">
+                            </scroll-page>
+                            <scroll-page id="page6_demonstracao">
+                                <video src="/CSS/videos/html_semantico/HTML5 - hover.mp4" controls></video>
+                            </scroll-page>
+                        </scroll-container> 
+                    </figure>
+                   <figure class="conteudo_projeto_html_semantico" id="html_semantico_github">
+                        <p>
+                            O projeto foi desenvolvido em dupla  utilizando o serviço <b>GitHub</b>  e o software <b>GitBash</b> para o controle das versões do arquivo
+                        </p>
+                        <img id="img_opacity_github" src="/CSS/Images/html_semantico/git_hub.png" alt="">
+                   </figure>
                 </figure>
                     
                   

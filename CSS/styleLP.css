@@ -470,7 +470,7 @@ details summary:hover{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 400px;
+    width: 350px;
     padding: 30px;
     
     border-radius: 42px;
@@ -492,7 +492,70 @@ details summary:hover{
     background-color: rgb(245, 231, 231);
     transition: 0.3s;
 }
-.conteudo_projeto_html_semantico{
-    display: none;
+#video_projeto{
     width: 600px;
+}
+.conteudo_projeto_html_semantico, #html_semantico_github{
+    display: none;
+    width: 550px;
+    flex-direction: column;
+}
+.conteudo_projeto_html_semantico nav{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.conteudo_projeto_html_semantico nav button{
+    display: flex;
+    justify-content: center;
+    
+    padding: 5px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 700;
+    color:#01014a;
+    background-color:#cfe0df;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.conteudo_projeto_html_semantico nav button:hover{
+    transform: scale(110%);
+    color: #020109;
+} 
+scroll-container{
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    gap: 30px;
+    padding: 15px;
+    
+} 
+scroll-page{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.conteudo_projeto_html_semantico img, .conteudo_projeto_html_semantico figure img{
+    width: 480px;
+} 
+.conteudo_projeto_html_semantico video{
+    width: 500px;
+}
+#img_opacity_hover, #img_opacity_github{
+    width: 300px;
+}
+#html_semantico_github{
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    color: #020109;
+    padding: 15px;
+    border-radius: 22px;
+
+    background: #ffffff;
+    color: #020109;
+    box-shadow:  -6px 6px 15px #222223,
+                6px -6px 12px #020109;
 }
