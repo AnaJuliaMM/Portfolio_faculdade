@@ -209,13 +209,13 @@ header h1{
 }
 .topicos div:hover{
     transform: scale(105%);
-    background: #7edfee;
+    background: #eab2d2;
     font-weight: 700;
 }
 .explicacao_div{
     margin: 30px;
 }
-.explicacao{
+.explicacao, .js_ct_main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -357,7 +357,7 @@ header h1{
     display: flex;
     gap: 90px;
 }
-.numeracao{
+.numeracao, .js_numeracao{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -371,7 +371,7 @@ header h1{
     rotate: 45deg;
 
 }
-.numeracao:hover{
+.numeracao:hover, .js_numeracao:hover{
     rotate: 0deg;
 }
 #css{
@@ -525,7 +525,7 @@ details summary:hover{
 } 
 scroll-container{
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-padding: 24px;
     gap: 30px;
@@ -568,7 +568,7 @@ scroll-page{
     width: 600px;
 }
 #js header h1{
-    font-size: 100px;
+    font-size: 80px;
     text-align: center;
     transition: 0.5s;
 }
@@ -597,8 +597,58 @@ scroll-page{
     display: flex;
     flex-direction:column;
     font-size: 20px;
-    gap: 10px;
+    gap: 20px;
     width: 850px;
     text-align: justify;
+}
 
+/*Seção js Conceitos Trabalhados*/
+#js_conteudos_trabalhados{
+    flex-direction: column;
+    padding-top: 20px;
+}
+#js_conteudos_trabalhados .topicos div{
+    width: 280px;
+}
+.js_numeracao{
+    background: #e4fb14;
+    color: #020109;
+}
+.js_conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.js_ct_conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 300px;
+    width: 500px;
+}
+.js_ct_main{
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    height: 200px;
+    width: 400px;
+    gap:5px; 
+}
+.js_ct_main button{
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #210339;
+    color: #d5d4dd;
+    font-size: medium;
+    transition: 0.5s;
+}
+.js_ct_main button:hover{
+    transform: scale(110%);
+}
+#topico_var{
+    display: flex;
 }

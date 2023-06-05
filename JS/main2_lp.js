@@ -1,59 +1,52 @@
-
-//Lógica section 1 : Introdução
+//Lógica dos cartões
 //Array com os elementos
 var class_introducao = ".explicacao";
+var class_topicos = ".js_ct_main"
 var ids_explicacoes = [ "explicacao_comunicacaoWeb", "explicacao_conceito", "explicacao_ide", "explicacao_github" ]
 
-div_comunicacaoWeb = document.getElementById("comunicacao_web");
-div_comunicacaoWeb.addEventListener("mouseover", function() {
-    tornarDisplayFlex(ids_explicacoes[0]);
-  });
+var bts_html_introducao_topicos = document.getElementsByClassName("html_topicos")
+var divs_html_introducao_topicos = document.getElementsByClassName("explicacao")
 
-div_conceitos = document.getElementById("conceitos");
-div_conceitos.addEventListener("mouseover", function() {
-    tornarDisplayFlex(ids_explicacoes[1]);
-  });
+bts_html_introducao_topicos[0].addEventListener("mouseover", function() {
+  tornarDisplayFlex(0, divs_html_introducao_topicos );
+});
+bts_html_introducao_topicos[1].addEventListener("mouseover", function() {
+  tornarDisplayFlex(1, divs_html_introducao_topicos );
+});
+bts_html_introducao_topicos[2].addEventListener("mouseover", function() {
+  tornarDisplayFlex(2, divs_html_introducao_topicos );
+});
+bts_html_introducao_topicos[3].addEventListener("mouseover", function() {
+  tornarDisplayFlex(3, divs_html_introducao_topicos );
+});
+bts_html_introducao_topicos[4].addEventListener("mouseover", function() {
+  tornarDisplayFlex(4, divs_html_introducao_topicos );
+});
 
-div_conceitos_ide = document.getElementById("ide");
-div_conceitos_ide.addEventListener("mouseover", function() {
-    tornarDisplayFlex(ids_explicacoes[2]);
-  });
 
-div_github = document.getElementById("github");
-div_github.addEventListener("mouseover", function() {
-    tornarDisplayFlex(ids_explicacoes[3]);
-  });
-
-
-function tornarDisplayNone(class_element){
-  var divs = document.querySelectorAll(class_element);
-
+function tornarDisplayNone(elementos){
     //Deixar todos os display invisíveis
-    for(let i=0; i< divs.length; i++){
-        divs[i].style.display = "none";
-    }   
+    for(let i=0; i< elementos.length; i++){
+      elementos[i].style.display = "none";
+      console.log("display none")
+    }  
+   
 }
-function tornarDisplayFlex(id_elemento){
-    //Tornar todos invisíveis (display= "none")
-    tornarDisplayNone(class_introducao)
-
-    //Tornar 1 display flex
-    let elemento = document.getElementById(id_elemento);
-    elemento.style.display = "flex"
-    console.log("display flex")
-
+function tornarDisplayFlex(indice, elementos){
+  //Recebe o índice do elemento para tornar flex
+  tornarDisplayNone(elementos)
+  //Manda para o ser none todo o array
+  elementos[indice].style.display = "flex"
+  console.log("display flex")
 }
+
 
 
 //Lógica seção projeto html5 semântico
-
 //Video inicial 
 video_projeto = document.getElementById("video_projeto").style.display = "block";
 
-
 //classe para criar os vetores
-var projeto_semantico = ".conteudo_projeto_html_semantico";
-
 lista_suspensa = document.getElementById("select_html_semantico");
 lista_suspensa.addEventListener("change", controlarCartoes)
 
@@ -64,32 +57,32 @@ function controlarCartoes(){
   var media = document.getElementsByClassName("conteudo_projeto_html_semantico")
   item_selecionado = lista_suspensa.value
   if(item_selecionado == "demonstração do projeto"){
-    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    tornarDisplayNone(media) //desaparecer com o div
     media[0].style.display = "flex"
     console.log("aqui")
   }
   else if(item_selecionado == "html_semantico"){
-    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    tornarDisplayNone(media) //desaparecer com o div
     media[1].style.display = "flex"
     console.log("aqui")
   }
   else if(item_selecionado == "tag_formulario"){
-    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    tornarDisplayNone(media) //desaparecer com o div
     media[2].style.display = "flex"
     console.log(item_selecionado)
   }
   else if(item_selecionado == "tag_ancoragem"){
-    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    tornarDisplayNone(media) //desaparecer com o div
     media[3].style.display = "flex"
     console.log(item_selecionado)
   }
   else if(item_selecionado == "css"){
-    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    tornarDisplayNone(media) //desaparecer com o div
     media[4].style.display = "flex"
     console.log(item_selecionado)
   }
   else{
-    tornarDisplayNone(projeto_semantico) //desaparecer com o div
+    tornarDisplayNone(media) //desaparecer com o div
     media[5].style.display = "flex"
     console.log("hello")
     console.log(item_selecionado)
@@ -98,9 +91,19 @@ function controlarCartoes(){
 }
 
 
+// Seção Js: conteúdos trabalhados
+var bts_conteudo_trabalhados = document.getElementsByClassName("ct_topicos")
+var conteiner_js_conteudos_trabalhados = document.getElementsByClassName("js_ct_main")
 
- 
 
-
+bts_conteudo_trabalhados[0].addEventListener("mouseover", function() {
+  tornarDisplayFlex(0,  conteiner_js_conteudos_trabalhados );
+});
+bts_conteudo_trabalhados[1].addEventListener("mouseover", function() {
+  tornarDisplayFlex(1,  conteiner_js_conteudos_trabalhados );
+});
+bts_conteudo_trabalhados[2].addEventListener("mouseover", function() {
+  tornarDisplayFlex(2,  conteiner_js_conteudos_trabalhados );
+});
 
 

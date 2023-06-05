@@ -23,7 +23,7 @@
             <div>
                 <h1 class="disciplina">Linguagem de Programação</h1>
                 <div class="ancora_sequencia_aprendizado">
-                    <div >Introdução</div>
+                    <div>Introdução</div>
                     <div>HTML</div>
                     <div>CSS</div>
                     <div>Javascript</div>
@@ -40,15 +40,35 @@
                     <p>A princípios tivemos uma introdução teórica sobre os seguintes tópicos:</p>
                 </header> 
                 <div class="topicos">
-                    <div>Método ágil: Scrum</div>
-                    <div id="ide">IDE</div>
-                    <div id="github">Git Hub</div>
-                    <div id="comunicacao_web">Comunicação Web</div>
-                    <div id="conceitos">Conceitos</div>
-                    
+                    <div class="html_topicos">Método ágil: Scrum</div>
+                    <div class="html_topicos">IDE</div>
+                    <div class="html_topicos">Git Hub</div>
+                    <div class="html_topicos">Comunicação Web</div>
+                    <div class="html_topicos">Conceitos</div>
                 </div>
             </div>
             <div class="explicacao_div">
+                <div id="explicacao_metodologia_agil" class="explicacao">
+
+                </div>
+                <div id="explicacao_ide" class="explicacao">
+                    <h1>IDE: Ambiente de desenvolvimento integrado</h1>
+                    <p>Fomos instruídos a baixar o VSCODE como local para desenvolvimento, edição e compilação dos códigos nas linguagens trabalhadas</p>
+                    <figure>
+                        <img src="/CSS/Images/VSCODE.jpg" alt="">
+                    </figure>
+                </div>
+                <div id="explicacao_github" class="explicacao">
+                    <figure>
+                        <img src="/CSS/Images/git hub.png" alt="logo github">
+                        <img src="/CSS/Images/gitBash.png" alt="logo gitBash">
+                    </figure>
+                    <ul>
+                        <li>Plataforma de portifólio e armazenamento de projetos</li>
+                        <li>Acesso à repositórios de outros desenvolvedores</li>
+                        <li>Gerenciador de versões</li>
+                    </ul>
+                </div>
                 <div id="explicacao_comunicacaoWeb" class="explicacao">
                     <figure>
                         <img src="/CSS/Images/comunicacaoWeb.jpg" alt="Anotação do meu caderno em relação a matéria Comunicação web">
@@ -78,26 +98,8 @@
                         
                     </div>
                 </div>
-                <div id="explicacao_ide" class="explicacao">
-                    <h1>IDE: Ambiente de desenvolvimento integrado</h1>
-                    <p>Fomos instruídos a baixar o VSCODE como local para desenvolvimento, edição e compilação dos códigos nas linguagens trabalhadas</p>
-                    <figure>
-                        <img src="/CSS/Images/VSCODE.jpg" alt="">
-                    </figure>
-                </div>
-                <div id="explicacao_github" class="explicacao">
-                    <figure>
-                        <img src="/CSS/Images/git hub.png" alt="logo github">
-                        <img src="/CSS/Images/gitBash.png" alt="logo gitBash">
-                    </figure>
-                    <ul>
-                        <li>Plataforma de portifólio e armazenamento de projetos</li>
-                        <li>Acesso à repositórios de outros desenvolvedores</li>
-                        <li>Gerenciador de versões</li>
-                    </ul>
-
-                </div>
-
+                
+                
             </div>
          </section>
         <section id="html">
@@ -295,7 +297,57 @@
                     <br> Dando continuidade, para avançarmos nas aulas práticas, realizamos a instalação do node.js e executamos alguns comandos para demonstração da utilização do <strong>console</strong>  no VSCODE e em um navageador web. Dessa forma, o ambiente de aprendizado foi preparado para o estudo dos conceitos de programação e desenvolvimento de projetos.
                 </p>
             </article>
-    
+
+        </section>
+        <section id="js_conteudos_trabalhados">
+            <header class="curriculo_titulo">
+                <div class="js_numeracao">
+                    <p>1</p> 
+                </div>
+                <h1> Conteúdos Trabalhados</h1>
+            </header>
+            <article class="js_conteiner">
+                <article class="topicos">
+                    <div class="ct_topicos">Variáveis</div>
+                    <div class="ct_topicos">Operadores</div>
+                    <div class="ct_topicos">D.O.M</div>
+                </article>
+                <article class="js_ct_conteudo">
+                    <article id="topico_var" class="js_ct_main">
+                        <li><b>Conceito de variáveis</b></li>
+                        <li><b>Regras de nomeclatura</b></li>
+                        <details>
+                            <summary><b> Tipos de variáveis</b></summary>
+                            <ul>
+                                <li>Number(inteiros e decimais)</li>
+                                <li>String(cadeia de caracteres)</li> 
+                                <li> Boolean</li>
+                            </ul>
+                        </details>
+                        <li><b>Sintaxe de declaração e inicialização</b></li>
+                        <li><b>Concatenação</b></li>
+                    </article>
+                    <article class="js_ct_main">
+                       <li>Atribuição (=)</li>
+                       <li>Aritmética (+, +=, -, *, /, **, %, ...)</li>
+                       <li>Condicional (==, >, !=, ===, ...)</li>
+                       <li>Lógicos (&&, ||, !)</li>
+                       <li>Ternário</li>
+                    </article>
+                    <article class="js_ct_main">
+                        <u><b>M</b>odelo de <b>O</b>bjeto de <b>D</b>ocumento</u>
+                        <li>Árvore do Dom</li>
+                        <li>Métodos</li>
+                        <li>Eventos</li>
+                        <button onclick="window.alert('Você clicou em um elemento da árvore DOM!')">Clique aqui</button>
+
+
+
+                    </article>
+                </article>
+            </article>
+            
+
         </section>
    </article>
    <article>
