@@ -637,6 +637,14 @@ scroll-page{
     width: 400px;
     gap:5px; 
 }
+#laco_repeticao{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.js_ct_main figure img{
+    width: 100px;
+}
 .js_ct_main button{
     border-radius: 15px;
     padding: 10px;
