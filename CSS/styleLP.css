@@ -603,6 +603,7 @@ scroll-page{
 }
 
 /*Seção js Conceitos Trabalhados*/
+
 #js_conteudos_trabalhados{
     flex-direction: column;
     padding-top: 20px;
@@ -643,7 +644,15 @@ scroll-page{
     gap: 80px;
 }
 .js_ct_main figure img{
-    width: 100px;
+    width: 130px;
+}
+#imagem_js_ct{
+    display: flex;
+    background: transparent;
+}
+#imagem_js_ct img{
+    width: 290px;
+    border-radius: 50px;
 }
 .js_ct_main button{
     border-radius: 15px;
@@ -657,6 +666,28 @@ scroll-page{
 .js_ct_main button:hover{
     transform: scale(110%);
 }
-#topico_var{
+
+/*Seção- Primeiros Projetos*/
+#js_primeiros_projetos{
+    flex-direction: column;
+    height: 1000px;
+}
+#conteiner_primeiros_projetos{
     display: flex;
+    justify-content: center;
+
+    gap: 30px;
+    width: 100%;
+}
+#conteiner_primeiros_projetos article{
+    width: 400px;
+}
+#conteiner_primeiros_projetos h1{
+    font-size: 30px;
+}
+#conteiner_primeiros_projetos p{
+    font-size: 20px;
+}
+#js_primeiros_projetos video{
+    width: 600px;
 }

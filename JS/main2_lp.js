@@ -97,19 +97,19 @@ var conteiner_js_conteudos_trabalhados = document.getElementsByClassName("js_ct_
 
 
 bts_conteudo_trabalhados[0].addEventListener("mouseover", function() {
-  tornarDisplayFlex(0,  conteiner_js_conteudos_trabalhados );
-});
-bts_conteudo_trabalhados[1].addEventListener("mouseover", function() {
   tornarDisplayFlex(1,  conteiner_js_conteudos_trabalhados );
 });
-bts_conteudo_trabalhados[2].addEventListener("mouseover", function() {
+bts_conteudo_trabalhados[1].addEventListener("mouseover", function() {
   tornarDisplayFlex(2,  conteiner_js_conteudos_trabalhados );
 });
-bts_conteudo_trabalhados[3].addEventListener("mouseover", function() {
+bts_conteudo_trabalhados[2].addEventListener("mouseover", function() {
   tornarDisplayFlex(3,  conteiner_js_conteudos_trabalhados );
 });
-bts_conteudo_trabalhados[4].addEventListener("mouseover", function() {
+bts_conteudo_trabalhados[3].addEventListener("mouseover", function() {
   tornarDisplayFlex(4,  conteiner_js_conteudos_trabalhados );
+});
+bts_conteudo_trabalhados[4].addEventListener("mouseover", function() {
+  tornarDisplayFlex(5,  conteiner_js_conteudos_trabalhados );
 });
 
 
