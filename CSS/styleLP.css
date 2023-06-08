@@ -220,9 +220,7 @@ header h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
     border-radius: 42px;
-
 
     padding: 40px;
     max-width: 370px;
@@ -239,10 +237,15 @@ header h1{
 
 /* DIV COMUNICAÇÃO WEB */
 #explicacao_comunicacaoWeb img{
-    height: 320px;
-    border-radius: 32px;
+    height: 250px;
+    border-radius: 20px;
 }
-
+#explicacao_comunicacaoWeb figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
 /* DIV CONCEITOS TEÓRICOS*/
 #explicacao_conceito h1{
     padding-bottom: 10px;
@@ -633,7 +636,7 @@ scroll-page{
     display: none;
     flex-direction: column;
     align-items: start;
-    height: 200px;
+    height: 250px;
     width: 400px;
     gap:5px; 
 }
@@ -651,4 +654,5 @@ scroll-page{
 }
 #topico_var{
     display: flex;
+    gap: 10px;
 }
