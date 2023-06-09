@@ -112,17 +112,10 @@ bts_conteudo_trabalhados[4].addEventListener("mouseover", function() {
   tornarDisplayFlex(5,  conteiner_js_conteudos_trabalhados );
 });
 
+var bts_atividades = document.getElementsByClassName("atividades");
+var conteiner_atividades = document.getElementsByClassName("conteiner_atividades_descricao")
 
-//
-section = document.getElementById("video_projeto1")
-var classe = "descrição_projeto"
-section.addEventListener("mouseover", function(){tornarTodosDisplayFlex(classe)})
-
-function tornarTodosDisplayFlex(classe){
-  descricoes = document.getElementsByClassName(classe)
-  for (let i = 0; i < descricoes.length; i++) {
-    descricoes[i].style.display = "flex";
-    
-  }
-
-}
+bts_atividades[0].addEventListener("mouseover", function(){tornarDisplayFlex(0, conteiner_atividades)})
+bts_atividades[1].addEventListener("mouseover", function(){tornarDisplayFlex(1, conteiner_atividades)})
+bts_atividades[2].addEventListener("mouseover", function(){tornarDisplayFlex(2, conteiner_atividades)})
+bts_atividades[3].addEventListener("mouseover", function(){tornarDisplayFlex(3, conteiner_atividades)})
