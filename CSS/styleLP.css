@@ -14,110 +14,84 @@ body{
     
 }
 .header{
-    background-image: url(Images/fundo_main2.jpg);
+    background-image: url(Images/header/fundo.png);
     background-size: cover;
-
-    
     position: relative;
-    height: 550px;
+    height: 600px;
 }
 .camada{
-    background: linear-gradient(90.14deg, rgba(5, 9, 50, 0.85) 25.86%, rgba(216, 39, 124, 0.77) 98.91%, rgba(234, 16, 173, 0.53) 105.95%);
-    height: 550px;
+    background: linear-gradient(90.12deg, rgba(1, 2, 9, 0.85) 26.92%, rgba(9, 2, 5, 0.77) 91.39%, rgba(8, 2, 5, 0.772533) 91.4%, rgba(15, 2, 11, 0.53) 99.92%);
+    height: 600px;
     width: 100%;
     position: absolute;
 
 }
 .nav_logo{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 700px;
     height: 70px;
     width: 100%;
-    justify-content: space-around;
     position: relative;
 
-    background: rgba(23, 21, 22, 0.44);
+    background: linear-gradient(180deg, rgba(52, 1, 41, 0.44) 0%, rgba(85, 2, 39, 0) 100%);}
+.nav_logo  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+}
+.nav_logo figure img{
+    width: 100px;
 }
 .logo{
     font-family: 'Lobster Two', cursive;
     color: white;
+    cursor: pointer;
+    font-size: 30px;
     padding: 30px;
 }
 .titulo{
     position: absolute;
-    left: 100px;
-    top: 110px;
-    gap: 30px;
-
-    width: 1000px;
+    top: 150px;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
-
-    font-family: 'Source Sans Pro', sans-serif;
-    color: rgb(219, 222, 232);
-
-}
-.portifolio_aluna{
-    font-size: 25px;
-}
-.disciplina{
-    padding-left: 10px;
-    padding-top: 40px;
-    padding: 10px;
-    font-size: 50px;
-}
-.curso{
-    padding-left: 400px;
-    font-size: 30px;
-}
-.semestre{
-    padding-left: 900px;
-    font-size: 30px;
-}
-.botao_acesso{
-    position: absolute;
-
-    display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
-
-    width: 100%;
-    height: 150px;
-    gap:100px;
-
-    top: 300px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(219, 222, 232);
 }
-.botao_acesso img{
-    width: 400px;
-}
-.botao_acesso button{
-    width: 500px;
-    height: 60px;
-
-    background: linear-gradient(357.92deg, rgba(33, 32, 32, 0.44) 21.69%, rgba(57, 55, 56, 0.42) 49.94%, rgba(23, 21, 22, 0.58) 112.3%);    color: rgb(233, 233, 233);
-    border: none;
-
-    font-size: 30px;
-
-    transition: 0.5s;
-}
-.botao_acesso button:hover{
-    transform: scale(110%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.titulo nav{
+    padding: 20px;
+    display: flex;
+    gap: 100px;
+    justify-content:end;
 
 }
-.logo_senai{
-    transform: scale(50%);
+.titulo nav figure img{
+    width: 200px;
+}
+.titulo h1{
+    font-size: 70px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    font-size: 20px;
+    gap: 80px;
+    padding: 10px;
 }
 nav li{
     list-style: none;
 }
 nav li a{
     font-style: none;
+    font-weight: 600;
     color: white;
 }
 nav li:hover{
@@ -128,48 +102,31 @@ a{
     color: white;
     text-decoration: none;
 }
-nav ul{
+.sumario{
     display: flex;
-    color: aliceblue;
-    gap: 40px;
-    padding: 10px;
-}
-.titulo_introducao{
-    padding-left: 40px;
-    padding-bottom: 30px;
-}
-.titulo h1{
-    font-size: 70px;
-}
-.ancora_sequencia_aprendizado{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
-    gap: 20px;
-    width: 100%;
-}
-.ancora_sequencia_aprendizado div{
-    border-radius: 12px;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    font-size:xx-large;
-
-    width: 100%;
-    height: 100px;
-
-
-    color: rgb(0, 190, 243);
-    font-weight: 700;
-    font-size: 50px;
-
+    opacity: 0;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 400px;
+    gap: 5px;
     transition: 0.5s;
 }
-.ancora_sequencia_aprendizado div:hover{
-    transform: scale(110%);    
+.sumario:hover{
+    opacity: 1;
 }
+.sumario li a {
+    font-size: 25px;
+    font-weight: 400;
+}
+.sumario li:hover{
+    transform: scale(100%);
+    translate: -10px;
+}
+
+
+
+
+/*Seções*/
 section{
     height: 600px;
     display: flex;
@@ -177,10 +134,14 @@ section{
     align-items: center;
     gap: 60px;
 
-    background: linear-gradient(90.14deg, rgba(5, 9, 50, 0.85) 25.86%, rgba(216, 39, 124, 0.77) 98.91%, rgba(234, 16, 173, 0.53) 105.95%);
+    background: linear-gradient(90.14deg, #170744 6.72%, rgba(91, 8, 60, 0.89334) 48.58%, rgba(111, 9, 61, 0.865867) 56.85%, rgba(20, 3, 68, 0.85456) 86.82%, rgba(1, 0, 52, 0.85) 98.91%, rgba(255, 0, 153, 0.53) 105.95%, rgba(3, 0, 133, 0.53) 105.95%);
 }
-
-
+.titulo_introducao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 5px;
+}
 .titulo_introducao h1, #html_semantico h1, #js_introducao h1{
     font-size: 40px;
 }
@@ -387,7 +348,7 @@ header h1{
     gap: 50px;
     height: 200px;
     width: 100%;
-    background: #01014a;
+    background: #02022a;
 
 }
 
@@ -692,7 +653,6 @@ scroll-page{
 /*Seção- Primeiros Projetos*/
 #js_primeiros_projetos{
     flex-direction: column;
-    height: 500px;
     gap:30px;
 }
 .opcoes_projetos{

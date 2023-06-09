@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&family=Libre+Franklin&family=Lobster+Two&family=Red+Hat+Display:ital,wght@0,300;0,400;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+body{
+    opacity: 1;
+    color: white;
+    background-color: rgb(15, 17, 48, 1);
+    
+}
+.header{
+    background-image: url(Images/header/fundo_AI.png);
+    background-size: cover;
+    position: relative;
+    height: 600px;
+}
+.camada{
+    background: linear-gradient(90.12deg, rgba(1, 2, 9, 0.85) 26.92%, rgba(9, 2, 5, 0.77) 91.39%, rgba(8, 2, 5, 0.772533) 91.4%, rgba(15, 2, 11, 0.53) 99.92%);
+    height: 600px;
+    width: 100%;
+    position: absolute;
+
+}
+.nav_logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 700px;
+    height: 70px;
+    width: 100%;
+    position: relative;
+
+    background: linear-gradient(180deg, rgba(52, 1, 41, 0.44) 0%, rgba(85, 2, 39, 0) 100%);}
+.nav_logo  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+}
+.nav_logo figure img{
+    width: 100px;
+}
+.logo{
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 30px;
+}
+.titulo{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(219, 222, 232);
+}
+.titulo nav{
+    padding: 20px;
+    display: flex;
+    gap: 100px;
+    justify-content:end;
+
+}
+.titulo nav figure img{
+    width: 200px;
+}
+.titulo h1{
+    font-size: 70px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    font-size: 20px;
+    gap: 80px;
+    padding: 10px;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    font-style: none;
+    font-weight: 600;
+    color: white;
+}
+nav li:hover{
+    transform: scale(110%);
+    transition: 0.5s;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.sumario{
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 400px;
+    gap: 5px;
+    transition: 0.5s;
+}
+.sumario:hover{
+    opacity: 1;
+}
+.sumario li a {
+    font-size: 25px;
+    font-weight: 400;
+}
+.sumario li:hover{
+    transform: scale(100%);
+    translate: -10px;
+}
