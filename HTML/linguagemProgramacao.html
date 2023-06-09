@@ -298,7 +298,6 @@
                     <br> Dando continuidade, para avançarmos nas aulas práticas, realizamos a instalação do node.js e executamos alguns comandos para demonstração da utilização do <strong>console</strong>  no VSCODE e em um navageador web. Dessa forma, o ambiente de aprendizado foi preparado para o estudo dos conceitos de programação e desenvolvimento de projetos.
                 </p>
             </article>
-
         </section>
         <section id="js_conteudos_trabalhados">
             <header class="curriculo_titulo">
@@ -320,51 +319,68 @@
                         <img  src="/CSS/Images/seção_js/book.png" alt="">
                     </figure>
                     <article id="topico_var" class="js_ct_main">
-                        <p>Tendo em vista que as variáveis são espaços na memória reservados para armazenar valores gerados durante a execução de um programa, estudamos os seguintes tópicos</p>
+                        <h3>Variáveis</h3>
+                        <p>Variáveis são espaços na memória reservados para armazenar valores gerados durante a execução de um programa. Sobre o assunto, estudamos os seguintes tópicos:</p>
                         <div>
-                            <li><b>Sintaxe de declaração e inicialização</b></li>
-                            <li><b>Regras de nomeclatura de variáveis</b></li>
-                            <details>
-                                <summary><b>Tipos de variáveis</b></summary>
-                                <ul>
-                                    <li>Number(inteiros e decimais)</li>
-                                    <li>String(cadeia de caracteres)</li> 
-                                    <li> Boolean</li>
-                                </ul>
-                            </details>
-                            <li><b>Concatenação de String</b></li>
+                            <li>Sintaxe de declaração e inicialização</li>
+                            <li>Regras de nomeclatura de variáveis</li>
+                            <li>Tipos de Variáveis(Number, String e Boolean)</li>
+                            <li>Concatenação de String</li>
                         </div> 
                     </article>
                     <article class="js_ct_main">
-                       <li>Atribuição (=)</li>
-                       <li>Aritmética (+, +=, -, *, /, **, %, ...)</li>
-                       <li>Condicional (==, >, !=, ===, ...)</li>
-                       <li>Lógicos (&&, ||, !)</li>
-                       <li>Ternário</li>
+                        <h3>Operadores</h3>
+                        <p>Operadores são símbolos que permitem realizar operações com variáveis. Em JS existem os seguintes tipos:</p>
+                        <div>
+                            <li>Atribuição (=)</li>
+                            <li>Aritmética (+, +=, -, *, /, **, %, ...)</li>
+                            <li>Condicional (==, >, !=, ===, ...)</li>
+                            <li>Lógicos (&&, ||, !)</li>
+                            <li>Ternário</li>
+                        </div>
                     </article>
                     <article class="js_ct_main">
-                        <u><b>M</b>odelo de <b>O</b>bjeto de <b>D</b>ocumento</u>
-                        <li>Árvore do D.O.M</li>
-                        <li>Métodos</li>
-                        <li>Eventos</li>
-                        <button onclick="window.alert('Você clicou em um elemento da árvore DOM!')">Clique aqui</button>
+                        <div>
+                            <h3>Modelo de Objeto de Documento</h3>
+                            O D.O.M é a estrutura hierarquica dos elementos de uma página, e via comandos do javascript pode-se acessar e manipular esses elementos num programa. Tópicos Abordados:
+                        </div>
+                        <div class="lista_botao">
+                            <ul>
+                                <li>Árvore do D.O.M</li>
+                                <li>Métodos de acesso</li>
+                                <li>Eventos</li>
+                            </ul>
+                            <button onclick="window.alert('Você clicou em um elemento da árvore DOM!')">Clique aqui</button>
+                        </div>
                     </article>
                     <article class="js_ct_main">
-                        <li>Simples (if)</li>
-                        <li>Composto (if... else)</li>
-                        <li>Encadeado (if... else if... else)</li>
-                        <li>switch case</li>
+                        <div>
+                            <h3>Desvios Condicionais</h3>
+                            <p>Estas estruturas possibilitam alterar a ordem padrão de execução dos código ao atrelar uma condição à execução de um bloco de código, realizando assim um desvio. </p>
+                        </div>
+                        <ul>
+                            <li>Simples (if)</li>
+                            <li>Composto (if... else)</li>
+                            <li>Encadeado (if... else if... else)</li>
+                            <li>switch case</li>
+                        </ul>
                     </article>
                     <article  class="js_ct_main">
                         <article  id="laco_repeticao">
-                            <ul>
-                                <li>while</li>
-                                <li>do while</li>
-                                <li>for</li>
-                            </ul>
-                            <figure>
-                                <img src="/CSS/Images/seção_js/loop.png" alt="">
-                            </figure>
+                            <div>
+                                <h3>Laços de Repetição</h3>
+                                <p>Comandos que permitem a repetição da execução de um bloco de código. São eles:</p>
+                            </div>
+                            <div class="lista_botao">
+                                <ul>
+                                    <li>while</li>
+                                    <li>do while</li>
+                                    <li>for</li>
+                                </ul>
+                                <figure>
+                                    <img src="/CSS/Images/seção_js/loop.png" alt="">
+                                </figure>
+                            </div>
                         </article>
                     </article>
                 </article>
@@ -375,30 +391,51 @@
                 <div class="js_numeracao">
                     <p>2</p> 
                 </div>
-                <h1> Primeiros Projetos</h1>
+                <div>
+                    <h1> Projetos de Introdução à Javascript</h1>
+                    <p>Passe o mouse em cima dos vídeos para ler a descrição do projeto</p>
+                </div>
+                
             </header>
            <div id="conteiner_primeiros_projetos">
-                <figure>
-                    <video src="/CSS/videos/js/projeto_idade.mp4" controls loop></video>
-                </figure>
-                <article>
+                <article class="conteiner_video_titulo">
                     <h1>Desafio 1: Restrição de Idade</h1>
-                    <p>
-                        Nesse primeiro desafio utilizamos a estrutura de laço de repetição <strong>DO WHILE</strong> e a estrutura <strong>IF...ELSE</strong> para fazer um programa que ao receber o dado da idade do usuário, caso a idade seja menor que 18, um alerta será emitido ao usuário e inserir outra 
-                    </p>
+                    <figure class="video_projeo_container">
+                        <video src="/CSS/videos/js/projeto_idade.mp4" controls autoplay loop></video>
+                        <div class="overlay_projeto">
+                            <article class="text">
+                                <p>
+                                     O objetivo do programa é receber a entrada da idade do usuário, enquanto a idade inserida for menor que 18, um alerta será emitido ao usuário e ele poderá inserir novas entradas. Quando a idade for maior ou igual à 18, um aviso de permissão de acesso será lançado.
+                                     As seguintes estruturas foram utilizadas:
+                                     <ul>
+                                        <li><strong>DO WHILE</strong></li>
+                                        <li><strong>IF...ELSE</strong></li>
+                                        <li><strong>Comando DOM: <code class="code">window.alert("Mensagem") </code></strong></li>
+                                     </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </figure>
                 </article>
-           </div>
-           <div id="conteiner_primeiros_projetos">
-            <article>
-                <h1>Desafio 2</h1>
-                <p>
-
-                </p>
-            </article>
-            <figure>
-                <video src="/CSS/videos/js/projeto_idade.mp4" controls loop></video>
-            </figure>
-        </div>
+                <article class="conteiner_video_titulo">
+                    <h1>Desafio 2: Identificador de Números Pares</h1>
+                    <figure class="video_projeo_container">
+                        <video src="/CSS/videos/js/Numero Par.mp4" controls autoplay loop></video>
+                        <div class="overlay_projeto">
+                            <article class="text">
+                                <p>
+                                    O objetivo do programa é receber a entrada de um número inteiro e notificar ao usuário se é um número ímpar ou número par. As seguintes estrutura foram utilizadas:
+                                    <ul>
+                                        <li><strong>IF...ELSE</strong></li>
+                                        <li> <strong>Módulo de Divisão(%)</strong></li>
+                                        <li><strong>Comando DOM: <code class="code">window.alert("Mensagem") </code></strong></li>
+                                    </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </figure>
+                </article>
+            </div>
         </section>
    </article>
    <article>
