@@ -113,3 +113,16 @@ bts_conteudo_trabalhados[4].addEventListener("mouseover", function() {
 });
 
 
+//
+section = document.getElementById("video_projeto1")
+var classe = "descrição_projeto"
+section.addEventListener("mouseover", function(){tornarTodosDisplayFlex(classe)})
+
+function tornarTodosDisplayFlex(classe){
+  descricoes = document.getElementsByClassName(classe)
+  for (let i = 0; i < descricoes.length; i++) {
+    descricoes[i].style.display = "flex";
+    
+  }
+
+}
