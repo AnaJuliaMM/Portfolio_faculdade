@@ -120,3 +120,68 @@ a{
     transform: scale(100%);
     translate: -10px;
 }
+
+/*Estilização generalizada das seções*/
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    padding: 10px;
+    background: linear-gradient(90.14deg, #080E40 13.96%, rgba(83, 3, 42, 0.77) 98.91%, rgba(54, 9, 42, 0.53) 105.95%);
+}
+section header h1{
+    font-size: 40px;
+}
+/*Seção: Conceitos Instrodutórios*/
+#conceitos_introdutorios{
+    gap: 10px;
+}
+.conteiner_assuntos_introdutorios{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+#conceitos_introdutorios div span{
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 700;
+
+    background-color: rgb(247, 240, 230);
+    color: black;
+    box-shadow: 1px 1px 10px rgb(29, 29, 29);
+    transition: 0.5s; 
+}
+#conceitos_introdutorios div span:hover{
+    transform: scale(110%);
+}
+.descricao_conceitos_introdutorios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descricao_conceitos_introdutorios article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 800px;
+    height: 350px;
+
+    background-color: rgb(247, 240, 230);
+    color: black;
+    border-radius: 20px;
+}
+.revolucao_industrial{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.revolucao_industrial img{
+    width: 750px;
+    border-radius: 20px;
+}
