@@ -111,6 +111,13 @@ bts_conteudo_trabalhados[3].addEventListener("mouseover", function() {
 bts_conteudo_trabalhados[4].addEventListener("mouseover", function() {
   tornarDisplayFlex(5,  conteiner_js_conteudos_trabalhados );
 });
+/* Seção da parte 2 */
+bts_conteudo_trabalhados[5].addEventListener("mouseover", function() {
+  tornarDisplayFlex(7,  conteiner_js_conteudos_trabalhados );
+});
+bts_conteudo_trabalhados[6].addEventListener("mouseover", function() {
+  tornarDisplayFlex(8,  conteiner_js_conteudos_trabalhados );
+});
 
 var bts_atividades = document.getElementsByClassName("atividades");
 var conteiner_atividades = document.getElementsByClassName("conteiner_atividades_descricao")
