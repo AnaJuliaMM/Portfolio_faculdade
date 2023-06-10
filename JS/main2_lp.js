@@ -127,9 +127,3 @@ bts_atividades[1].addEventListener("mouseover", function(){tornarDisplayFlex(1, 
 bts_atividades[2].addEventListener("mouseover", function(){tornarDisplayFlex(2, conteiner_atividades)})
 bts_atividades[3].addEventListener("mouseover", function(){tornarDisplayFlex(3, conteiner_atividades)})
 
-/*Página automação industrial*/
-var conceitos_introdutorios = document.getElementsByClassName("assuntos")
-var descricao_conceitos_introdutorios = document.getElementsByClassName("descricao")
-
-conceitos_introdutorios[0].addEventListener("mouseover", function (){tornarDisplayFlex(0,descricao_conceitos_introdutorios)})
-conceitos_introdutorios[1].addEventListener("mouseover", function (){tornarDisplayFlex(1,descricao_conceitos_introdutorios)})

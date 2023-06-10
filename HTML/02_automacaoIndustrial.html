@@ -16,7 +16,8 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="/HTML/index.html">home</a></li>
+                    <li><a href="/HTML/00_index.html">home</a></li>
+                    <li><a href="/HTML/01_linguagemProgramacao.html">Linguagem de Programação</a></li>
                 </ul>
             </nav>
         </nav>
@@ -24,10 +25,10 @@
             <h1 class="disciplina">Automação Industrial</h1>
             <nav>
                 <ul class="sumario">
-                    <li><a href="#introducao">Introdução</a></li>
-                    <li><a href="#html">Html</a></li>
-                    <li><a href="#css">Css</a></li>
-                    <li><a href="#js">Javascript</a></li>
+                    <li><a href="#conceitos_introdutorios">Assuntos Introdutórios</a></li>
+                    <li><a href="#porta_logica">Portas Lógicas</a></li>
+                    <li><a href="#microcontroladores">Microcontroladores</a></li>
+                    <li><a href="#robotica">Robótica</a></li>
                 </ul>
                 <figure><img src="/CSS/Images/header/html, css e js.png" alt=""></figure>
             </nav>
@@ -35,34 +36,203 @@
    </header>
     <section id="conceitos_introdutorios">
         <header>
-            <h1>Conceitos Introdutórios</h1>
+            <h1>Assuntos Introdutórios</h1>
+            <p>A princípios fomos introduzidos à alguns conceitos e fundamentos da área de automação industrial</p>
         </header>
         <div class="conteiner_assuntos_introdutorios">
             <span class="assuntos">Revolução Industrial</span>
             <span class="assuntos">Conceitos de Eletricidade</span>
-            <span class="assuntos">Conceitos de Eletricidade</span>
+            <span class="assuntos">Hardware e Software</span>
         </div>
         <div class="descricao_conceitos_introdutorios">
+            <img class="descricao" id="imagem_inicio" src="/CSS/Images/automação industrial/conc introdutórios/industria.jpg" alt="">
             <article class="descricao">
                 <figure class="revolucao_industrial">
-                    <h2>Revoluções Industrais: Evolução da Tecnologia</h2>
+                    <h2>Como a tecnologia industrial evolui ao longo dos anos:</h2>
                     <img src="/CSS/Images/automação industrial/conc introdutórios/revolução.jpg" alt="Revoluções Industrais">
                 </figure>
             </article>
-            <article class="descricao">
-                <div>
-                    <h3>Tensão</h3>
+            <article id="conceitos_eletricidade_div" class="descricao">
+                <div  class="conceitos_eletricidade">
+                    <h3>Tensão (V)</h3>
+                    <p>É a medida da diferencia de pontencial elétrico das cargas em dois pontos de um circuito, denominados polos positivo e negativo. O valor é calculado em <strong>volts(v)</strong> </p>
+                    <p>Fonte elétrica:</p>
+                    <figure>
+                        <img id="tensao" src="/CSS/Images/automação industrial/conc introdutórios/fonte.png" alt="Símbolo de uma fonte elétrica">
+                    </figure>
                 </div>
-                <div>
-                    <h3>Corrente</h3>
+                <div class="conceitos_eletricidade">
+                    <h3>Corrente Elétrica (I)</h3>
+                    <p>Movimento ordenado dos elétrons impulsionado pela tensão. A intensidade é calculdada em <strong>amperes(i)</strong></p>
+                    <figure>
+                        <img src="/CSS/Images/automação industrial/conc introdutórios/correnteElétrica.gif" alt="Representação de uma corrente elétrica">
+                    </figure>
                 </div>
-                <div>
-                    <h3>Resistencia</h3>
+                <div class="conceitos_eletricidade">
+                    <h3>Resistência Elétrica (R)</h3>
+                    <p>Resistência dos materias à passagem dos elétrons. O valor é calculado em <strong>ohm</strong> </p>
+                    <p>Resistor:</p>
+                    <figure>
+                        <img src="/CSS/Images/automação industrial/conc introdutórios/R.jpeg" alt="Símbolo do Resistor">
+                    </figure>
+                </div>
+                <div id="outros_conteudos" class="conceitos_eletricidade">
+                    <h3>Outros assuntos tratados</h3>
+                    <ul>
+                        <li>2° lei de Ohm - <strong>V = I * R</strong>;</li>
+                        <li>Múltiplos e Submúltiplos (tera,micro, etc);</li>
+                        <li>Curto circuito e efeito Joule;</li>
+                        <li>Representão de um circuito:</li>
+                        <figure><img src="/CSS/Images/automação industrial/conc introdutórios/circuito.png" alt=""></figure>
+                    </ul>
+                </div>
+            </article>
+            <article  id="hardware_software_div" class="descricao">
+                <div class="hardware_software">
+                    <h1>Software</h1>
+                    <p>Corresponde a parte de programação de um sistema, isto é, as instruções a serem executadas por ele.</p>
+                    <details>
+                        <summary><strong>Níveis de uma Linguagem</strong></summary>
+                        <ul>
+                            <li><strong>Linguagem de Máquina -</strong> números binários</li>
+                            <li><strong>Baixo Nível -</strong>comandos correspondentes a arquitetura do Hardware</li>
+                            <li><strong>Alto Nível -</strong> comandos mais próximos da linguagem humana</li>
+                        </ul>
+                    </details>
+                </div>
+                <div class="hardware_software">
+                    <h1>Hardware</h1>
+                    <p>É a parte física de um sistemas, que executa as instruções do software.Exemplos:</p>
+                    <div>
+                        <details>
+                            <summary><strong>Computadores</strong> </summary>
+                            Hardwares que executam diversas tarefas
+                        </details>
+                        <details>
+                            <summary><strong>Embarcados</strong></summary>
+                            Hardwares dedicado para executar tarefas específicas, por isso, possuem uma memória menor, como no caso dos sistemas para automóveis.
+                        </details>
+                    </div>
                 </div>
             </article>
         </div>
+        
     </section>
+    <section id="porta_logica">
+        <header>
+            <div class="numeracao">
+                <p>3</p> 
+            </div>
+            <h1> Portas Lógicas</h1>
+        </header>
+        <article>
+            <div class="faixa">
+                
+                <div id="porta_logico_conceito" class="descricao_portas_logicas">
+                    <h1>Portas lógicas</h1>
+                    <article  class="conteiner_descricao_conceitos_pl">
+                        <figure>
+                            <img src="/CSS/Images/automação industrial/conc introdutórios/portalogica.png" alt="Imagem de um CI">
+                        </figure>
+                        <article>
+                            <p>Portas lógicas são um conjunto de transistores que realizam operações com os bits (sinais elétricos) de um circuito. Sobre o assunto também estudamos:</p>
+                            <ul>
+                                <li><strong>Transistores e como funcionam</strong> </li>
+                                <li><strong>Processamento interno das portas</strong> </li>
+                                <li><strong>Como atuam num computador (CPU)</strong> </li>
+                            </ul>
+                        </article>
+                    </article>
+                </div>
+                <div id="bits" class="descricao_portas_logicas">
+                    <h1>Bits</h1>
+                    <div>
+                        <p>Um bit equivale a um pulso elétrico e também é considerado a menor unidade de informação de sistemas digitais. Eles podem ter dois valores:
+                        <strong>1 bit = 1 (com energia) ou 0 (sem energia)</strong>
+                        <p>Sobre eles estudamos: </p>
+                    </div>
+                    
+                    <ul>
+                        <li><strong>Como se relacionam com a história do telégrafo;</strong></li>
+                        <li><strong>Onde atuam num computador (ex: cpu x64-64bits, x86-32bits)</strong></li>
+                        <li><strong>Conversões de valores: <strong>números binários e números decimais</strong></strong></li>
+                        <p>Ex: 0001 = 1, 1001= 9</p>
+                    </ul>
+                </div>
+                <div class="descricao_portas_logicas">
+                    <figure><img src="/CSS/Images/automação industrial/conc introdutórios/tiposPortasLogicas.jpg" alt="Tipos de Portas Lógicas"></figure>
+                </div>
+                <div class="conteudos_porta_logica">
+                    <span class="assuntos">Conceito</span>
+                    <span class="assuntos">Bits</span>
+                    <span class="assuntos">Tipos</span>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <header>
+            <div class="numeracao">
+                <p>4</p> 
+            </div>
+            <h1> Exercícios Portas Lógicas</h1>
+        </header>
+    </section>
+    <section id="microcontroladores">
+        <header>
+            <h1>Microcontroladores</h1>
+            <hr>
+            <img src="/CSS/Images/automação industrial/conc introdutórios/diferencaPL_MC.jpg" alt="">
+        </header>
+        <figure>
+            <img src="/CSS/Images/automação industrial/conc introdutórios/arduinoUno.png" alt="">
+        </figure>
+
+    </section>
+    <section id="microcontroladores_conceitos">
+        <header>
+            <div class="numeracao">
+                <p>1</p> 
+            </div>
+            <h1> Assuntos</h1>
+        </header>
+        <article  class="conteiner_descricao_mc_assuntos">
+            <div class="conteiner_opcoes">
+                <span class="assuntos">Entradas e Saídas</span>
+                <span class="assuntos">Sensores</span>
+                <span class="assuntos">Arduino</span>
+            </div>
+            <article id="entradas_saidas" class="descricao_mc_assuntos">
+                <img src="/CSS/Images/automação industrial/conc introdutórios/entradasSaidas.jpg" alt="Descrição da definição de entrada e saída">
+            </article>
+            <article class="descricao_mc_assuntos">
+                <h1>Sensores</h1>
+                <ul>
+                    <li><strong>CAPACITIVO:</strong> detecta campos elétricos </li>
+                    <li><strong>INDUTIVO:</strong> detecta campo magnético de metais </li>
+                    <li><strong>ÓPTICO BARREIRA:</strong> detecta pela interrupção da passagem de luz </li>
+                    <li><strong>ÓPTICOS REFLEXIVO:</strong> detecta quando recebe reflexão da luz emitida </li>
+                    <li><strong>SENSOR ULTRASSÔNICO:</strong> detecta pelo reflexo da onda sonora emitida pelo <i>trigger</i> e percebida pelo <i>echo</i></li>
+                </ul>
+            </article>
+            <article id="arduino" class="descricao_mc_assuntos" >
+                <figure>
+                    <img src="/CSS/Images/automação industrial/conc introdutórios/arduinoUno.png" alt="Foto de uma arduni unoo">
+                </figure>
+                <article>
+                    <h1>Arduino</h1>
+                    <p>Arduino é uma plataforma que possui um microcontrolador e outros componentes que permite o desenvolvimento de projetos utilizando entradas e saídas. Durante as aulas, trabalhamos os seguintes assuntos:</p>
+                    <ul>
+                        <li>Portas de um arduino</li>
+                        <li>Desenvolvimentos de circuitos no software <a href="https://www.tinkercad.com/" target="_blank" style="color:black"><u>Tinkercad</u></a></li>
+                        <li>Programação em <strong>Linguagem C</strong></li>
+                    </ul>
+                </article>
+            </article>
+        </article>
+    </section>
+    <section id="projetos_mc_arduino"></section>
+    <section id="robotica"></section>
 </body>
-<script src="/JS/main2_lp.js"></script>
 <script src="/JS/main3_ai.js"></script>
 </html>
