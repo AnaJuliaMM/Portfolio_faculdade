@@ -213,7 +213,7 @@
                     <li><strong>INDUTIVO:</strong> detecta campo magnético de metais </li>
                     <li><strong>ÓPTICO BARREIRA:</strong> detecta pela interrupção da passagem de luz </li>
                     <li><strong>ÓPTICOS REFLEXIVO:</strong> detecta quando recebe reflexão da luz emitida </li>
-                    <li><strong>SENSOR ULTRASSÔNICO:</strong> detecta pelo reflexo da onda sonora emitida pelo <i>trigger</i> e percebida pelo <i>echo</i></li>
+                    <li><strong>SENSOR ULTRASSÔNICO:</strong> detecta presença pelo reflexo da onda sonora emitida pelo <i>trigger</i> e recebida pelo <i>echo</i></li>
                 </ul>
             </article>
             <article id="arduino" class="descricao_mc_assuntos" >
@@ -237,8 +237,158 @@
             <div class="numeracao">
                 <p>2</p> 
             </div>
-            <h1>Projetos Arduino</h1>
+            <h1>Atividades com Arduino</h1>
+            <span class="projetos_arduino">1</span>
+            <span class="projetos_arduino">2</span>
+            <span class="projetos_arduino">3</span>
+            <span class="projetos_arduino">4</span>
+            <span class="projetos_arduino">5</span>
         </header>
+        <article id="primeiro" class="conteiner_projeto_descricao_arduino">
+            <figure  class="conteiner_projetos_arduino"> 
+                <video width="600" autoplay loop src="/CSS/videos/arduino/led.mp4"></video>
+                <figure class="comada_projeto_codigo">
+                    <img width="550" src="/CSS/Images/automação industrial/arduino/codigoLed.png" alt="Código para acender o led">
+                </figure>
+            </figure>
+            <article class="descricao_atividade">
+                <h1>Exercício 1</h1>
+                <p>Nessa atividade, desenvolvemos nosso primeiro circuito com arduino. Para tanto, utilizamos como componentes uma <strong>placa arduino uno</strong>, um <strong>led vermelho</strong> e um <strong>resistor de 330 Ohms</strong>. Nesse circuito, a placa arduino atua como um microcontrolador e uma fonte de 5 volts, uma vez que a alimentação que aciona o led provém de uma de suas portas digitais, assim como o sinal negativo provém do pino GND. </p> 
+                <ul>
+                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha</li>
+                    <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/9nSL48rgdbP-exercicio-pisca-1hz/editel">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
+                </ul>
+            </article>
+        </article>
+        <article class="conteiner_projeto_descricao_arduino">
+            <article class="descricao_atividade">
+                <h1>Exercício 2</h1>
+                <p>Nessa atividade, trabalhamos com entradas e saídas. Para tanto, utilizamos os mesmos componentes do exercício anterior acrecidos de um botão. Nesse circuito, o botão é um elemento de entrada, e quando ele estiver pressionado, o arduino acionara o led por 500 ms e o desligará por 500 ms, caso o botão seja desligado, o led também desligará. </p> 
+                <ul>
+                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha</li>
+                    <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/jfOTX8KXn1A-led-liga-pelo-acionamento-do-botao-pullup/editel">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
+                </ul>
+            </article>
+            <figure class="conteiner_projetos_arduino"> 
+                <video width="600" autoplay loop src="/CSS/videos/arduino/btn.mp4"></video>
+                <figure class="comada_projeto_codigo">
+                    <img width="550" src="/CSS/Images/automação industrial/arduino/codeBtn.png" alt="Código para acender o led quando o botao for pressionado">
+                </figure>
+            </figure>
+        </article>
+        <article class="conteiner_projeto_descricao_arduino">
+            <figure class="conteiner_projetos_arduino"> 
+                <video width="600" autoplay loop src="/CSS/videos/arduino/sequenciaLed.mp4"></video>
+                <figure class="comada_projeto_codigo">
+                    <img width="550" src="/CSS/Images/automação industrial/arduino/sequencia.png" alt="Código para controlar o arduino">
+                </figure>
+            </figure>
+            <article class="descricao_atividade">
+                <h1>Exercício 3</h1>
+                <p>Nessa atividade, utilizamos o recurso de laços de repetição (contador for) para evitar a repetição de código. O programa realiza o processo de acender um led, permanecer ligado por 1 segundo e então desligar, após isso, o mesmo processo acontece para todos os outros. </p> 
+                <ul>
+                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha</li>
+                    <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/6A8sAbdhIZ5-glorious-jaiks-kup/editel">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
+                </ul>
+            </article>
+            
+        </article>
+        <article class="conteiner_projeto_descricao_arduino">
+            <article class="descricao_atividade">
+                <h1>Exercício 4</h1>
+                <p>Essa atividade é muito semelhante à anterior, contudo, para além da aplicação de laço de repetição, praticamos lógica de programação, haja vista, que o objetivo do programa é fazer o processo de acender e desligar cada led da direita para esquerda e depois no sentido contrário. </p> 
+                <ul>
+                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha</li>
+                    <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/5nZtZWExnIr-copy-of-grand-densor-rottis/editel?tenant=circuits">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
+                </ul>
+            </article>
+            <figure class="conteiner_projetos_arduino"> 
+                <video width="600" autoplay loop src="/CSS/videos/arduino/sequenciaVaiVolta.mp4"></video>
+                <figure class="comada_projeto_codigo">
+                    <img width="550" src="/CSS/Images/automação industrial/arduino/vaiVolta.png" alt="Código para controlar o arduino">
+                </figure>
+            </figure>
+        </article>
+        <article class="conteiner_projeto_descricao_arduino">
+            <article class="descricao_atividade">
+                <h1>Exercício 5: Semáforo</h1>
+                <p>Essa atividade é muito semelhante à anterior, contudo, para além da aplicação de laço de repetição, praticamos lógica de programação, haja vista, que o objetivo do programa é fazer o processo de acender e desligar cada led da direita para esquerda e depois no sentido contrário. </p> 
+                <ul>
+                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha</li>
+                    <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/5nZtZWExnIr-copy-of-grand-densor-rottis/editel?tenant=circuits">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
+                </ul>
+            </article>
+            <figure class="conteiner_projetos_arduino"> 
+                <video width="600" autoplay loop src="/CSS/videos/arduino/sequenciaVaiVolta.mp4"></video>
+                <figure class="comada_projeto_codigo">
+                    <img width="550" src="/CSS/Images/automação industrial/arduino/vaiVolta.png" alt="Código para controlar o arduino">
+                </figure>
+            </figure>
+        </article>
+    </section>
+    <section id="projeto_sensor_arduino">
+        <header>
+            <div class="numeracao">
+                <p>2</p> 
+            </div>
+            <h1>Projeto Arduino e Sensor Ultrassônico</h1>
+            <span class="projetos_arduino">Projeto</span>
+            <span class="projetos_arduino">Sensor</span>
+            <span class="projetos_arduino">Código</span>
+            
+        </header>
+        <article  id="primeiro" class="conteiner_projeto_descricao_arduino">
+            <figure  class="conteiner_projetos_arduino"> 
+                <video width="600" autoplay loop src="/CSS/videos/arduino/snsUltrassonico.mp4"></video>
+                <figure class="comada_projeto_codigo">
+                    <video width="600" autoplay  loop src="/CSS/videos/arduino/console.mp4"></video>
+                </figure>
+            </figure>
+            <article class="descricao_atividade">
+                <h1>Desafio</h1>
+                <p>Esse projeto propunha controlar um sensor ultrassônico com o arduino e exibir no console o valor da distância do sensor até o obstáculo em milimetros e em polegadas. Além disso, foi implementado uma lógica de sinalização: quando a distância estiver dentro de um intervalo definido o <u>LED verde</u> é acionado, quando atingir o limite máximo, o <u>LED amarelo</u> é ligado e quando atingir o limite mínimo, o <u>LED vermelho</u> é aceso. </p> 
+                <ul>
+                    <li><strong>Distância:</strong> Passe o pouse sobre o vídeo para visualizar a demonstração da exibição das distâncias no console</li>
+                    <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/62YvOa1WXpM-sns-ultrassonico/editel">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
+                </ul>
+            </article>
+        </article>
+        <article class="conteiner_projeto_descricao_arduino">
+            <figure  class="conteiner_projetos_arduino"> 
+                <h3>Algoritmo para Acionar o Sensor</h3>
+                <img  width="500" src="/CSS/Images/automação industrial/arduino/snsUltrassonico.jpg" alt="Explicação do Funcionamento do sensor ultrassônico" >
+            </figure>
+            <figure>
+                <h3>Cálculo da distância</h3>
+                <img  width="550" src="/CSS/Images/automação industrial/arduino/calculo.jpg" alt="Lógica para calcular a distância">
+            </figure>
+        </article>
+        
+        <article class="conteiner_projeto_descricao_arduino">
+            <figure  class="conteiner_projetos_arduino"> 
+                <img width="600" src="/CSS/Images/automação industrial/arduino/algoritmoCodigo.png" alt="Algoritmo do Código">
+                <figure class="comada_projeto_codigo">
+                    <strong><u><a target="_blank" href="https://www.tinkercad.com/things/62YvOa1WXpM-sns-ultrassonico/editel">Clique aqui</a></u></strong> para acessar o circuito e o código no Tinkercad
+                </figure>
+            </figure>
+            <article class="descricao_atividade">
+                <h1>Sobre o Código</h1>
+                <p>No código foi trabalho os seguintes paradigmas: </p> 
+                <ul>
+                    <li><strong>Console: </strong>inicialização e impressão de mensagens</li>
+                    <li><strong>Funções: </strong>declaração, chamada e retorno</li>
+                    <li><strong>Controle das portas digitais: </strong>acionamento e leitura</li>
+                    <li><strong>Desvios condicionais</li>
+                    <li><strong>While com vírgula <code>While();</code>: estratégia para travar o código até que certa condição seja atendida</li>
+                    <li><strong>Sensor:</strong>algoritmo para controlar as portas do sensor</li>
+                    <li><strong>Função <code>micros()</code></strong>- usada para calcular a variação do tempo, uma vez que retorna o valor em microsegundo desde que a programação começou a ser executada</li>
+                    <li>Cálculo de variação de espaço</li>
+                    
+                </ul>
+            </article>
+        </article>
+        
+
     </section>
     <section id="robotica">
         <header>

@@ -7,9 +7,10 @@ function tornarDisplayNone(elementos){
     }  
 }
 function tornarDisplayFlex(indice, elementos){
-  //Recebe o índice do elemento para tornar flex
-  tornarDisplayNone(elementos)
   //Manda para o ser none todo o array
+  tornarDisplayNone(elementos)
+  
+  //Tornar display flex
   elementos[indice].style.display = "flex"
   console.log("display flex")
 }
@@ -35,9 +36,24 @@ conceitos_introdutorios[6].addEventListener("mouseover", function (){tornarDispl
 conceitos_introdutorios[7].addEventListener("mouseover", function (){tornarDisplayFlex(1,descricao_microcontroladores)})
 conceitos_introdutorios[8].addEventListener("mouseover", function (){tornarDisplayFlex(2,descricao_microcontroladores)})
 
+/*Variáveis dos projetos de microcontroladores */
+var projeto_arduino = document.getElementsByClassName("projetos_arduino")
+var explicacao_projetos_arduino = document.getElementsByClassName("conteiner_projeto_descricao_arduino")
+
+projeto_arduino[0].addEventListener("mouseover", function (){tornarDisplayFlex(0,explicacao_projetos_arduino)})
+projeto_arduino[1].addEventListener("mouseover", function (){tornarDisplayFlex(1,explicacao_projetos_arduino)})
+projeto_arduino[2].addEventListener("mouseover", function (){tornarDisplayFlex(2,explicacao_projetos_arduino)})
+projeto_arduino[3].addEventListener("mouseover", function (){tornarDisplayFlex(3,explicacao_projetos_arduino)})
+projeto_arduino[4].addEventListener("mouseover", function (){tornarDisplayFlex(4,explicacao_projetos_arduino)})
+
+/*Seção projeto arduino e sensor ultrassônico*/
+projeto_arduino[5].addEventListener("mouseover", function (){tornarDisplayFlex(5,explicacao_projetos_arduino)})
+projeto_arduino[6].addEventListener("mouseover", function (){tornarDisplayFlex(6,explicacao_projetos_arduino)})
+projeto_arduino[7].addEventListener("mouseover", function (){tornarDisplayFlex(7,explicacao_projetos_arduino)})
+
 /*Seção classificação robôs */
-classificacao_robos = document.getElementsByClassName("assuntos_robotica")
-explicacao_classificacao_robo = document.getElementsByClassName("categorias_classificacao")
+var classificacao_robos = document.getElementsByClassName("assuntos_robotica")
+var explicacao_classificacao_robo = document.getElementsByClassName("categorias_classificacao")
 
 classificacao_robos[0].addEventListener("mouseover", function (){tornarDisplayFlex(0,explicacao_classificacao_robo)})
 classificacao_robos[1].addEventListener("mouseover", function (){tornarDisplayFlex(1,explicacao_classificacao_robo)})

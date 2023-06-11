@@ -28,7 +28,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 700px;
     height: 70px;
     width: 100%;
     position: relative;
@@ -160,6 +159,11 @@ section header h1{
 details summary{
     cursor: pointer;
 }
+code{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(206, 204, 204);
+    color: #020109;
+}
 
 
 /*Seção: Conceitos Instrodutórios*/
@@ -181,7 +185,7 @@ details summary{
     gap: 30px;
     width: 80%;
 }
-.assuntos, .assuntos_robotica{
+.assuntos, .assuntos_robotica, .projetos_arduino{
     text-align: center;
     padding: 10px;
     font-weight: 700;
@@ -191,7 +195,7 @@ details summary{
     box-shadow: 1px 1px 10px rgb(29, 29, 29);
     transition: 0.3s; 
 }
-.assuntos:hover, .assuntos_robotica:hover{
+.assuntos:hover, .assuntos_robotica:hover, .projetos_arduino:hover{
     transform: scale(110%);
     background-color: rgb(201, 200, 199);
 
@@ -411,6 +415,69 @@ details summary{
     width: 200px;
 }
 
+/*Projetos Arduino*/
+#projetos_mc_arduino, #projeto_sensor_arduino{
+    gap: 80px;
+}
+.conteiner_projeto_descricao_arduino{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    width: 100%;
+    height: 300px;
+
+}
+.conteiner_projetos_arduino{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    width: 600px;
+    height: 300px;
+}
+.comada_projeto_codigo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 600px;
+    height: 320px;
+
+    position: absolute;
+
+    background-color: rgba(5, 9, 45, 0.744);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.conteiner_projetos_arduino:hover .comada_projeto_codigo{
+    opacity: 1;
+}
+.descricao_atividade{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px;
+}
+.descricao_atividade h1{
+    font-size: 30px;
+}
+.descricao_atividade ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+}
+#primeiro{
+    display: flex;
+}
+
 /*Robótica*/
 #robotica{
     flex-direction: row;
@@ -480,7 +547,7 @@ details summary{
 #classificacao_robos{
     gap:20px;
 }
-.assuntos_robotica{
+.assuntos_robotica, .projetos_arduino{
     border-radius: 10px;
     width: 50px;
 }
