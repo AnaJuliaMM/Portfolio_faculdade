@@ -5,7 +5,6 @@ function tornarDisplayNone(elementos){
       elementos[i].style.display = "none";
       console.log("display none")
     }  
-   
 }
 function tornarDisplayFlex(indice, elementos){
   //Recebe o índice do elemento para tornar flex
@@ -35,3 +34,15 @@ var descricao_microcontroladores = document.getElementsByClassName("descricao_mc
 conceitos_introdutorios[6].addEventListener("mouseover", function (){tornarDisplayFlex(0,descricao_microcontroladores)})
 conceitos_introdutorios[7].addEventListener("mouseover", function (){tornarDisplayFlex(1,descricao_microcontroladores)})
 conceitos_introdutorios[8].addEventListener("mouseover", function (){tornarDisplayFlex(2,descricao_microcontroladores)})
+
+/*Seção classificação robôs */
+classificacao_robos = document.getElementsByClassName("assuntos_robotica")
+explicacao_classificacao_robo = document.getElementsByClassName("categorias_classificacao")
+
+classificacao_robos[0].addEventListener("mouseover", function (){tornarDisplayFlex(0,explicacao_classificacao_robo)})
+classificacao_robos[1].addEventListener("mouseover", function (){tornarDisplayFlex(1,explicacao_classificacao_robo)})
+classificacao_robos[2].addEventListener("mouseover", function (){tornarDisplayFlex(2,explicacao_classificacao_robo)})
+classificacao_robos[3].addEventListener("mouseover", function (){tornarDisplayFlex(3,explicacao_classificacao_robo)})
+classificacao_robos[4].addEventListener("mouseover", function (){tornarDisplayFlex(4,explicacao_classificacao_robo)})
+
+
