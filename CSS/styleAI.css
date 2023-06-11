@@ -570,3 +570,47 @@ details summary{
 .imagem_explicacao:hover .juntas_elos_explicacao{
     opacity: 1;
 }
+
+/*Seção Movimentação Robótica*/
+#movimentacao_robotica{
+    gap: 30px;
+}
+.conceitos_tecnicos_movimentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+
+   background-color: #ffffff; 
+   border-radius: 12px;
+   padding: 20px;
+   width: 400px;
+   
+}
+#linguagem_mit {
+    gap: 10px;
+}
+#linguagem_mit ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#trajetorias, #velocidade_aceleracao{
+    background: transparent;
+    align-items: start;
+
+}
+#trajetorias img{
+    width: 400px ;
+}
+#img_def{
+    width: 230px;
+}
+.img_codigo{
+    display: flex;
+    gap: 10px;
+}
+#img_fim{
+    height: 100px;
+    width: 230px;
+}

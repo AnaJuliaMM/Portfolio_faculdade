@@ -202,7 +202,6 @@
                 <span class="assuntos">Sensores</span>
                 <span class="assuntos">Arduino</span>
                 <span class="assuntos">Linguagem C</span>
-
             </div>
             <article id="entradas_saidas" class="descricao_mc_assuntos">
                 <img src="/CSS/Images/automação industrial/conc introdutórios/entradasSaidas.jpg" alt="Descrição da definição de entrada e saída">
@@ -233,7 +232,14 @@
             </article>
         </article>
     </section>
-    <section id="projetos_mc_arduino"></section>
+    <section id="projetos_mc_arduino">
+        <header>
+            <div class="numeracao">
+                <p>2</p> 
+            </div>
+            <h1>Projetos Arduino</h1>
+        </header>
+    </section>
     <section id="robotica">
         <header>
             <h1>Robótica</h1>
@@ -432,6 +438,92 @@
                 <p>Efetuadores são as ferramentas acopladas no punho do braço robótico. Por exmplo, garras, ventosas ou eletrodos de solda. Contudo, é importante destacar que eles não compõe as partes do robô, ainda que sejam importantes na programação devido ao TCP (tool center ponit), isto é, quando o centro da ferramenta é tomado como referência de movimentação.</p>
             </article>
             <figure><img width="400" src="/CSS/Images/automação industrial/robotica/efetuador.png" alt="Ilustração de ferramenta"></figure>
+        </article>
+    </section>
+    <section id="movimentacao_robotica">
+        <header>
+            <div class="numeracao">
+                <p>4</p> 
+            </div>
+            <h1>Movimentação Robótica</h1>
+        </header>
+        <article  class="conteiner_descricao_mc_assuntos">
+            <div class="conteiner_opcoes">
+                <span class="assuntos">Conceito técnicos</span>
+                <span class="assuntos">Programação</span>
+                <span class="assuntos">Trajetória</span>
+                <span class="assuntos">Velocidade e Aceleração</span>
+                <span class="assuntos">Acurácia e Precisão</span>
+            </div>
+            <article id="entradas_saidas" class="descricao_mc_assuntos">
+                <div class="conceitos_tecnicos_movimentacao">
+                    <h1>Payload</h1>
+                    <p>É uma informação de segurança informada no manual do robô, que indica a carga máxima que o braço aguenta quando totalmente esticado, ou seja, na pior condição</p>
+                </div>
+                <div class="conceitos_tecnicos_movimentacao">
+                    <h1>Interpolação</h1>
+                    <p>É o nome que se dá a movimentação simultânea das juntas do braço</p>
+                </div>
+            </article>
+            <article id="linguagem_mit" class="descricao_mc_assuntos">
+                <h1>Linguagem de Programação</h1>
+                <ul>
+                    <p>A programação de robôs é baseada no mapeamento de pontos no espaço</p>
+                    <li><strong>Robôs de exemplo em aula:</strong> Mitsubishi e Motoman</li>
+                    <li><strong>Linguagem de exmplo:</strong> MelfaBasic IV (Mitsubishi)</li>
+                </ul>
+                <figure class="img_codigo">
+                    <img src="/CSS/Images/automação industrial/robotica/defpontos.jpg" id="img_def" alt="Sintaxe de definicao de pontos">
+                    <img src="/CSS/Images/automação industrial/robotica/fimCodigo.jpg" id="img_fim" alt="Sintaxe de definicao de pontos">
+                </figure>
+                
+            </article>
+            <article id="trajetorias" class="descricao_mc_assuntos" >
+                <img  id="trajetorias" src="/CSS/Images/automação industrial/robotica/trajetorias.jpg" alt="Imagem de trajetorias">
+            </article>
+            <article id="velocidade_aceleracao" class="descricao_mc_assuntos">
+                <div class="conceitos_tecnicos_movimentacao">
+                    <h1>Velocidade(m/s)</h1>
+                    <p>Quanto maior a velocidade, menor a precisão do movimento</p>
+                    <p>Comandos: OVRD, JOVRD , SPEED</p>
+                </div>
+                <div class="conceitos_tecnicos_movimentacao">
+                    <h1>Aceleração</h1>
+                    <p>Importante para determinar o tempo dos movimento</p>
+                    <p>Comandos: ACCEL (% de Aceleração, % desaceleração)</p>
+                </div>
+            </article>
+            <article id="velocidade_aceleracao" class="descricao_mc_assuntos">
+                <div class="conceitos_tecnicos_movimentacao">
+                    <h1>Acurácia</h1>
+                    <p>Determina o quão próximo do ponto alvo a estrutura consegue atingir.</p>
+                </div>
+                <div class="conceitos_tecnicos_movimentacao">
+                    <h1>Precisão</h1>
+                    <p>Analisa a repetitividade dos movimentos, isto é, o quanto os resultados variam para realizar a mesma instrução. Quanto menor variações, mais preciso. </p>
+                </div>
+            </article>
+        </article>
+
+
+    </section>
+    <section id="pick_place">
+        <header>
+            <div class="numeracao">
+                <p>5</p> 
+            </div>
+            <h1>Pick and Place</h1>
+        </header>
+    </section>
+    <section id="pick_place">
+        <header>
+            <div class="numeracao">
+                <p>6</p> 
+            </div>
+            <h1>Aula Prática</h1>
+        </header>
+        <article>
+            <video width="400" controls autoplay loop src="/CSS/videos/robotica/robotica.mp4"></video>
         </article>
     </section>
 </body>

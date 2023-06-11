@@ -29,7 +29,7 @@ conceitos_introdutorios[3].addEventListener("mouseover", function (){tornarDispl
 conceitos_introdutorios[4].addEventListener("mouseover", function (){tornarDisplayFlex(1,descricao_porta_logica)})
 conceitos_introdutorios[5].addEventListener("mouseover", function (){tornarDisplayFlex(2,descricao_porta_logica)})
 
-/*Variáveis da seção porta lógica */
+/*Variáveis da seção microcontrolados */
 var descricao_microcontroladores = document.getElementsByClassName("descricao_mc_assuntos")
 conceitos_introdutorios[6].addEventListener("mouseover", function (){tornarDisplayFlex(0,descricao_microcontroladores)})
 conceitos_introdutorios[7].addEventListener("mouseover", function (){tornarDisplayFlex(1,descricao_microcontroladores)})
@@ -46,3 +46,9 @@ classificacao_robos[3].addEventListener("mouseover", function (){tornarDisplayFl
 classificacao_robos[4].addEventListener("mouseover", function (){tornarDisplayFlex(4,explicacao_classificacao_robo)})
 
 
+/*Seção movimentação de juntas */
+conceitos_introdutorios[10].addEventListener("mouseover", function (){tornarDisplayFlex(3,descricao_microcontroladores)})
+conceitos_introdutorios[11].addEventListener("mouseover", function (){tornarDisplayFlex(4,descricao_microcontroladores)})
+conceitos_introdutorios[12].addEventListener("mouseover", function (){tornarDisplayFlex(5,descricao_microcontroladores)})
+conceitos_introdutorios[13].addEventListener("mouseover", function (){tornarDisplayFlex(6,descricao_microcontroladores)})
+conceitos_introdutorios[14].addEventListener("mouseover", function (){tornarDisplayFlex(7,descricao_microcontroladores)})
