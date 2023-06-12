@@ -35,6 +35,8 @@ var descricao_microcontroladores = document.getElementsByClassName("descricao_mc
 conceitos_introdutorios[6].addEventListener("mouseover", function (){tornarDisplayFlex(0,descricao_microcontroladores)})
 conceitos_introdutorios[7].addEventListener("mouseover", function (){tornarDisplayFlex(1,descricao_microcontroladores)})
 conceitos_introdutorios[8].addEventListener("mouseover", function (){tornarDisplayFlex(2,descricao_microcontroladores)})
+conceitos_introdutorios[9].addEventListener("mouseover", function (){tornarDisplayFlex(3,descricao_microcontroladores)})
+
 
 /*Variáveis dos projetos de microcontroladores */
 var projeto_arduino = document.getElementsByClassName("projetos_arduino")
@@ -47,9 +49,10 @@ projeto_arduino[3].addEventListener("mouseover", function (){tornarDisplayFlex(3
 projeto_arduino[4].addEventListener("mouseover", function (){tornarDisplayFlex(4,explicacao_projetos_arduino)})
 
 /*Seção projeto arduino e sensor ultrassônico*/
-projeto_arduino[5].addEventListener("mouseover", function (){tornarDisplayFlex(5,explicacao_projetos_arduino)})
-projeto_arduino[6].addEventListener("mouseover", function (){tornarDisplayFlex(6,explicacao_projetos_arduino)})
-projeto_arduino[7].addEventListener("mouseover", function (){tornarDisplayFlex(7,explicacao_projetos_arduino)})
+var arduino_sensor_ultra = document.getElementsByClassName("conteiner_projeto_descricao_arduino_sns")
+projeto_arduino[5].addEventListener("mouseover", function (){tornarDisplayFlex(0,arduino_sensor_ultra)})
+projeto_arduino[6].addEventListener("mouseover", function (){tornarDisplayFlex(1,arduino_sensor_ultra)})
+projeto_arduino[7].addEventListener("mouseover", function (){tornarDisplayFlex(2,arduino_sensor_ultra)})
 
 /*Seção classificação robôs */
 var classificacao_robos = document.getElementsByClassName("assuntos_robotica")
@@ -63,8 +66,9 @@ classificacao_robos[4].addEventListener("mouseover", function (){tornarDisplayFl
 
 
 /*Seção movimentação de juntas */
-conceitos_introdutorios[10].addEventListener("mouseover", function (){tornarDisplayFlex(3,descricao_microcontroladores)})
-conceitos_introdutorios[11].addEventListener("mouseover", function (){tornarDisplayFlex(4,descricao_microcontroladores)})
-conceitos_introdutorios[12].addEventListener("mouseover", function (){tornarDisplayFlex(5,descricao_microcontroladores)})
-conceitos_introdutorios[13].addEventListener("mouseover", function (){tornarDisplayFlex(6,descricao_microcontroladores)})
-conceitos_introdutorios[14].addEventListener("mouseover", function (){tornarDisplayFlex(7,descricao_microcontroladores)})
+var  movimentacao_robotica = document.getElementsByClassName("movimentacao_robotica")
+conceitos_introdutorios[10].addEventListener("mouseover", function (){tornarDisplayFlex(0,movimentacao_robotica)})
+conceitos_introdutorios[11].addEventListener("mouseover", function (){tornarDisplayFlex(1,movimentacao_robotica)})
+conceitos_introdutorios[12].addEventListener("mouseover", function (){tornarDisplayFlex(2,movimentacao_robotica)})
+conceitos_introdutorios[13].addEventListener("mouseover", function (){tornarDisplayFlex(3,movimentacao_robotica)})
+conceitos_introdutorios[14].addEventListener("mouseover", function (){tornarDisplayFlex(4,movimentacao_robotica)})

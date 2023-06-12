@@ -230,6 +230,26 @@
                     </ul>
                 </article>
             </article>
+            <article class="descricao_mc_assuntos" >
+                <article id="linguagem_c" >
+                    <h1>Linguagem C</h1>
+                    <p>Para controlar o arduino utilizamos a linguagem C. Além disso, todo o código foi desenvolvido no simulador do Tinkercad. Segue alguns comandos utilizados:</p>
+                    <ul>
+                        <li><strong>Função <code>void setup()</code>:</strong> configuração dos elementos do programa
+                            <ul>
+                                <li><strong>pinMode():</strong> configuração das portas como input ou output</li>
+                                <li><strong>Serial.begin(9600):</strong> inicializador do console do tinkercad</li>
+                            </ul>
+                        </li>
+                        <li><strong>Função <code>void loop()</code>:</strong> função que é executada repetidamente, onde escrevemos a lógica do programa.
+                            <ul>
+                                <li><strong>digitalWrite():</strong> controle do acionamento das portas digitais (high ou low)</li>
+                                <li><strong>Serial.print():</strong> imprimi saída de dados no console</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </article>
         </article>
     </section>
     <section id="projetos_mc_arduino">
@@ -291,12 +311,11 @@
                     <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/6A8sAbdhIZ5-glorious-jaiks-kup/editel">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
                 </ul>
             </article>
-            
         </article>
         <article class="conteiner_projeto_descricao_arduino">
             <article class="descricao_atividade">
                 <h1>Exercício 4</h1>
-                <p>Essa atividade é muito semelhante à anterior, contudo, para além da aplicação de laço de repetição, praticamos lógica de programação, haja vista, que o objetivo do programa é fazer o processo de acender e desligar cada led da direita para esquerda e depois no sentido contrário. </p> 
+                <p>Essa atividade é muito semelhante à anterior, contudo, para além da aplicação de laços de repetição, praticamos lógica de programação, haja vista, que o objetivo do programa é fazer o processo de acender e desligar cada led da direita para esquerda e depois no sentido contrário. </p> 
                 <ul>
                     <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha</li>
                     <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/5nZtZWExnIr-copy-of-grand-densor-rottis/editel?tenant=circuits">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
@@ -335,9 +354,8 @@
             <span class="projetos_arduino">Projeto</span>
             <span class="projetos_arduino">Sensor</span>
             <span class="projetos_arduino">Código</span>
-            
         </header>
-        <article  id="primeiro" class="conteiner_projeto_descricao_arduino">
+        <article  id="primeiro" class="conteiner_projeto_descricao_arduino_sns">
             <figure  class="conteiner_projetos_arduino"> 
                 <video width="600" autoplay loop src="/CSS/videos/arduino/snsUltrassonico.mp4"></video>
                 <figure class="comada_projeto_codigo">
@@ -353,7 +371,7 @@
                 </ul>
             </article>
         </article>
-        <article class="conteiner_projeto_descricao_arduino">
+        <article class="conteiner_projeto_descricao_arduino_sns">
             <figure  class="conteiner_projetos_arduino"> 
                 <h3>Algoritmo para Acionar o Sensor</h3>
                 <img  width="500" src="/CSS/Images/automação industrial/arduino/snsUltrassonico.jpg" alt="Explicação do Funcionamento do sensor ultrassônico" >
@@ -362,9 +380,8 @@
                 <h3>Cálculo da distância</h3>
                 <img  width="550" src="/CSS/Images/automação industrial/arduino/calculo.jpg" alt="Lógica para calcular a distância">
             </figure>
-        </article>
-        
-        <article class="conteiner_projeto_descricao_arduino">
+        </article>   
+        <article class="conteiner_projeto_descricao_arduino_sns">
             <figure  class="conteiner_projetos_arduino"> 
                 <img width="600" src="/CSS/Images/automação industrial/arduino/algoritmoCodigo.png" alt="Algoritmo do Código">
                 <figure class="comada_projeto_codigo">
@@ -605,7 +622,7 @@
                 <span class="assuntos">Velocidade e Aceleração</span>
                 <span class="assuntos">Acurácia e Precisão</span>
             </div>
-            <article id="entradas_saidas" class="descricao_mc_assuntos">
+            <article id="entradas_saidas" class="movimentacao_robotica">
                 <div class="conceitos_tecnicos_movimentacao">
                     <h1>Payload</h1>
                     <p>É uma informação de segurança informada no manual do robô, que indica a carga máxima que o braço aguenta quando totalmente esticado, ou seja, na pior condição</p>
@@ -615,7 +632,7 @@
                     <p>É o nome que se dá a movimentação simultânea das juntas do braço</p>
                 </div>
             </article>
-            <article id="linguagem_mit" class="descricao_mc_assuntos">
+            <article id="linguagem_mit" class="movimentacao_robotica">
                 <h1>Linguagem de Programação</h1>
                 <ul>
                     <p>A programação de robôs é baseada no mapeamento de pontos no espaço</p>
@@ -628,10 +645,10 @@
                 </figure>
                 
             </article>
-            <article id="trajetorias" class="descricao_mc_assuntos" >
+            <article id="trajetorias" class="movimentacao_robotica" >
                 <img  id="trajetorias" src="/CSS/Images/automação industrial/robotica/trajetorias.jpg" alt="Imagem de trajetorias">
             </article>
-            <article id="velocidade_aceleracao" class="descricao_mc_assuntos">
+            <article id="velocidade_aceleracao" class="movimentacao_robotica">
                 <div class="conceitos_tecnicos_movimentacao">
                     <h1>Velocidade(m/s)</h1>
                     <p>Quanto maior a velocidade, menor a precisão do movimento</p>
@@ -643,7 +660,7 @@
                     <p>Comandos: ACCEL (% de Aceleração, % desaceleração)</p>
                 </div>
             </article>
-            <article id="velocidade_aceleracao" class="descricao_mc_assuntos">
+            <article id="velocidade_aceleracao" class="movimentacao_robotica">
                 <div class="conceitos_tecnicos_movimentacao">
                     <h1>Acurácia</h1>
                     <p>Determina o quão próximo do ponto alvo a estrutura consegue atingir.</p>

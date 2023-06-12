@@ -371,6 +371,7 @@ code{
 /*Seção Assuntos de Microcontroladores*/
 #microcontroladores_conceitos{
     gap: 40px;
+    height: 400px;
 }
 .conteiner_descricao_mc_assuntos{
     display: flex;
@@ -384,7 +385,7 @@ code{
     gap: 10px;
     width: 200px;
 }
-.descricao_mc_assuntos{
+.descricao_mc_assuntos, .movimentacao_robotica{
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -398,7 +399,7 @@ code{
     border-radius: 20px;
     padding: 20px;
 }
-.descricao_mc_assuntos h1{
+.descricao_mc_assuntos h1, .movimentacao_robotica h1{
     font-size: 30px;
 }
 .descricao_mc_assuntos img{
@@ -414,12 +415,18 @@ code{
 #arduino figure img{
     width: 200px;
 }
+#linguagem_c{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} 
+
 
 /*Projetos Arduino*/
 #projetos_mc_arduino, #projeto_sensor_arduino{
     gap: 80px;
 }
-.conteiner_projeto_descricao_arduino{
+.conteiner_projeto_descricao_arduino, .conteiner_projeto_descricao_arduino_sns{
     display: none;
     justify-content: center;
     align-items: center;
