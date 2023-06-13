@@ -158,7 +158,7 @@ section header h1{
 details summary{
     cursor: pointer;
 }
-.item_redes, .item_transmissao{
+.item_redes, .item_transmissao, .item_equipamento, .item_ip{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,11 +173,14 @@ details summary{
     color: black;
     cursor: pointer;
 }
-.item_redes:hover, .item_transmissao:hover{
+.item_redes:hover, .item_transmissao:hover, .item_equipamento:hover, .item_ip:hover{
     transform: scale(110%);
     background-color: rgb(212, 211, 209);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+.item_equipamento, .item_ip{
+    width: 150px;
 }
 
 
@@ -190,7 +193,7 @@ details summary{
 
     gap: 20px;
 }
-.descricao{
+.descricao, .descricao_equipamentos, .descricao_ip{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,7 +209,7 @@ details summary{
     border-radius: 20px;
 }
 
-.descricao h1{
+.descricao h1, .descricao_topologia h1, .descricao_equipamentos h1, .descricao_ip h1{
     font-size: 30px;
 }
 .explicacao_osi, .body_transmissao{
@@ -230,7 +233,13 @@ details summary{
     box-shadow: 1px 1px 10px rgb(29, 29, 29);
     transition: 0.3s; 
 }
-
+.descricao_topologia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 
 /*Tópicos de modelo */
 #protocolos{
@@ -273,6 +282,12 @@ details summary{
 #transmissao{
     gap: 40px;
 }
-.body_transmissao{
+.body_transmissao,.descricao_ip{
+    display: none;
+}
+
+/*Equipamentos*/
+
+.descricao_equipamentos{
     display: none;
 }

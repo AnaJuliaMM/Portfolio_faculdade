@@ -38,7 +38,6 @@
             <h1>Introdução à Redes de Computadores</h1>
             <span class="item_redes">1</span>
             <span class="item_redes">2</span>
-            <span class="item_redes">3</span>
         </header>
         <article id="definicao" class="body_introducao">
             <article id="definicao" class="descricao">
@@ -46,6 +45,7 @@
                 <p>Redes de computadores é um conjunto de equipamentos  conectados entre si que podem se comunicar trocando informações. Existem os seguintes tipos de redes:</p>
                 <ul>
                     <li><strong>LAN (Local Area Network):</strong> rede de alcance local</li>
+                    <li><strong>VLAN (Virtual Local Area Network):</strong> virtualmente segmenta um rede em grupos menores</li>
                     <li><strong>MAN (Metropolitan Area Network):</strong> rede de alcance metropolitano, onde se encaixam as SP (provedoras de sinais). </li>
                     <li><strong>WAN (Wide Area Network):</strong> rede de alcance global</li>
                 </ul>
@@ -53,28 +53,75 @@
             <figure><img width="400" src="/CSS/Images/redes/Rede.jpg" alt="Ilustração de rede"></figure>
         </article>
         <article class="body_introducao">
-            <article class="descricao">
-                <h1 >Topologia</h1>
-                <p>Diz respeito à configuração das conexões das redes de computadores, que podem ser físicas ou wireless. Existem as seguintes topologias:</p>
-                <ul>
-                    <li>Barramento</li>
-                    <li>Anel</li>
-                    <li>Estrela</li>
-                    <li>Duplo Anel</li>
-                    <li>Estrela Entendida</li>
-                    <li>Estrela Entendida</li>
-                    <li>Malha</li>
-                    <li>Mista</li>
-                </ul>
-            </article>
-            <figure><img width="500" src="/CSS/Images/redes/topologia.jpg" alt="Ilustração de rede"></figure>
+            <figure  class="descricao_topologia">
+                <figcaption class="descricao">
+                    <h1 >Topologia</h1>
+                    <p>Diz respeito à configuração das conexões das redes de computadores, que definem dois aspectos da rede:
+                        <ul>
+                            <li><strong>Topologia Lógica:</strong> modo como os dados circulam</li>
+                            <li><strong>Topologia Física:</strong> ligação física entre os computadores</li>
+                        </ul>
+                    <p>Ao lado estão os modelos de topologia.</p>
+                </figcaption>
+                <img width="300" src="/CSS/Images/redes/topologia.png" alt="Ilustração de rede">
+            </figure>
         </article>
       
    </section>
-   <section id="modelo_osi">
+   <section id="equipamentos">
     <header>
         <div class="numeracao">
             <p>1</p> 
+        </div>
+        <h1>Dispositivos</h1>
+        <span class="item_equipamento">finais</span>
+        <span class="item_equipamento">intermediarios</span>
+        <span class="item_equipamento">conexão</span>
+    </header>
+    <article class="display_flex">
+        <article style="display: flex;" class="descricao_equipamentos">
+            <h1>Dispositivos Finais</h1>
+            <p>São equipamentos que o usuário final utilizam, que posseum as placas de redes de origem ou  destino do pacote de informação. São eles:</p>
+            <ul>
+                <li><strong>PC (personal computer) e Smartphones </strong> </li>
+                <li><strong>Impressoras</strong> </li>
+                <li><strong>Servidores. Exemplos:</strong> 
+                    <ul>
+                        <li><strong>Servidor Web:</strong> armazena os arquivos de uma página web</li>
+                        <li><strong>Servidor DNS:</strong> traduz o domínio de um site para seu IP correspondente</li>
+                        <li><strong>Servidor DNCH:</strong> Distribui IP automaticamente para os <i>hosts</i></li>
+                    </ul>       
+                </li>
+                <li>entre outros</li>
+            </ul>
+        </article>
+        <article class="descricao_equipamentos">
+            <h1>Dispositivos Intermediários</h1>
+            <p>São equipamentos utilizados na comunicação entre os nós finais e a fonte de informação, entre o receptor e o emissor de informação. </p>
+            <ul>
+                <li><strong>Switch e Hubs:</strong>  responsáveis por ampliar as conexões de uma rede </li>
+                <li><strong>Roteador:</strong> conecta as redes e calcula a rota do pacote de informações </li>
+                <li><strong>Gateway:</strong> interface entre redes com arquiteturas diferentes</li>
+  
+            </ul>
+        </article>
+        <article class="descricao_equipamentos">
+            <h1>Conexões</h1>
+            <p>As conexões podem ocorrer de forma físicaa ou <i>wireless</i>. Como exemplo de conexão física, cita-se o <u>cabo de par trançado</u>. Mas, independente do meio de transmissão, duas são as formas de conexões entre esses dispositivos. </p>
+            <ul>
+                <li><strong>Direta:</strong> entre dispositos de níveis diferentes</li>
+                <li><strong>Cross-Over:</strong>entre dispositos de  mesmos níveis  </li>
+            </ul>
+            <figure>
+                <img width="100" src="/CSS/Images/redes/par trançado.jpeg" alt="Cabo de Par Trançado">
+            </figure>
+        </article>
+    </article>
+</section>
+   <section id="modelo_osi">
+    <header>
+        <div class="numeracao">
+            <p>2</p> 
         </div>
         <h1>Modelo OSI</h1>
     </header>
@@ -101,10 +148,30 @@
         
     </article>
    </section>
+   <section id="protocolo_tcp_ip">
+    <header>
+        <div class="numeracao">
+            <p>3</p> 
+        </div>
+        <h1>Protocolo TC/IP</h1>
+    </header>
+    <article style="display: flex;" class="body_modelo_osi">
+        <article class="conteudo_modelo_osi">
+            <div class="explicacao_osi">
+            <h1>O que é o Protocolo TC/IP?</h1>
+                <p>O protocolo TC/IP rege o processo de transporte e comunicação numa rede de computadores.</p>
+                
+            </div>
+        </article>
+        <figure class="explicacao_camda_OSI">
+            <img width="600" src="/CSS/Images/redes/protocoloTcIp.jpg" alt="Modelo OSI">
+        </figure>
+    </article>
+    </section>
    <section id="transmissao">
     <header>
         <div class="numeracao">
-            <p>2</p> 
+            <p>4</p> 
         </div>
         <h1>Transmissão de Pacotes</h1>
         <span class="item_transmissao">1</span>
@@ -115,11 +182,11 @@
             <h1>Transmissão</h1>
             <p>Sobre a transmissão dos pacotes, estudamos os seguintes tópicos</p>
             <ul>
-                <li>Transmissão síncrona e Assíncrona</li>
-                <li>Papel do receptor e do emissor em transmissões de simplex, half-duplex e full duplex.</li>
+                <li>Transmissão <strong>síncrona</strong> e <strong>assíncrona</strong> </li>
+                <li>Emissores e Receptores em transmissões de <strong>simplex</strong>,<strong>half-duplex</strong> e <strong>full duplex</strong> .</li>
                 <li>Meio de transmissão físico: cabo de par trançado</li>
-                <li>Protocolos de transmissão: http(web), https (web com camada de segurança), ftp (arquivos), ftps(arquivos com segurança)</li>
-                <li>Protolos de transporte: UDP(sem confirmação de chegada) e TCP (com confirmação de chegada dos pacotes)</li>
+                <li><strong>Protocolos de transmissão:</strong> http(web), https (web com camada de segurança), ftp (arquivos), ftps(arquivos com segurança)</li>
+                <li><strong>Protolos de transporte:</strong> UDP(sem confirmação de chegada) e TCP (com confirmação de chegada dos pacotes)</li>
             </ul>
         </article>
     </article>
@@ -134,49 +201,61 @@
         </article>
     </article>
     </section>
-    <section id="protocolo_tcp_ip">
-        <header>
-            <div class="numeracao">
-                <p>2</p> 
-            </div>
-            <h1>Protocolo TC/IP</h1>
-        </header>
-        <article style="display: flex;" class="body_modelo_osi">
-            <article class="conteudo_modelo_osi">
-                <div class="explicacao_osi">
-                <h1>O que é o Protocolo TC/IP?</h1>
-                    <p>O protocolo TC/IP rege o processo de transporte e comunicação numa rede de computadores.</p>
-                    
-                </div>
-            </article>
-            <figure class="explicacao_camda_OSI">
-                <img width="600" src="/CSS/Images/redes/protocoloTcIp.jpg" alt="Modelo OSI">
-            </figure>
-        </article>
-   </section>
-
     <section id="ip">
         <header>
             <div class="numeracao">
-                <p>2</p> 
+                <p>5</p> 
             </div>
             <h1>IP e Máscara de Rede</h1>
+            <span class="item_ip">conceito IP</span>
+            <span class="item_ip">Máscara de Rede</span>
+            <span class="item_ip">publico e privado</span>
+
         </header>
         <article class="display_flex">
-            ipv4 e ipv6
-            ip - o que É
-            mascara de rede e classe
-            ip publico de ip privado --> processo de NAT
-            
+            <article style="display: flex;" class="descricao_ip">
+                <h1>Protocolo de Internet(IP)</h1>
+                <p>O IP é um identificador que é dado aos disposivos conectados a uma rede de computadores. Diferente dos  endereços de MAC, que vem do fabricante, o IP de um dispositivo varia conforme a rede que ele se conecta. Sobre o assunto, estudamos:
+                <ul>
+                    <li>O <strong>atual</strong> Ipv4 de 32 bits e o <strong>futuro</strong> Ipv6 de 64 bits</li>
+                    <li>Existem faixas de IP reservadas pela <abbr title="Assigned Numbers Authority"> IANA</abbr> para diferentes redes, como as redes locais com o IP 10.0.0.0/8</li>
+                    <li><strong>IP reservados:</strong>
+                        <ul>
+                            <li><strong>Primeiro(ex: 10.0.0.0/24)</strong>: IP da rede</li>
+                            <li><strong>Último(ex: 10.0.0.255/24)</strong>: IP de broadcast</li>
+                        </ul>
+                   </li>
+                </ul>
+            </article>
+            <article class="descricao_ip">
+                <h1>Máscara de Rede</h1>
+                <p>É um parâmetro da rede que divide os bytes do ip em identificadores de <u>hots (dispositivos finais)</u> e <u>Redes</u>. A placa de rede interpreta que onde existir um byte completo de número 1, ou o número decimal 255, é reservado para rede. E onde existe 0 é para hosts</p>
+                <ul>
+                   <li><strong>Classe A:</strong>255.0.0.0 ou /8</li>
+                   <li><strong>Classe B:</strong>255.255.0.0 ou /16</li>
+                   <li><strong>Classe C:</strong>255.255.255.0 ou /24</li>
+                   <li>Existem máscaras que fogem dos números exatos, por exemplo:  255.255.255.224 ou /27</li>
+                </ul>
+            </article>
+            <article class="descricao_ip">
+                <h1>IP privado e público</h1>
+                <ul>
+                   <li><strong>IP privado:</strong>ip que um dispositivo possui dentro de uma rede</li>
+                   <li><strong>IP público:</strong>IP da interface do roteador que estabelece conexão externa e representa toda a rede</li>
+                   <li><strong>Protocolo NAT:</strong>é o processo que o roteador realiza de traduzir o IP publico para o privado e vice-versa</li>
+                   <li><strong>Servidor DHCP:</strong>é o dispositivo que distriu automaticamente op IP´s de uma rede.</li>
+                </ul>
+            </article>            
         </article>
     </section>
 
-   <section id="equipamentos">
+   
+    <section id="Projetos">
         <header>
             <div class="numeracao">
-                <p>2</p> 
+                <p>6</p> 
             </div>
-            <h1>Equipamentes</h1>
+            <h1>Apresentações em Grupo</h1>
         </header>
         <article class="display_flex">
             <article class="descricao">
@@ -193,14 +272,13 @@
                 </ul>
             </article>
         </article>
-   </section>
-
-   <section id="Projetos  VLAN?">
+        </section>
+   <section id="Projetos">
     <header>
         <div class="numeracao">
-            <p>2</p> 
+            <p>7</p> 
         </div>
-        <h1>Equipamentes</h1>
+        <h1>Projetos</h1>
     </header>
     <article class="display_flex">
         <article class="descricao">
@@ -217,7 +295,7 @@
             </ul>
         </article>
     </article>
-</section>
+    </section>
 
 
 
