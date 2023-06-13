@@ -125,9 +125,13 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     height: 700px;
     padding: 10px;
-    background: linear-gradient(90.14deg, #170744 6.72%, rgba(91, 8, 60, 0.89334) 48.58%, rgba(111, 9, 61, 0.865867) 56.85%, rgba(20, 3, 68, 0.85456) 86.82%, rgba(1, 0, 52, 0.85) 98.91%, rgba(255, 0, 153, 0.53) 105.95%, rgba(3, 0, 133, 0.53) 105.95%);}
+    background: linear-gradient(90.14deg, #170744 6.72%, rgba(91, 8, 60, 0.89334) 48.58%, rgba(111, 9, 61, 0.865867) 56.85%, rgba(20, 3, 68, 0.85456) 86.82%, rgba(1, 0, 52, 0.85) 98.91%, rgba(255, 0, 153, 0.53) 105.95%, rgba(3, 0, 133, 0.53) 105.95%);
+
+    gap: 50px;
+}
 section header{
     display: flex;
     gap: 30px;
@@ -155,4 +159,34 @@ section header h1{
 }
 details summary{
     cursor: pointer;
+}
+
+/*Seção de introdução de Banco de Dados*/
+.display_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 300px;
+    gap: 20px;
+}
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    height: 250px;
+    width: 600px;
+    padding: 30px;
+
+    color: black;
+    background-color: rgb(229, 235, 241);
+    border-radius: 20px;
+
+}
+.descricao h1{
+    font-size: 30px;
 }
