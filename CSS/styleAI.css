@@ -648,6 +648,7 @@ code{
 
 /*Seção Movimentação Robótica*/
 #movimentacao_robotica{
+    height: 500px;
     gap: 30px;
 }
 .conceitos_tecnicos_movimentacao{
@@ -659,8 +660,13 @@ code{
    background-color: #ffffff; 
    border-radius: 12px;
    padding: 20px;
-   width: 400px;
+   width: 500px;
    
+}
+#velocidade{
+    flex-direction: row;
+    align-items: center;
+
 }
 #linguagem_mit {
     gap: 10px;
@@ -688,4 +694,31 @@ code{
 #img_fim{
     height: 100px;
     width: 230px;
+}
+
+/*Seção Pick and Place e Atividade prática*/
+#pick_place, #aula_pratica{
+    gap: 30px;
+}
+#corpo_aula_pratica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1000px;
+    gap: 20px;
+
+}
+.descricao_pick_place{
+    width: 600px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    align-items: center;
+}
+#pick_place_body{
+    display: flex;
+    gap: 20px;
 }

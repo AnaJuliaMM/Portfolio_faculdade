@@ -187,7 +187,6 @@
         <figure>
             <img src="/CSS/Images/automação industrial/conc introdutórios/arduinoUno.png" alt="">
         </figure>
-
     </section>
     <section id="microcontroladores_conceitos">
         <header>
@@ -235,7 +234,7 @@
                     <h1>Linguagem C</h1>
                     <p>Para controlar o arduino utilizamos a linguagem C. Além disso, todo o código foi desenvolvido no simulador do Tinkercad. Segue alguns comandos utilizados:</p>
                     <ul>
-                        <li><strong>Função <code>void setup()</code>:</strong> configuração dos elementos do programa
+                        <li><strong>Função <code>void setup()</code>:</strong> função onde configura-se os elementos do programa
                             <ul>
                                 <li><strong>pinMode():</strong> configuração das portas como input ou output</li>
                                 <li><strong>Serial.begin(9600):</strong> inicializador do console do tinkercad</li>
@@ -649,10 +648,13 @@
                 <img  id="trajetorias" src="/CSS/Images/automação industrial/robotica/trajetorias.jpg" alt="Imagem de trajetorias">
             </article>
             <article id="velocidade_aceleracao" class="movimentacao_robotica">
-                <div class="conceitos_tecnicos_movimentacao">
-                    <h1>Velocidade(m/s)</h1>
-                    <p>Quanto maior a velocidade, menor a precisão do movimento</p>
-                    <p>Comandos: OVRD, JOVRD , SPEED</p>
+                <div id="velocidade" class="conceitos_tecnicos_movimentacao">
+                    <article>
+                        <h1>Velocidade(m/s)</h1>
+                        <p>Quanto maior a velocidade, menor a precisão do movimento. Ao lado, estão comandos em MelfaBasic IV.</p>
+                    </article>
+                    
+                    <figure><img width="280" src="/CSS/Images/automação industrial/robotica/tipoVelocidade.jpg" alt="Tipo de velocidades"></figure>
                 </div>
                 <div class="conceitos_tecnicos_movimentacao">
                     <h1>Aceleração</h1>
@@ -681,16 +683,32 @@
             </div>
             <h1>Pick and Place</h1>
         </header>
+        <article id="pick_place_body">
+            <article class="descricao_pick_place">
+                <p>O movimento Pick and Place é um movimento que o braço industrial faz para deslocar uma peça de um lugar para o outro como ilustra a figura.</p>
+                <p>Para essa programação em MelfaBasic IV, além dos comandos de movimentação linear(MVS) e de junta(MOV) utilizamos parâmetros para definir a velocidade(SPD, JOVRD); a aceleração e desaceleração (ACCEL); o controle de abertura e fechamento da ferramenta( HOPEN e HCLOSE) e comando de espera (delay) para evitar colisões ou outros percalços entre o robô e a peça.</p>
+                <figure>
+                    <img width="300" src="/CSS/Images/automação industrial/robotica/pickPlace.jpg" alt="Ilustração do movimento de pick and place">
+                </figure>
+            </article>
+            <figure>
+                <img width="500" src="/CSS/Images/automação industrial/robotica/codPickPlace.jpg" alt="Código em MelfaBasic para o movimento Pick and Place">
+            </figure>
+
+        </article>
     </section>
-    <section id="pick_place">
+    <section id="aula_pratica">
         <header>
             <div class="numeracao">
-                <p>6</p> 
+                <p>6</p>
             </div>
-            <h1>Aula Prática</h1>
+            <h1>Aulas Práticas</h1> 
         </header>
-        <article>
+        <article id="corpo_aula_pratica">
             <video width="400" controls autoplay loop src="/CSS/videos/robotica/robotica.mp4"></video>
+            <article>
+            <p>Fomos apresentados à estrutura de automação e aos braços robóticos da faculdade. Durante a aula de robótica, os alunos foram convidados a manipular os eixos dos braços robóticos através do <i>Teaching Pendant</i>. Os movimentos demonstrados foram de coordenadas cartesianas, movimento de juntas e movimento tool, no qual a origem do plano cartesiano se centraliza na ferramenta. </p>
+            </article>
         </article>
     </section>
 </body>
