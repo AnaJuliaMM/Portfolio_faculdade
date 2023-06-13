@@ -128,7 +128,6 @@ section{
     align-items: center;
     height: 700px;
     padding: 10px;
-    gap: 20px;
     background: linear-gradient(90.14deg, #170744 6.72%, rgba(91, 8, 60, 0.89334) 48.58%, rgba(111, 9, 61, 0.865867) 56.85%, rgba(20, 3, 68, 0.85456) 86.82%, rgba(1, 0, 52, 0.85) 98.91%, rgba(255, 0, 153, 0.53) 105.95%, rgba(3, 0, 133, 0.53) 105.95%);}
 section header{
     display: flex;
@@ -157,84 +156,4 @@ section header h1{
 }
 details summary{
     cursor: pointer;
-}
-.protocolos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: auto;
-    height: 50px;
-    padding: 10px;
-    border-radius: 20px;
-
-    background-color: rgb(249, 249, 249);
-    color: black;
-}
-.protocolos:hover{
-    transform: scale(110%);
-    background-color: rgb(201, 200, 199);
-}
-
-/*Redes de Computadores - Conceitos */
-.body_modelo_osi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 20px;
-}
-.descricao{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    height: 250px;
-    width: 600px;
-    padding: 10px;
-
-    color: black;
-    background-color: rgb(229, 235, 241);
-    border-radius: 20px;
-}
-.descricao h1{
-    font-size: 30px;
-}
-.explicacao_osi{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-items: center;
-    gap: 20px;
-    width: 400px;
-}
-.explicacao_osi h1{
-    font-size: 30px;
-}
-.camadas_osi{
-    text-align: center;
-    padding: 10px;
-    font-weight: 700;
-
-    background-color: rgb(248, 245, 241);
-    color: black;
-    box-shadow: 1px 1px 10px rgb(29, 29, 29);
-    transition: 0.3s; 
-}
-.conteudo_modelo_osi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-}
-
-/*Tópicos de modelo */
-#protocolos{
-    gap: 40px;
-}
-.display_flex{
-    display: flex;
-    gap: 10px;
 }
