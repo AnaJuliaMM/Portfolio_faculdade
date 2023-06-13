@@ -126,7 +126,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 600px;
     padding: 10px;
     gap: 20px;
     background: linear-gradient(90.14deg, #170744 6.72%, rgba(91, 8, 60, 0.89334) 48.58%, rgba(111, 9, 61, 0.865867) 56.85%, rgba(20, 3, 68, 0.85456) 86.82%, rgba(1, 0, 52, 0.85) 98.91%, rgba(255, 0, 153, 0.53) 105.95%, rgba(3, 0, 133, 0.53) 105.95%);}
@@ -158,23 +158,29 @@ section header h1{
 details summary{
     cursor: pointer;
 }
-.protocolos{
+.item_redes, .item_transmissao{
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: auto;
-    height: 50px;
-    padding: 10px;
+    width: 50px;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
     border-radius: 20px;
 
     background-color: rgb(249, 249, 249);
     color: black;
+    cursor: pointer;
 }
-.protocolos:hover{
+.item_redes:hover, .item_transmissao:hover{
     transform: scale(110%);
-    background-color: rgb(201, 200, 199);
+    background-color: rgb(212, 211, 209);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
+
+
 
 /*Redes de Computadores - Conceitos */
 .body_modelo_osi{
@@ -193,16 +199,17 @@ details summary{
 
     height: 250px;
     width: 600px;
-    padding: 10px;
+    padding: 30px;
 
     color: black;
     background-color: rgb(229, 235, 241);
     border-radius: 20px;
 }
+
 .descricao h1{
     font-size: 30px;
 }
-.explicacao_osi{
+.explicacao_osi, .body_transmissao{
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -210,7 +217,7 @@ details summary{
     gap: 20px;
     width: 400px;
 }
-.explicacao_osi h1{
+.explicacao_osi h1, .body_transmissao h1{
     font-size: 30px;
 }
 .camadas_osi{
@@ -223,12 +230,7 @@ details summary{
     box-shadow: 1px 1px 10px rgb(29, 29, 29);
     transition: 0.3s; 
 }
-.conteudo_modelo_osi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-}
+
 
 /*Tópicos de modelo */
 #protocolos{
@@ -237,4 +239,40 @@ details summary{
 .display_flex{
     display: flex;
     gap: 10px;
+}
+
+/*Introdução */
+.body_introducao{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 400px;
+}
+#definicao_descricao{
+    display: flex;
+    padding: 30px;
+    height: 200px;
+    width: 500px;
+}
+#definicao{
+    display: flex;
+}
+
+/*Modelo OSI*/
+.conteudo_modelo_osi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+/*Transmissão*/
+
+#transmissao{
+    gap: 40px;
+}
+.body_transmissao{
+    display: none;
 }
