@@ -14,13 +14,13 @@ body{
     
 }
 .header{
-    background-image: url(Images/bd/header.jpeg);
+    background-image: url(Images/cd/header.jpg);
     background-size: cover;
     position: relative;
     height: 600px;
 }
 .camada{
-    background: linear-gradient(90.12deg, rgba(1, 2, 9, 0.85) 26.92%, rgba(9, 2, 5, 0.77) 91.39%, rgba(8, 2, 5, 0.772533) 91.4%, rgba(15, 2, 11, 0.53) 99.92%);
+    background: linear-gradient(90.12deg, rgba(1, 2, 9, 0.8) 26.92%, rgba(9, 2, 5, 0.77) 91.39%, rgba(8, 2, 5, 0.772533) 91.4%, rgba(15, 2, 11, 0.53) 99.92%);
     height: 600px;
     width: 100%;
     position: absolute;
@@ -130,7 +130,7 @@ section{
 
     height: 550px;
     padding: 10px;
-    background: linear-gradient(90.14deg, #170744 6.72%, rgba(91, 8, 60, 0.89334) 48.58%, rgba(111, 9, 61, 0.865867) 56.85%, rgba(20, 3, 68, 0.85456) 86.82%, rgba(1, 0, 52, 0.85) 98.91%, rgba(255, 0, 153, 0.53) 105.95%, rgba(3, 0, 133, 0.53) 105.95%);
+    background: linear-gradient(90.14deg, #170744 6.72%, rgba(91, 8, 60, 0.89334) 48.58%, rgba(111, 9, 62, 0.4) 56.85%, rgba(20, 3, 68, 0.85456) 86.82%, rgba(1, 0, 52, 0.85) 98.91%, rgba(255, 0, 153, 0.53) 105.95%, rgba(3, 0, 133, 0.53) 105.95%);
 
     gap: 30px;
 }
@@ -151,12 +151,11 @@ section header{
     background: rgba(249, 149, 0, 0.908897);
 
     transition: 0.3s;
-    border-radius: 55px;
+    border-radius: 10px;
     rotate: 0deg;
 }
 .numeracao:hover{
-    rotate: 45deg;
-
+    rotate: 20deg;
 }
 section header h1{
     font-size: 40px;
@@ -186,11 +185,12 @@ details summary{
 article h1{
     font-size: 30px;
 }
-span{
+span, button{
     text-align: center;
     padding: 10px;
     font-weight: 700;
-    width: 20px;
+    width: auto;
+    min-width: 200px;
     cursor: pointer;
 
     background-color: rgb(248, 245, 241);
@@ -199,18 +199,19 @@ span{
     transition: 0.3s; 
     border-radius: 10px;
 }
-span:hover{
+span:hover, button:hover {
     transform: scale(110%);
-    background-color: rgb(201, 200, 199);
 }
-
-
-
-
-
-
-
-
+button{
+    background: transparent;
+    border: 2px solid  rgb(201, 200, 199);
+    color: rgb(201, 200, 199);
+}
+button:hover, .conceito:hover{
+    background-color: rgb(248, 245, 241);
+    color: black;
+    border: none;
+}
 
 
 /* Estilizando o botão do menu suspenso */
@@ -300,3 +301,47 @@ span:hover{
   .dropdown.hover:hover li:first-child, .dropdown.toggle > input:checked ~ ul li:first-child {
     padding-top: 15px;
   }
+
+  /*Seção de Explicação de vários conceito*/
+.body{
+display: flex;
+justify-content: center;
+align-items: center;
+
+height: 300px;
+width: 100%;
+}
+.topicos{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+width: 400px;
+
+}
+.explicacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    gap: 20px;
+    
+    border-radius: 12px;
+    background-color: rgb(248, 245, 241);
+    color: rgb(11, 2, 51);
+}
+.conceito{
+    background: transparent;
+    border: 2px solid  rgb(234, 231, 229);
+    color: rgb(201, 200, 199);
+    height: 100px;
+    width: 300px;
+    transition: 0.3s;
+    font-weight: 600;
+}
