@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&family=Libre+Franklin&family=Lobster+Two&family=Red+Hat+Display:ital,wght@0,300;0,400;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+p{
+    text-align: justify;
+}
+body{
+    opacity: 1;
+    color: white;
+    background-color: rgb(15, 17, 48, 1);
+    
+}
+.header{
+    background-image: url(Images/bd/header.jpeg);
+    background-size: cover;
+    position: relative;
+    height: 600px;
+}
+.camada{
+    background: linear-gradient(90.12deg, rgba(1, 2, 9, 0.85) 26.92%, rgba(9, 2, 5, 0.77) 91.39%, rgba(8, 2, 5, 0.772533) 91.4%, rgba(15, 2, 11, 0.53) 99.92%);
+    height: 600px;
+    width: 100%;
+    position: absolute;
+
+}
+.nav_logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+
+    background: linear-gradient(180deg, rgba(52, 1, 41, 0.44) 0%, rgba(85, 2, 39, 0) 100%);}
+.nav_logo  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+}
+.nav_logo figure img{
+    width: 100px;
+}
+.logo{
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 30px;
+}
+.titulo{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(219, 222, 232);
+}
+.titulo nav{
+    padding: 20px;
+    display: flex;
+    gap: 100px;
+    justify-content:end;
+
+}
+.titulo nav figure img{
+    width: 200px;
+}
+.titulo h1{
+    font-size: 70px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    font-size: 20px;
+    gap: 80px;
+    padding: 10px;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    font-style: none;
+    color: white;
+}
+nav li:hover{
+    transform: scale(110%);
+    transition: 0.5s;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.sumario{
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 400px;
+    gap: 5px;
+    transition: 0.5s;
+}
+.sumario:hover{
+    opacity: 1;
+}
+.sumario li a {
+    font-size: 25px;
+    font-weight: 400;
+}
+.sumario li:hover{
+    transform: scale(100%);
+    translate: -10px;
+}
+
+/*Estilização generalizada das seções*/
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 550px;
+    padding: 10px;
+    background: linear-gradient(90.14deg, #170744 6.72%, rgba(91, 8, 60, 0.89334) 48.58%, rgba(111, 9, 61, 0.865867) 56.85%, rgba(20, 3, 68, 0.85456) 86.82%, rgba(1, 0, 52, 0.85) 98.91%, rgba(255, 0, 153, 0.53) 105.95%, rgba(3, 0, 133, 0.53) 105.95%);
+
+    gap: 30px;
+}
+section header{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.numeracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    width: 55px;
+    height:55px;
+    background: rgba(249, 149, 0, 0.908897);
+
+    transition: 0.3s;
+    border-radius: 55px;
+    rotate: 0deg;
+}
+.numeracao:hover{
+    rotate: 45deg;
+
+}
+section header h1{
+    font-size: 40px;
+}
+details summary{
+    cursor: pointer;
+}
+.descricao, .descricao_banco, .card_explicacao, .descricao_entidade, .descricao_modeloLog,.descricao_modeloFis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    height: 250px;
+    width: 700px;
+    padding: 30px;
+
+    color: black;
+    background-color: rgb(229, 235, 241);
+    border-radius: 20px;
+
+}
+.descricao_banco{
+    display: none;
+}
+article h1{
+    font-size: 30px;
+}
+span{
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    width: 20px;
+    cursor: pointer;
+
+    background-color: rgb(248, 245, 241);
+    color: black;
+    box-shadow: 1px 1px 10px rgb(29, 29, 29);
+    transition: 0.3s; 
+    border-radius: 10px;
+}
+span:hover{
+    transform: scale(110%);
+    background-color: rgb(201, 200, 199);
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilizando o botão do menu suspenso */
+.dropdown {
+    width: 230px;
+    display: inline-block;
+    margin-top: 15px;
+    position: relative;
+    float: right;
+}
+  
+  .dropdown ul {
+  
+      list-style-type: none;
+      display: block;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.86);
+      overflow: hidden;
+      border-radius: 0 0 8px 8px;
+      z-index: 9;
+  
+  }
+  
+  .dropdown a {
+  
+    display: block;
+    padding: 0 0 0 10px;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #00bfec;
+    background-color: #242424;
+  
+  }
+  
+  .dropdown li {
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .dropdown li:first-child a {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .dropdown li:last-child a {
+    border-radius: 0 0 2px 2px;
+  }
+  
+  .dropdown li:first-child a::before {
+  
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid #242424;
+    margin: -9px 0 0 15px;
+  
+  }
+  
+  .dropdown .primeiro-item       { background:transparent; color: #242424; }
+  .dropdown .primeiro-item:hover { background:transparent; color: #242424; }
+  
+  .dropdown a:hover, .dropdown.toggle > label:hover, .dropdown.toggle > input:checked ~ label {
+    background-color: #00bfec;
+    color: #fff;
+  }
+  
+  .dropdown > a:hover::after, .dropdown.toggle > label:hover::after, .dropdown.toggle > input:checked ~ label::after {
+    border-top-color: #AAA;
+  }
+  
+  .dropdown li:first-child a:hover::before {
+    border-bottom-color: #00bfec;
+  }
+  
+  .dropdown.hover:hover li, .dropdown.toggle > input:checked ~ ul li {          
+    height: auto;
+  }
+  
+  .dropdown.hover:hover li:first-child, .dropdown.toggle > input:checked ~ ul li:first-child {
+    padding-top: 15px;
+  }
