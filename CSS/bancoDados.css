@@ -3,7 +3,9 @@
 *{
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-
+}
+p{
+    text-align: justify;
 }
 body{
     opacity: 1;
@@ -126,11 +128,11 @@ section{
     justify-content: center;
     align-items: center;
 
-    height: 700px;
+    height: 550px;
     padding: 10px;
     background: linear-gradient(90.14deg, #170744 6.72%, rgba(91, 8, 60, 0.89334) 48.58%, rgba(111, 9, 61, 0.865867) 56.85%, rgba(20, 3, 68, 0.85456) 86.82%, rgba(1, 0, 52, 0.85) 98.91%, rgba(255, 0, 153, 0.53) 105.95%, rgba(3, 0, 133, 0.53) 105.95%);
 
-    gap: 50px;
+    gap: 30px;
 }
 section header{
     display: flex;
@@ -144,21 +146,62 @@ section header{
     align-items: center;
 
     font-size: 30px;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height:55px;
     background: rgba(249, 149, 0, 0.908897);
 
     transition: 0.3s;
-    rotate: 45deg;
+    border-radius: 55px;
+    rotate: 0deg;
 }
 .numeracao:hover{
-    rotate: 0deg;
+    rotate: 45deg;
+
 }
 section header h1{
     font-size: 40px;
 }
 details summary{
     cursor: pointer;
+}
+.descricao, .descricao_banco, .card_explicacao, .descricao_entidade, .descricao_modeloLog,.descricao_modeloFis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    height: 250px;
+    width: 700px;
+    padding: 30px;
+
+    color: black;
+    background-color: rgb(229, 235, 241);
+    border-radius: 20px;
+
+}
+.descricao_banco{
+    display: none;
+}
+article h1{
+    font-size: 30px;
+}
+span{
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    width: 20px;
+    cursor: pointer;
+
+    background-color: rgb(248, 245, 241);
+    color: black;
+    box-shadow: 1px 1px 10px rgb(29, 29, 29);
+    transition: 0.3s; 
+    border-radius: 10px;
+}
+span:hover{
+    transform: scale(110%);
+    background-color: rgb(201, 200, 199);
 }
 
 /*Seção de introdução de Banco de Dados*/
@@ -171,7 +214,65 @@ details summary{
     height: 300px;
     gap: 20px;
 }
-.descricao{
+.item_mer{
+    width: 110px;
+}
+.card_explicacao{
+    width: 400px;
+     justify-content: start;
+}
+.explicacao_mer{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/*Exerícios*/
+#exercicios{
+    gap: 10px;
+}
+#exercicios .display_flex{
+    height: 500px;
+}
+.exposicao_exercícios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+.btn_controle{
+    width: 50px;
+    font-size: 40px;
+    border: none;
+
+}
+.explicao_exercicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+}
+.explicao_exercicios h1{
+    font-size: 30px;
+}
+  
+/*Modelo Lógico*/ 
+#modelo_logico{
+gap: 60px;
+}
+.descricao_modeloLog, .descricao_modeloFis{
+    height: 200px;
+    width: 400px;
+}
+
+/*Comandos SQL*/
+#comandos_sql{
+    height: 500px;
+}
+.card_comando, .card_fn{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -179,14 +280,61 @@ details summary{
     gap: 20px;
 
     height: 250px;
-    width: 600px;
-    padding: 30px;
+    width: 200px;
+    padding: 20px;
 
     color: black;
     background-color: rgb(229, 235, 241);
     border-radius: 20px;
+}
+#dql{
+    width:350px;
+}
+.card_fn{
+    width: 250px ;
+}
+#projetos{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+#projetos header{
+    flex-direction: column;
+    width: 500px;
+}
+#projetos header h1{
+    font-size: 50px;
+    transition: 0.3s;
+}
+#projetos header h1:hover{
+    translate: 30px;
+}
+
+.exercicios{
+    gap: 90px;
+}
+
+.exposicao_exercícios{
+    position: relative;
+}
+.camada_ex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height:100% ;
+    width: 100%;
+    opacity: 0;
+
+    position: absolute;
+    background-color: rgba(10, 7, 19, 0.753);
+
 
 }
-.descricao h1{
-    font-size: 30px;
+.exposicao_exercícios:hover .camada_ex{
+    opacity: 1;
+    
+
 }
+
