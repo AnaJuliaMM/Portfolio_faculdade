@@ -12,36 +12,97 @@
         <nav class="nav_logo">
             <div class="logo">
                 <h1 class="logo">AnaJ</h1>
-                <figure><img src="/CSS/Images/senai_logo.png" alt="Logo do Senai"></figure>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/HTML/00_index.html">home</a></li>
-                    <li class="dropdown hover">
-                        <a href="#" class="primeiro-item"> Menu</a>
-                        <ul>
-                         
-                          <li><a href="#" title="Html5">Html5</a></li>
-                          <li><a href="#" title="Css3">Css3</a></li>
-                          <li><a href="#" title="Jquery">Jquery</a></li>
-                          <li><a href="#" title="WordPress">WordPress</a></li>
-                          <li><a href="#" title="Técnologia">Técnologia</a></li>
-              
-                        </ul>
-                    </li>
+                    <ul>
+                        <li><a href="/HTML/00_index.html">home</a></li>
+                        <li><a href="/HTML/01_linguagemProgramacao.html">Linguagem de Programação</a></li>
+                        <li><a href="/HTML/02_automacaoIndustrial.html">Automação Industrial</a></li>
+                        <li><a href="/HTML/03_redesComputadores.html">Redes de Computadores</a></li>
+                        <li><a href="/HTML/04_bancoDados.html">Banco de Dados</a></li>
+                    </ul>
                 </ul>
             </nav>
         </nav>
         <div class = "titulo">
             <h1 class="disciplina">Ciência de Dados</h1>
             <nav>
-                <ul class="sumario">
-                    <li><a href="#modelagem_dados">Topico 1</a></li>
-                    <li><a href="#projetos">Topico 2</a></li>
-                </ul>
+                <figure>
+                    <img width="100" src="https://logodownload.org/wp-content/uploads/2019/10/python-logo.png" alt="phyton">
+                </figure>
             </nav>
         </div>
    </header>
+   <section id="conceitos">
+        <header>
+            <div class="numeracao">
+                <p>1</p> 
+            </div>
+            <h1>Estatística</h1>
+        </header>
+        <div class="body">
+            <figure>
+                <img width="300" src="https://th.bing.com/th/id/OIP.ULhfX7ZVM5750uJv_cnT1AHaEu?pid=ImgDet&rs=1" alt="">
+            </figure>
+            <article class="descricao">
+                <p>A princípio aprendemos sobre o conceito de população e amostragem, como ilustra a figura. E então, estudamos os tipos de amostra:</p>
+                    <ul>
+                        <li><strong>Aleatória</strong>: cada elemento da população tem a mesma possibilidade de serem escolhidos.</li>
+                        <li><strong>Sistemática</strong>: é feito uma seleção aleatória do primeiro elemento da amostra e em seguidas os demais são escolhidos através de intervalos fixos.</li>
+                        <li><strong>Estratificada</strong>: separa os elementos em grupos homogêneos e em seguida é feita uma amostra aleatória em cada grupo (estrato).</li>
+                    </ul>          
+            </article>
+        </div>
+
+
+   </section>
+   <section id="escalas_medicao">
+    <header>
+        <div class="numeracao">
+            <p>2</p> 
+        </div>
+        <h1>Escalas de Medição</h1>
+    </header>
+    <div class="descricao">
+        <p>Um dos pilares da análise de dados é a pesquisa, e para extrair conclusões dessas consultas existem métodos para medir as respostas e, assim, extrair relatórios. São eles:</p>
+        <ul>
+            <li><strong>Escala Nominal:</strong> as variáveis são opções de nomeação (ex: cores)</li>
+            <li><strong>Escala Ordinal:</strong> as variáveis são valores categorizados(ex: nível de satisfação)</li>
+            <li><strong>Escala Intervalar:</strong> nota em um intervalo de valores (ex: 1 a 10)</li>
+            <li><strong>Escala Razão:</strong> as variáveis são intervalos (ex: faixa etárias: 1-10 anos, 20-30 anos, ...)</li>
+
+        </ul>
+    </div>
+   </section>
+   <section id="phyton">
+    <header>
+        <div class="numeracao">
+            <p>3</p> 
+        </div>
+        <h1>Python</h1>
+        <a href="https://drive.google.com/drive/folders/1ks3R900UEb6_23DRsoGwQFXvCpNijQod?usp=sharing"><strong>Clique aqui para acessar os colab que utilizei em aula</strong></a>
+    </header>
+    <div class="body">
+        <article class="descricao">
+            <p>A linguagem Python e seus métodos foram utilizados para aplicar as medidas estatísticas que estudamos. Além disso, como ferramenta de desenvolvimento utilizamos o Google Colab</p>
+            <figure class="displayFlex">
+                <img width="100" src="https://logodownload.org/wp-content/uploads/2019/10/python-logo.png" alt="phyton">
+                <img width="100" src="https://www.prometheus-studio.it/prometheus_blog_wp/wp-content/uploads/2019/09/colab-cover.jpg" alt="colab">
+            </figure>
+        </article>
+        <article class="explicacao_branco">
+            <h1>Bibliotecas Utilizadas</h1>
+            <ul>
+                <li><strong>Pandas</strong>: manipulação de DataFrame</li>
+                <li><strong>Numpy</strong>: manipulação de vetores</li>
+                <li><strong>MatplotLib</strong>: plotagem de gráficos</li>
+                <li><strong>mysql.connector</strong>: conexão com o SGBD mySql</li>
+              </ul>
+        </article>
+    </div>
+
+   </section>
    <section id="tendencia_centrais">
         <header>
             <div class="numeracao">
@@ -99,7 +160,6 @@
                     </div>
                 </article>
                 <article class="explicacao tendeciaCentral">
-                   
                         <h1>Percentil</h1>
                         <p>Indica a posição em porcentagem de um valor dentro de seu conjunto ordenado. Ainda, existe o <strong>quartil</strong> que divide o conjunto nos seguintes intervalos:</p>
                         <ul>
@@ -107,10 +167,8 @@
                             <li>Segundo Quartil - 50%</li>
                             <li>Terceiro Quartil - 75%</li>
                         </ul>
-                
                 </article>
                 <article class="explicacao tendeciaCentral">
-                  
                         <h1>Métodos em Phyton</h1>
                         <ul>
                             <li><strong>moda:</strong><code>  dataFrame.mode()</code></li>
@@ -118,65 +176,64 @@
                             <li><strong>media:</strong><code>  dataFrame.mean()</code></li>
                             <li><strong>percentil/quartil:</strong><code>  dataFrame.quantile()</code></li>
                         </ul>
-             
                 </article>
             </div>
         </div>
    </section>
    <section id="tendencia_centrais">
-    <header>
-        <div class="numeracao">
-            <p>1</p> 
+        <header>
+            <div class="numeracao">
+                <p>1</p> 
+            </div>
+            <h1>Medidas de Dispersão</h1>
+            <button class="topico_md">Conceito</button>
+        </header>
+        <div class="body">
+            <div class="topicos">
+                <span class="topico_md">Amplitude</span>
+                <span class="topico_md">Variância</span>
+                <span class="topico_md">Desvio Padrão</span>
+                <span class="topico_md">Phyton</span>
+            </div>
+            <div>
+                <article class="conceito explicacao medidaDispersao">
+                    <p>São métodos matemáticos que evidenciam a variação dos valores de um conjunto.</p>
+                </article>
+                <article class="explicacao medidaDispersao">
+                    <div>
+                        <h1>Amplitude</h1>
+                        <p>É a diferença entre o menor e o maior valor</p>
+                    </div>
+                    <figure><img width="300" src="/CSS/Images/cd/amplitude.jpg" alt="Ilustraçaõ de diferentes tamanhos"></figure>
+                </article>
+                <article class="explicacao medidaDispersao">
+                    <div>
+                        <h1>Variância</h1>
+                        <p>Indica o quanto os valores de um conjunto estão dispersos de sua média. </p>
+                    </div>
+                    <figure>
+                        <img width="250" src="/CSS/Images/cd/formulaVariancia.png" alt="Formula da variância">
+                    </figure>
+                </article>
+                <article class="explicacao medidaDispersao">
+                    <div>
+                        <h1>Desvio Padrão</h1>
+                        <p>Fornece uma valor para determinar o intervalo com maior concentração de dados</p>
+                    </div>
+                    <figure>
+                        <img width="200" src="/CSS/Images/cd/dvPexemplo.png" alt="desvio padrão">
+                        <figcaption>Vermelho: Média | Azul: Desvio Padrão</figcaption>
+                    </figure>
+                </article>
+                <article class="explicacao medidaDispersao">
+                        <h1>Métodos em Phyton</h1>
+                        <ul>
+                            <li><strong>variâncis:</strong><code>  dataFrame.var()</code></li>
+                            <li><strong>desvio padrão:</strong><code>  dataFrame.std()</code></li>
+                        </ul>
+                </article>
+            </div>
         </div>
-        <h1>Medidas de Dispersão</h1>
-        <button class="topico_md">Conceito</button>
-    </header>
-    <div class="body">
-        <div class="topicos">
-            <span class="topico_md">Amplitude</span>
-            <span class="topico_md">Variância</span>
-            <span class="topico_md">Desvio Padrão</span>
-            <span class="topico_md">Phyton</span>
-        </div>
-        <div>
-            <article class="conceito explicacao medidaDispersao">
-                <p>São métodos matemáticos que evidenciam a variação dos valores de um conjunto.</p>
-            </article>
-            <article class="explicacao medidaDispersao">
-                <div>
-                    <h1>Amplitude</h1>
-                    <p>É a diferença entre o menor e o maior valor</p>
-                </div>
-                <figure><img width="300" src="/CSS/Images/cd/amplitude.jpg" alt="Ilustraçaõ de diferentes tamanhos"></figure>
-            </article>
-            <article class="explicacao medidaDispersao">
-                <div>
-                    <h1>Variância</h1>
-                    <p>Indica o quanto os valores de um conjunto estão dispersos de sua média. </p>
-                </div>
-                <figure>
-                    <img width="250" src="/CSS/Images/cd/formulaVariancia.png" alt="Formula da variância">
-                </figure>
-            </article>
-            <article class="explicacao medidaDispersao">
-                <div>
-                    <h1>Desvio Padrão</h1>
-                    <p>Fornece uma valor para determinar o intervalo com maior concentração de dados</p>
-                </div>
-                <figure>
-                    <img width="200" src="/CSS/Images/cd/dvPexemplo.png" alt="desvio padrão">
-                    <figcaption>Vermelho: Média | Azul: Desvio Padrão</figcaption>
-                </figure>
-            </article>
-            <article class="explicacao medidaDispersao">
-                    <h1>Métodos em Phyton</h1>
-                    <ul>
-                        <li><strong>variâncis:</strong><code>  dataFrame.var()</code></li>
-                        <li><strong>desvio padrão:</strong><code>  dataFrame.std()</code></li>
-                    </ul>
-            </article>
-        </div>
-    </div>
     </section>
     <section id="inferencia">
         <header>
@@ -246,7 +303,6 @@
                 </ul>
             </article>
         </div>
-    
     </section>
     <section id="calculo">
         <header>
@@ -278,13 +334,13 @@
                 </article>
                 <article class="explicacao calculo">
                     <h1>Limites</h1>
-                    <p>É um recurso matemático utilizado principalmente em funções descontinuas, e determina qual valor uma função tende a ter quando se aproxima de um valor especificado(a).</p>
+                    <p>É um recurso matemático utilizado principalmente em funções descontinuas, e determina qual valor uma função tende a ter quando se aproxima de um valor especificado.</p>
                     <img width="200" src="https://www.fisicalab.com/sites/all/files/contenidos/matematicas/2224_limites_funciones/notacion_concepto_limite.gif" alt="Limtes">
                 
                 </article>
                 <article class="explicacao calculo">
                     <h1>Derivadas</h1>
-                    <p>É um método de determina qual a variação em determinado ponto da função, que fornece o coeficiente angular da reta tangente ao ponto.</p>
+                    <p>É um método que determina qual a variação em determinado ponto da função e fornece o coeficiente angular da reta tangente ao ponto.</p>
                     <img width="200" src="https://th.bing.com/th/id/OIP.gle2E0VBVNJZBlDqCsOQTgAAAA?pid=ImgDet&rs=1" alt="fórmula derivada">
                 </article>
                 <article class="explicacao calculo">
@@ -294,9 +350,6 @@
                 </article>
             </div>
         </div>
-
-
-
     </section>
     <section id="projeto">
         <header>
@@ -313,6 +366,7 @@
                 <p>1</p> 
             </div>
             <h1>Normalização</h1>
+            <a href="https://www.notion.so/Normaliza-o-do-Banco-de-Dados-TITANIC-documenta-o-aee054d2ce884bf4973a7b4b267e52e3"><strong>Clique aqui para acessar a documentação</strong></a>
         </header>
         <div class="body">
            <figure class="conteiner_titanic" >
@@ -337,18 +391,27 @@
             <figure>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/p101Sa4A20c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </figure>
-           <article class="conceito explicacao">
+           <article style="width: 450px;" class="descricao explicacao">
                 Aplicamos os conhecimentos desenvolvidos sobre matemática e estatística descritiva para realizar a análise quantitativa dos dados da base de dados. Realizamos:
                 <ul>
                     <li>Amostragem</li>
-                    <li>Moda por coluna</li>
-                    <li>Mediana por coluna</li>
-                    <li>Medidas de disperção por coluna</li>
+                    <li>Moda. mediana e moda por coluna</li>
+                    <li>Plotagem de gráficos</li>
                 </ul>
+                <p>
+                    Como ferramenta utilizamos a biblioteca <code>matplotlib</code> para plotagem de gráficos em linha <code>plot()</code> e pontos <code>scatter()</code>
+                </p>
            </article>
         </div>
-        
     </section>  
+    <footer>
+        <div>
+            <p>Redes Sociais:</p>
+            <a  target="_blank" hrf="https://github.com/AnaJuliaMM"><img width="50" src="/CSS/Images/github.png" alt="github"></a>
+            <a  target="_blank" href="https://www.linkedin.com/in/anajulia-mm/"><img width="50" src="/CSS/Images/linkedin.png" alt="linkedin"></a>
+        </div>
+        <p>Todos os direito reservados à Ana Julia Moura Martins</p>
+    </footer>
 </body>
 <script src="/JS/main6.js"></script>
 </html>

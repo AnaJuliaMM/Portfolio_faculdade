@@ -13,24 +13,25 @@
         <nav class="nav_logo">
             <div>
                 <h1 class="logo">AnaJ</h1>
-                <figure><img src="/CSS/Images/senai_logo.png" alt="Logo do Senai"></figure>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/HTML/00_index.html">home</a></li>
-                    <li><a href="/HTML/01_linguagemProgramacao.html">Linguagem de Programação</a></li>
-                    <li><a href="/HTML/02_automacaoIndustrial.html">Automação Industrial</a></li>
-                    <li><a href="/HTML/03_redesComputadores.html">Redes de computadores</a></li>
+                    <ul>
+                        <li><a href="/HTML/00_index.html">home</a></li>
+                        <li><a href="/HTML/01_linguagemProgramacao.html">Linguagem de Programação</a></li>
+                        <li><a href="/HTML/02_automacaoIndustrial.html">Automação Industrial</a></li>
+                        <li><a href="/HTML/03_redesComputadores.html">Redes de Computadores</a></li>
+                        <li><a href="/HTML/05_cienciaDados.html">Ciência de Dados</a></li>
+                    </ul>
                 </ul>
             </nav>
         </nav>
         <div class = "titulo">
             <h1 class="disciplina">Banco de Dados</h1>
             <nav>
-                <ul class="sumario">
-                    <li><a href="#modelagem_dados">Modelagem de Banco de Dados</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                </ul>
+                <figure>
+                    <img width="100" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/postgresql_src_logo_icon_170834.png" alt="phyton">
+                </figure>
             </nav>
         </div>
    </header>
@@ -43,7 +44,7 @@
         <article class="display_flex">
             <article style="display: flex;" class="descricao_banco">
                 <h1>Banco de Dados Relacionais</h1>
-                <p>Um banco de dados é uma estrutura de armazenamento de dados, e o BD relacional é um tipo de banco de dados composto por tabelas que se relacionam entre si por meio de colunas denominadas chave estrangeira. Esse tipo de banco é caracterizado por:  </p>
+                <p>Uma vez que um banco de dados é uma estrutura de armazenamento de dados, e o BD relacional é um tipo de banco composto por tabelas que se relacionam entre si por meio de uma coluna denominada chave estrangeira. Esse tipo de banco é caracterizado por:  </p>
                 <ul>
                     <li><strong>Tabelas: </strong> estruturas que contém os dados</li>
                     <li><strong>Chave Primária:</strong> coluna sem repetição de valores e que serve como identificador da tabela </li>
@@ -77,7 +78,7 @@
             <article style="display: flex;" id="card" class="explicacao_mer">
                 <div class="card_explicacao">
                     <h1>Modelo de Entidade e Relacionamento (MER)</h1>
-                    <p>É a descrição textual do BD em formato de entidades, atributos e relacionamentos. Para isso, precisamos separar o problema em minimundos e realizar abstração deles para identificar os elementos citados.</p>
+                    <p>É a descrição textual do BD em formato de entidades, atributos e relacionamentos. Para isso, precisamos separar o problema em minimundos e realizar a abstração deles para identificar os elementos.</p>
                 </div>
                 <div  class="card_explicacao">
                     <h1>Diagrama de Entidade e Relacionamento(DER)</h1>
@@ -220,7 +221,7 @@
                 <ul>
                     <li><strong>WHERE -</strong>adiciona filtros nas buscas</li>
                     <li><strong>SELECT -</strong>visualizar</li>
-                    <li><strong>FUNÇÕES -</strong>operações matemáticas, por exemplo</li>
+                    <li><strong>FUNÇÕES -</strong>operações matemáticas, contagem, etc</li>
                     <li><strong>ORDER BY -</strong>organizar a exibição</li>
                     <li><strong>GROUP BY -</strong>organiza em função de uma coluna</li>
                     <li><strong>ALIASES -</strong>apelidos</li>
@@ -258,7 +259,7 @@
             </div>
             <div class="card_fn">
                 <h1><abbr title="Terceira Forma Normal">3FN</abbr></h1>
-                <p>Remover as colunas com dependências transitivase e criar novas entidades.</p>
+                <p>Remover as colunas com dependências transitivas e e criar novas entidades.</p>
             </div>
         </article>
     </section>
@@ -280,7 +281,7 @@
             </figure>
             <article class="explicao_exercicios">
                 <h1>dbSenai</h1>
-                <p>Esse banco de dados retrata o modelo de controle acadêmico (departamentos, alunos e cursos). Essa atividade foi desenvolvida com o objetivo de explicar os comandos aprendidos de DDL, DML e principalmente DQL, uma vez que depois de implantado o banco focamos em realizar buscas que repondam algumas perguntas, como:
+                <p>Esse banco de dados retrata o modelo de controle acadêmico (departamentos, alunos e cursos) do Seani. Essa atividade foi desenvolvida com o objetivo de explicar os comandos aprendidos de DDL, DML e principalmente DQL, uma vez que implantado o banco focamos em realizar buscas que repondam algumas perguntas, como:
                     <ol>
                         <li>Quantos cursos cada departamento possui?</li>
                         <li>Ordernar por uma coluna específica</Li>
@@ -327,20 +328,16 @@
                 </div>
             </figure>
         </article>
-        
-            
-            
-     
-
     </section>
-    
-
-
-    
-    
-
-    
-         
+    <footer>
+        <div>
+            <p>Redes Sociais:</p>
+            <a  target="_blank" hrf="https://github.com/AnaJuliaMM"><img width="50" src="/CSS/Images/github.png" alt="github"></a>
+            <a  target="_blank" href="https://www.linkedin.com/in/anajulia-mm/"><img width="50" src="/CSS/Images/linkedin.png" alt="linkedin"></a>
+        </div>
+        <p>Todos os direito reservados à Ana Julia Moura Martins</p>
+    </footer>
+   
 </body>
 <script src="/JS/main5.js"></script>
 </html>

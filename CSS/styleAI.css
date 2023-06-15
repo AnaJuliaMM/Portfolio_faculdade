@@ -32,7 +32,7 @@ body{
     width: 100%;
     position: relative;
 
-    background: linear-gradient(180deg, rgba(52, 1, 41, 0.44) 0%, rgba(85, 2, 39, 0) 100%);}
+    background: linear-gradient(180deg, rgba(49, 1, 1, 0.44) 0%, rgba(50, 1, 1, 0) 100%);}
 .nav_logo  div{
     display: flex;
     justify-content: center;
@@ -445,6 +445,8 @@ code{
 
     width: 600px;
     height: 300px;
+    pointer-events: all;
+
 }
 .comada_projeto_codigo{
     display: flex;
@@ -461,6 +463,7 @@ code{
     background-color: rgba(5, 9, 45, 0.744);
     opacity: 0;
     transition: 0.3s ease;
+    pointer-events: all;
 }
 .conteiner_projetos_arduino:hover .comada_projeto_codigo{
     opacity: 1;
@@ -719,5 +722,21 @@ code{
 }
 #pick_place_body{
     display: flex;
+    gap: 20px;
+}
+
+footer{
+    height: 180px;
+    background-color: #2e0352;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }

@@ -12,26 +12,19 @@
         <nav class="nav_logo">
             <div>
                 <h1 class="logo">AnaJ</h1>
-                <figure><img src="/CSS/Images/senai_logo.png" alt="Logo do Senai"></figure>
             </div>
             <nav>
                 <ul>
                     <li><a href="/HTML/00_index.html">home</a></li>
                     <li><a href="/HTML/01_linguagemProgramacao.html">Linguagem de Programação</a></li>
                     <li><a href="/HTML/03_redesComputadores.html">Redes de Computadores</a></li>
+                    <li><a href="/HTML/03_redesComputadores.html">Banco de Dados</a></li>
+                    <li><a href="/HTML/03_redesComputadores.html">Ciência de Dados</a></li>
                 </ul>
             </nav>
         </nav>
         <div class = "titulo">
             <h1 class="disciplina">Automação Industrial</h1>
-            <nav>
-                <ul class="sumario">
-                    <li><a href="#conceitos_introdutorios">Assuntos Introdutórios</a></li>
-                    <li><a href="#porta_logica">Portas Lógicas</a></li>
-                    <li><a href="#microcontroladores">Microcontroladores</a></li>
-                    <li><a href="#robotica">Robótica</a></li>
-                </ul>
-            </nav>
         </div>
    </header>
     <section id="conceitos_introdutorios">
@@ -257,7 +250,7 @@
         </header>
         <article id="primeiro" class="conteiner_projeto_descricao_arduino">
             <figure  class="conteiner_projetos_arduino"> 
-                <video width="600" autoplay loop src="/CSS/videos/arduino/led.mp4"></video>
+                <video width="600"controls autoplay loop src="/CSS/videos/arduino/led.mp4"></video>
                 <figure class="comada_projeto_codigo">
                     <img width="550" src="/CSS/Images/automação industrial/arduino/codigoLed.png" alt="Código para acender o led">
                 </figure>
@@ -266,7 +259,7 @@
                 <h1>Exercício 1</h1>
                 <p>Nessa atividade, desenvolvemos nosso primeiro circuito com arduino. Para tanto, utilizamos como componentes uma <strong>placa arduino uno</strong>, um <strong>led vermelho</strong> e um <strong>resistor de 330 Ohms</strong>. Nesse circuito, a placa arduino atua como um microcontrolador e uma fonte de 5 volts, uma vez que a alimentação que aciona o led provém de uma de suas portas digitais, assim como o sinal negativo provém do pino GND. </p> 
                 <ul>
-                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha</li>
+                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha.Se não conseguir visualizar o vídeo, habilite o autoplay do seu navegador ou acesse o circuito:.</li>
                     <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/9nSL48rgdbP-exercicio-pisca-1hz/editel">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
                 </ul>
             </article>
@@ -276,12 +269,12 @@
                 <h1>Exercício 2</h1>
                 <p>Nessa atividade, trabalhamos com entradas e saídas. Para tanto, utilizamos os mesmos componentes do exercício anterior acrecidos de um botão. Nesse circuito, o botão é um elemento de entrada, e quando ele estiver pressionado, o arduino acionara o led por 500 ms e o desligará por 500 ms, caso o botão seja desligado, o led também desligará. </p> 
                 <ul>
-                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha</li>
+                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha. Se não conseguir visualizar o vídeo, habilite o autoplay do seu navegador ou acesse o circuito:</li>
                     <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/jfOTX8KXn1A-led-liga-pelo-acionamento-do-botao-pullup/editel">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
                 </ul>
             </article>
             <figure class="conteiner_projetos_arduino"> 
-                <video width="600" autoplay loop src="/CSS/videos/arduino/btn.mp4"></video>
+                <video width="600" controls autoplay loop src="/CSS/videos/arduino/btn.mp4"></video>
                 <figure class="comada_projeto_codigo">
                     <img width="550" src="/CSS/Images/automação industrial/arduino/codeBtn.png" alt="Código para acender o led quando o botao for pressionado">
                 </figure>
@@ -289,7 +282,7 @@
         </article>
         <article class="conteiner_projeto_descricao_arduino">
             <figure class="conteiner_projetos_arduino"> 
-                <video width="600" autoplay loop src="/CSS/videos/arduino/sequenciaLed.mp4"></video>
+                <video width="600" controls autoplay loop src="/CSS/videos/arduino/sequenciaLed.mp4"></video>
                 <figure class="comada_projeto_codigo">
                     <img width="550" src="/CSS/Images/automação industrial/arduino/sequencia.png" alt="Código para controlar o arduino">
                 </figure>
@@ -298,7 +291,7 @@
                 <h1>Exercício 3</h1>
                 <p>Nessa atividade, utilizamos o recurso de laços de repetição (contador for) para evitar a repetição de código. O programa realiza o processo de acender um led, permanecer ligado por 1 segundo e então desligar, após isso, o mesmo processo acontece para todos os outros. </p> 
                 <ul>
-                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha</li>
+                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha. Se não conseguir visualizar o vídeo, habilite o autoplay do seu navegador ou acesse o circuito:</li>
                     <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/6A8sAbdhIZ5-glorious-jaiks-kup/editel">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
                 </ul>
             </article>
@@ -308,12 +301,12 @@
                 <h1>Exercício 4</h1>
                 <p>Essa atividade é muito semelhante à anterior, contudo, para além da aplicação de laços de repetição, praticamos lógica de programação, haja vista, que o objetivo do programa é fazer o processo de acender e desligar cada led da direita para esquerda e depois no sentido contrário. </p> 
                 <ul>
-                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha</li>
+                    <li> <strong>Código: </strong>Passe o mouse sobre o vídeo e encontre o código e a explicaçao de cada linha. Se não conseguir visualizar o vídeo, habilite o autoplay do seu navegador ou acesse o circuito:</li>
                     <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/5nZtZWExnIr-copy-of-grand-densor-rottis/editel?tenant=circuits">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
                 </ul>
             </article>
             <figure class="conteiner_projetos_arduino"> 
-                <video width="600" autoplay loop src="/CSS/videos/arduino/sequenciaVaiVolta.mp4"></video>
+                <video width="600" controls autoplay loop src="/CSS/videos/arduino/sequenciaVaiVolta.mp4"></video>
                 <figure class="comada_projeto_codigo">
                     <img width="550" src="/CSS/Images/automação industrial/arduino/vaiVolta.png" alt="Código para controlar o arduino">
                 </figure>
@@ -321,7 +314,7 @@
         </article>
         <article class="conteiner_projeto_descricao_arduino">
             <figure class="conteiner_projetos_arduino"> 
-                <video width="600" autoplay loop src="/CSS/videos/arduino/semaforo.mp4"></video>
+                <video width="600" controls autoplay loop src="/CSS/videos/arduino/semaforo.mp4"></video>
                 <p class="comada_projeto_codigo"><strong><u><a target="_blank" href="https://www.tinkercad.com/things/7xzVWsmzj2w-semaforo-versao-3/editel">Clique aqui</a></u></strong> para acessar o circuito e o código no Tinkercad</p>
             </figure>
             <article class="descricao_atividade">
@@ -348,16 +341,16 @@
         </header>
         <article  id="primeiro" class="conteiner_projeto_descricao_arduino_sns">
             <figure  class="conteiner_projetos_arduino"> 
-                <video width="600" autoplay loop src="/CSS/videos/arduino/snsUltrassonico.mp4"></video>
+                <video width="600" autoplay  controls loop src="/CSS/videos/arduino/snsUltrassonico.mp4"></video>
                 <figure class="comada_projeto_codigo">
-                    <video width="600" autoplay  loop src="/CSS/videos/arduino/console.mp4"></video>
+                    <video width="600" autoplay controls  loop src="/CSS/videos/arduino/console.mp4"></video>
                 </figure>
             </figure>
             <article class="descricao_atividade">
                 <h1>Desafio</h1>
                 <p>Esse projeto propunha controlar um sensor ultrassônico com o arduino e exibir no console o valor da distância do sensor até o obstáculo em milimetros e em polegadas. Além disso, foi implementado uma lógica de sinalização: quando a distância estiver dentro de um intervalo definido o <u>LED verde</u> é acionado, quando atingir o limite máximo, o <u>LED amarelo</u> é ligado e quando atingir o limite mínimo, o <u>LED vermelho</u> é aceso. </p> 
                 <ul>
-                    <li><strong>Distância:</strong> Passe o pouse sobre o vídeo para visualizar a demonstração da exibição das distâncias no console</li>
+                    <li><strong>Distância:</strong> Passe o pouse sobre o vídeo para visualizar a demonstração da exibição das distâncias no console. Se não conseguir visualizar o vídeo, habilite o autoplay do seu navegador ou acesse o circuito:</li>
                     <li><strong><u><a target="_blank" href="https://www.tinkercad.com/things/62YvOa1WXpM-sns-ultrassonico/editel">Clique aqui</a></u></strong> para acessar o circuito no Tinkercad</li>
                 </ul>
             </article>
@@ -703,6 +696,15 @@
             </article>
         </article>
     </section>
+    <footer>
+        <div>
+            <p>Redes Sociais:</p>
+            <a  target="_blank" hrf="https://github.com/AnaJuliaMM"><img width="50" src="/CSS/Images/github.png" alt="github"></a>
+            <a  target="_blank" href="https://www.linkedin.com/in/anajulia-mm/"><img width="50" src="/CSS/Images/linkedin.png" alt="linkedin"></a>
+        </div>
+        <p>Todos os direito reservados à Ana Julia Moura Martins</p>
+    
+       </footer>
 </body>
 <script src="/JS/main3_ai.js"></script>
 </html>

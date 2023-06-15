@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&family=Libre+Franklin&family=Lobster+Two&family=Red+Hat+Display:ital,wght@0,300;0,400;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=IBM+Plex+Serif:ital,wght@1,300&family=Kadwa&family=Noto+Rashi+Hebrew:wght@300&display=swap');
 
 *{
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-
+}
+p{
+    text-align: justify;
 }
 body{
     opacity: 1;
@@ -24,7 +24,6 @@ body{
     height: 600px;
     width: 100%;
     position: absolute;
-
 }
 .nav_logo{
     display: flex;
@@ -34,7 +33,7 @@ body{
     width: 100%;
     position: relative;
 
-    background: linear-gradient(180deg, rgba(52, 1, 41, 0.44) 0%, rgba(85, 2, 39, 0) 100%);}
+    background: linear-gradient(180deg, rgba(19, 1, 49, 0.44) 0%, rgba(14, 1, 50, 0) 100%);}
 .nav_logo  div{
     display: flex;
     justify-content: center;
@@ -132,7 +131,7 @@ section{
     align-items: center;
     gap: 60px;
 
-    background: linear-gradient(90.14deg, #170744 6.72%, rgba(91, 8, 60, 0.89334) 48.58%, rgba(111, 9, 61, 0.865867) 56.85%, rgba(20, 3, 68, 0.85456) 86.82%, rgba(1, 0, 52, 0.85) 98.91%, rgba(255, 0, 153, 0.53) 105.95%, rgba(3, 0, 133, 0.53) 105.95%);
+    background: linear-gradient(90.14deg, #080E40 13.96%, rgba(83, 3, 42, 0.77) 98.91%, rgba(54, 9, 42, 0.53) 105.95%);
 }
 .titulo_introducao{
     display: flex;
@@ -206,6 +205,9 @@ header h1{
     gap: 7px;
 }
 /* DIV CONCEITOS TEÓRICOS*/
+#explicacao_conceito{
+    gap: 20px;
+}
 #explicacao_conceito h1{
     padding-bottom: 10px;
 }
@@ -223,6 +225,7 @@ header h1{
 #explicacao_conceito p{
     padding-left: 10px;
 } 
+
 /* DIV IDE*/
 #explicacao_ide{
     justify-content: center;
@@ -705,7 +708,7 @@ code{
 
 
 /*Projeto Folha de pagamento*/
-#projeto_folha_pagamento{
+#projeto_folha_pagamento, #TransformCode{
     flex-direction: column;
     gap: 30px;
     
@@ -785,4 +788,20 @@ opacity: 1;
 /*Seção Conteúdos trabalhados parte 2*/
 #conteudos_trabalhados_p2{
     flex-direction: column;
+}
+
+footer{
+    height: 180px;
+    background-color: #2e0352;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
