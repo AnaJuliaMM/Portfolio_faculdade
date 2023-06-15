@@ -212,7 +212,27 @@ button:hover, .conceito:hover{
     color: black;
     border: none;
 }
-
+code{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.conteiner_carrosel{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.conteiner_carrosel button{
+    display: flex;
+    align-items: center;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+.displayNone{
+    display: none;
+}
 
 /* Estilizando o botão do menu suspenso */
 .dropdown {
@@ -322,7 +342,7 @@ width: 400px;
 
 }
 .explicacao{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -336,12 +356,87 @@ width: 400px;
     background-color: rgb(248, 245, 241);
     color: rgb(11, 2, 51);
 }
-.conceito{
+.conceito, .conceito_inferencia{
+    display: flex;
     background: transparent;
     border: 2px solid  rgb(234, 231, 229);
-    color: rgb(201, 200, 199);
-    height: 100px;
-    width: 300px;
+    color: rgb(253, 251, 249);
+    height: 200px;
+    width: 400px;
     transition: 0.3s;
     font-weight: 600;
+}
+.conceito p{
+    font-size: x-large;
+}
+.explicacao div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conceito_inferencia{
+    flex-direction: row;
+}
+.conteiner{
+    display: flex;
+    width: 300;
+    height: auto;
+    position: relative;
+}
+.camada_sobrepor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: rgba(36, 36, 36, 0.82);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    opacity: 0;
+    height: 220px;
+}
+.conteiner:hover .camada_sobrepor{
+    opacity: 1;
+}
+#inferencia .body{
+    height: 400px;
+}
+#inferencia .explicacao{
+    width: 500px;
+    height: 300px;
+}
+.teste_hipotese{
+    width: 900px;
+}
+#projeto header p{
+    font-size: 30px;
+}
+#etapa_1 .body, #etapa_2 .body{
+    gap: 30px;
+}
+.conteiner_titanic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 600px;
+    position: relative;
+}
+.camada_sobrepor_titanic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 250px;
+    width: 600px; 
+
+    opacity: 0;
+    position: absolute;
+    background-color: #170744d4;
+}
+.conteiner_titanic:hover .camada_sobrepor_titanic{
+    opacity: 1;
 }

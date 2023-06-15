@@ -56,16 +56,19 @@
                 <span class="topico_mt">Média Aritmética</span>
                 <span class="topico_mt">Mediana</span>
                 <span class="topico_mt">Percentil</span>
-                <span class="topico_mt">Quartil</span>
+                <span class="topico_mt">Phyton</span>
             </div>
             <div>
-                <article class="conceito explicacao">
-                    <p>Medidas de tendências centrais são um recurso matemático para representação de um conjunto de valores por um único valor.</p>
+                <article class="conceito explicacao tendeciaCentral">
+                    <p>Medidas de tendências centrais são um recurso matemático para representar um conjunto de valores por um único valor.</p>
                 </article>
-                <article class="explicacao">
-                    <h1>Moda</h1>
-                    <p>O(s) termo(s) que aparece com mais frequência</p>
-                    <h3>[1, 4, 5, 7, 4, 9, 10, 4, 4] Mo = [4]</h3>
+                <article class="explicacao tendeciaCentral">
+                    <div>
+                        <h1>Moda</h1>
+                        <p>O(s) termo(s) que aparece(m) com mais frequência num conjunto. Por exemplo:</p>
+                        <h3>A = [1, 4, 5, 7, 4, 9, 10, 4, 4] |  Moda = [4]</h3>
+                    </div>
+                    
                     <div>
                         <p>Um conjunto pode ser:</p>
                         <ul>
@@ -75,70 +78,277 @@
                         </ul>
                     </div>
                 </article>
+                <article class="explicacao tendeciaCentral">
+                    <div>
+                        <h1>Média Aritmética</h1>
+                        <p>É o valor médio de um conjunto. </p>
+                    </div>
+                    <figure>
+                        <img width="250" src="/CSS/Images/cd/formulaMedia.png" alt="Formula da média">
+                    </figure>
+                </article>
+                <article class="explicacao tendeciaCentral">
+                    <div>
+                        <h1>Mediana</h1>
+                        <p>É o termo central de um conjunto ordenado. Por exemplo:</p>
+                    </div>
+                    <div class="texto_aling">
+                        <h3>A = [1, 2, <mark>3</mark>,  4, 5] </h3>
+                        <br>
+                        <h3>B = [1, <mark> 2,3</mark>,  4] - Mediana= 2+3/2 = <mark>2,5</mark> </h3>
+                    </div>
+                </article>
+                <article class="explicacao tendeciaCentral">
+                   
+                        <h1>Percentil</h1>
+                        <p>Indica a posição em porcentagem de um valor dentro de seu conjunto ordenado. Ainda, existe o <strong>quartil</strong> que divide o conjunto nos seguintes intervalos:</p>
+                        <ul>
+                            <li>Primeiro Quartil - 25%</li>
+                            <li>Segundo Quartil - 50%</li>
+                            <li>Terceiro Quartil - 75%</li>
+                        </ul>
+                
+                </article>
+                <article class="explicacao tendeciaCentral">
+                  
+                        <h1>Métodos em Phyton</h1>
+                        <ul>
+                            <li><strong>moda:</strong><code>  dataFrame.mode()</code></li>
+                            <li><strong>mediana:</strong><code>  dataFrame.median()</code></li>
+                            <li><strong>media:</strong><code>  dataFrame.mean()</code></li>
+                            <li><strong>percentil/quartil:</strong><code>  dataFrame.quantile()</code></li>
+                        </ul>
+             
+                </article>
             </div>
         </div>
    </section>
-   <section id="medidas_dispersao">
+   <section id="tendencia_centrais">
+    <header>
+        <div class="numeracao">
+            <p>1</p> 
+        </div>
+        <h1>Medidas de Dispersão</h1>
+        <button class="topico_md">Conceito</button>
+    </header>
+    <div class="body">
+        <div class="topicos">
+            <span class="topico_md">Amplitude</span>
+            <span class="topico_md">Variância</span>
+            <span class="topico_md">Desvio Padrão</span>
+            <span class="topico_md">Phyton</span>
+        </div>
+        <div>
+            <article class="conceito explicacao medidaDispersao">
+                <p>São métodos matemáticos que evidenciam a variação dos valores de um conjunto.</p>
+            </article>
+            <article class="explicacao medidaDispersao">
+                <div>
+                    <h1>Amplitude</h1>
+                    <p>É a diferença entre o menor e o maior valor</p>
+                </div>
+                <figure><img width="300" src="/CSS/Images/cd/amplitude.jpg" alt="Ilustraçaõ de diferentes tamanhos"></figure>
+            </article>
+            <article class="explicacao medidaDispersao">
+                <div>
+                    <h1>Variância</h1>
+                    <p>Indica o quanto os valores de um conjunto estão dispersos de sua média. </p>
+                </div>
+                <figure>
+                    <img width="250" src="/CSS/Images/cd/formulaVariancia.png" alt="Formula da variância">
+                </figure>
+            </article>
+            <article class="explicacao medidaDispersao">
+                <div>
+                    <h1>Desvio Padrão</h1>
+                    <p>Fornece uma valor para determinar o intervalo com maior concentração de dados</p>
+                </div>
+                <figure>
+                    <img width="200" src="/CSS/Images/cd/dvPexemplo.png" alt="desvio padrão">
+                    <figcaption>Vermelho: Média | Azul: Desvio Padrão</figcaption>
+                </figure>
+            </article>
+            <article class="explicacao medidaDispersao">
+                    <h1>Métodos em Phyton</h1>
+                    <ul>
+                        <li><strong>variâncis:</strong><code>  dataFrame.var()</code></li>
+                        <li><strong>desvio padrão:</strong><code>  dataFrame.std()</code></li>
+                    </ul>
+            </article>
+        </div>
+    </div>
+    </section>
+    <section id="inferencia">
+        <header>
+            <div class="numeracao">
+                <p>1</p> 
+            </div>
+            <h1>Inferência</h1>
+            <button class="topico_in">Conceito</button>
+        </header>
+        <div class="body">
+            <div class="topicos">
+                <span class="topico_in">DPB</span>
+                <span class="topico_in">Machine Learning</span>
+                <span class="topico_in">Exercícios</span>
+            </div>
+            <div>
+                <article class="conceito explicacao inferencia">
+                    <p>é o processo matemático de estimar a probabilidade de algo acontecer ou não.</p>
+                </article>
+                <article class="explicacao inferencia">
+                    <h3>Distribuição Probabilística Binominal</h3>
+                    <figure class="conteiner">
+                        <img width="350"  src="/CSS/Images/cd/distribuiçaoProbabilistaBinomial.png" alt="grafico">
+                        <figure class="camada_sobrepor">
+                            <figcaption>A probilidade mais alta é de cair cara 100 vezes de 200 jogadas de uma moeda</figcaption>
+                            <img width="300" src="/CSS/Images/cd/dpb.png" alt="formula dpb">
+                        </figure>
+                        
+                    </figure>
+                
+                </article>
+                <article class="explicacao inferencia">
+                    <h1>Machine Learning</h1>
+                    <p>É uma aplicação da inferência matemática. Em aula, simulamos em Phyton o que um aprendizado supervisionado de classificação realiza. Seguimos as seguintes etapas:</p>
+                    <ol>
+                        <li>Identificação da curva(função)</li>
+                        <li>Separação dos grupos (acima e abaixo da curva)</li>
+                        <li>Cálculo de f(x) para classificar novos pontos</li>
+                    </ol>
+                </article>
+                <article class= "displayNone inferencia ">
+                    <figure class= "conteiner_carrosel">
+                        <button id="prevBtn" class="btn_controle" onclick="voltarImagem()"> &lt;</button>
+                        <a target="_blank" href="https://colab.research.google.com/drive/1TBevKa8gz_cIQ6vgSNQWn7Zi-awWG2kS#scrollTo=6280072rh3o8"><img  width="400" id="imageExercicio" src="/CSS/Images/cd/ex1Classificacao.png" alt="Imagem 1"></a>
+                        
+                        <button id="nextBtn" class="btn_controle" onclick="avancarImagem()"> &gt;</button>
+                    </figure>
+                </article>   
+            </div>
+        </div>
+    </section>
+   <section id="teste_hipotese">
+        <header>
+            <div class="numeracao">
+                <p>3</p> 
+            </div>
+            <h1>Teste de Hipótese</h1>
+        </header>
+        <div class="body">
+            <article class="conceito explicacao teste_hipotese ">
+                <p>São métodos para atestar o quanto o resultado de uma amostra pode representar uma população. Estudamos os seguintes métodos</p>
+                <ul>
+                    <li>Qui Quadrado: teste de dependência das variáveis </li>
+                    <li>Kolmogorov-Smirnov: verificar se duas amostra vem da mesma distribuição</li>
+                    <li>Shapiro-Wilk: verificar se a amostra vem de uma distribuição normal</li>
+                    <li>Anderson Darling: mede o quão bem os dados se adequam a uma destribuição específica</li>
+                </ul>
+            </article>
+        </div>
+    
+    </section>
+    <section id="calculo">
+        <header>
+            <div class="numeracao">
+                <p>3</p> 
+            </div>
+            <h1>Cálculo</h1>
+        </header>
+        <div class="body">
+            <div class="topicos">
+                <span class="topico_calculo">Funções</span>
+                <span class="topico_calculo">Limite</span>
+                <span class="topico_calculo">Derivadas</span>
+                <span class="topico_calculo">Integrais</span>
+            </div>
+            <div>
+                <article class="explicacao calculo">
+                    <h1>Funções Polinominais</h1>
+                    <div>
+                        <p>Primeiramente, estudamos o conceito de função e os tipos de função: bijetora, injetora, sobrejetora. Então, aprendemos as seguintes funções, suas leis de formação e seus gráficos:</p>
+                        <ul>
+                            <li>Função Afim</li>
+                            <li>Função Quadrática</li>
+                            <li>Função Exponencial</li>
+                            <li>Função Logarítmica</li>
+                            <li>Função Trigonométrica</li>
+                        </ul>
+                    </div>  
+                </article>
+                <article class="explicacao calculo">
+                    <h1>Limites</h1>
+                    <p>É um recurso matemático utilizado principalmente em funções descontinuas, e determina qual valor uma função tende a ter quando se aproxima de um valor especificado(a).</p>
+                    <img width="200" src="https://www.fisicalab.com/sites/all/files/contenidos/matematicas/2224_limites_funciones/notacion_concepto_limite.gif" alt="Limtes">
+                
+                </article>
+                <article class="explicacao calculo">
+                    <h1>Derivadas</h1>
+                    <p>É um método de determina qual a variação em determinado ponto da função, que fornece o coeficiente angular da reta tangente ao ponto.</p>
+                    <img width="200" src="https://th.bing.com/th/id/OIP.gle2E0VBVNJZBlDqCsOQTgAAAA?pid=ImgDet&rs=1" alt="fórmula derivada">
+                </article>
+                <article class="explicacao calculo">
+                    <h1>Integrais</h1>
+                    <p>É um método para calcular a área de uma curva de gráfico.</p>
+                    <img width="200" src="https://th.bing.com/th/id/R.4d034d24a8eddb321d084a6f43eb8643?rik=PdQcZZnSOMM0uw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-BPOqxSnNJgs%2fTrPPssCEl3I%2fAAAAAAAADQM%2fu5K8SExCb5M%2fs1600%2farea6.png&ehk=Lq4qDNJFUxQ6eVldvH%2fyutc6fwCO2MPCqJTs8m3JE%2bo%3d&risl=&pid=ImgRaw&r=0" alt="fórmula integrais">
+                </article>
+            </div>
+        </div>
+
+
+
+    </section>
+    <section id="projeto">
+        <header>
+            <div>
+                <p>Atividade:</p>
+                <h1>Normalização do BD Titanic</h1>
+            </div>
+            <img width="600" src="https://th.bing.com/th/id/OIP.9hjZs9-kcLMh2zVD-IqHsgHaE6?pid=ImgDet&w=930&h=618&rs=1" alt="ilustração projeto">
+        </header>
+    </section>
+    <section id="etapa_1">
+        <header>
+            <div class="numeracao">
+                <p>1</p> 
+            </div>
+            <h1>Normalização</h1>
+        </header>
+        <div class="body">
+           <figure class="conteiner_titanic" >
+                <img width="600" src="/CSS/Images/cd/dataFramaOriginal.png" alt="">
+                <figure class="camada_sobrepor_titanic">
+                    <img width="500" src="/CSS/Images/cd/derTitanic.png" alt="formula dpb">
+                </figure>
+            </figure>
+           <article class="conceito explicacao">
+            O objetivo da atividade era a partir de uma tabela de dados do Titanic criar uma modelagem normalizada de Banco de Dados. O projeto foi realizado em equipe através do Google Colab e do SGBD mySQL. Passe o mouse sobre a imagem para ver a modelagem do banco.
+           </article>
+        </div>
+    </section>
+    <section id="etapa_2">
         <header>
             <div class="numeracao">
                 <p>2</p> 
             </div>
-            <h1>Medidas de Dispersão</h1>
-            <button>Conceito</button>
+            <h1>Análises: Plotagem de Gráficos</h1>
         </header>
         <div class="body">
-            <div class="topicos">
-                <span>Amplitude</span>
-                <span>Variância</span>
-                <span>Mediana</span>
-                <span>Desvio Padrão</span>
-            </div>
-            <div>
-                    <article>
-
-                    </article>
-                    <article>
-
-                    </article>
-            </div>
+            <figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/p101Sa4A20c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </figure>
+           <article class="conceito explicacao">
+                Aplicamos os conhecimentos desenvolvidos sobre matemática e estatística descritiva para realizar a análise quantitativa dos dados da base de dados. Realizamos:
+                <ul>
+                    <li>Amostragem</li>
+                    <li>Moda por coluna</li>
+                    <li>Mediana por coluna</li>
+                    <li>Medidas de disperção por coluna</li>
+                </ul>
+           </article>
         </div>
-
-   </section>
-   <section id="teste_hipotese">
-    <header>
-        <div class="numeracao">
-            <p>3</p> 
-        </div>
-        <h1>Teste de Hipótese</h1>
-    </header>
-    <div class="body">
-        <div class="topicos">
-            <button>Conceito</button>
-            <span>Amplitude</span>
-            <span>Variância</span>
-            <span>Mediana</span>
-            <span>Desvio Padrão</span>
-        </div>
-        <div>
-                <article>
-
-                </article>
-                <article>
-
-                </article>
-        </div>
-    </div>
-
-    </section>
-
-
-
-    <!--
-       
-
-    -->
-    
-      
+        
+    </section>  
 </body>
 <script src="/JS/main6.js"></script>
 </html>
