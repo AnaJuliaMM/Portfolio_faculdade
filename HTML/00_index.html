@@ -9,33 +9,79 @@
 </head>
 <body>
    <header id="#header">
-        <div class="camada"></div>
         <div class="nav_logo">
             <h1 class="logo">AnaJ</h1>
             <nav>
                 <ul>
                     <li><a href="#header">home</a></li>
-                    <li><a href="#main">Componentes Curriculares</a></li>
+                    <li><a href="#sobremim">Sobre mim</a></li>
+                    <li><a href="#portfolioFaculdade">Portfólio</a></li>
                 </ul>
             </nav>
         </div>
-        <div class = "titulo">
-            <div>
-                <img src="/CSS/Images/senai_logo.png" class="logo_senai" width= "300" alt="Logo senai">
-                <p class="portifolio_aluna">Portifólio da aluna</p>
-                <h1 class="nome">Ana Julia Moura Martins</h1>
-            </div>
-            <div>
-                <p class="curso">Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
-                <h1 class="semestre">1º SEMESTRE</h1>
+        <div class = "apresentacao">
+            <div class="identificacao">
+                <div class="descricao">
+                    <p style="font-size: 35px;">Portifólio</p>
+                    <h1 style="font-size: 60px;">Ana Julia Moura Martins</h1>
+                    <p style="font-size: 20px;">estudante de ADS • estagiária de TI</p>
+                    <div class="buttons_acesso">
+                        <a href="#sobremim"><button class="buttons">Sobre mim</button></a>
+                        <a href="#portfolioFaculdade"><button class="buttons">Portfólio</button></a>
+                    </div>
+                </div>
+                <figure>
+                    <img id="perfil" src="/CSS/Images/perfil.png" alt="foto de perfil">
+                </figure>
             </div>
         </div>
    </header>
-   <main id="main">
-        <div class="titulo_cc">
-            <h1>Componentes Curriculares</h1>
-            <p>Ao lado estão as disciplinas trabalhadas ao longo do primeiro semestre, clique nelas para encontrar o conteúdos e os projetos desenvolvidos.</p>
+   <main>
+    <section id="sobremim">
+        <h1>Sobre mim</h1>
+        <div class="informacao_sobre_mim">
+            <div>
+                <figure>
+                    <img width="200"  src="/CSS/Images/foto perfil.png" alt="Foto sobr mim">
+                    <figcaption>Votorantim, SP, Brazil</figcaption>
+                </figure>
+            </div>
+            <div class="texto_sobre_mim">
+                <p>Olá, meu nome é Ana Julia, tenho 18 anos e  ,atualmente, sou estudante de Análise e Desenvolvimento de Sistema pela <a target="_blank" title="clique aqui para acessar o site da Faculdade" href="https://sorocaba.sp.senai.br/">Faculdade SENAI</a> ,e estagiária de TI na empresa  <a title="Clique aqui para ser direcionado para o site da empresa" href="https://www.2rpnet.com.br/pt">2RPnet</a>. </p>
+                <div class="cartoes_informacoes">
+                    <div class="ferramentas_contato">
+                        <h3>Ferramentas</h3>
+                        <div class="ferramentas">
+                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Html" />
+                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Css" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Js" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg"  alt="C"/>
+                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreeSQL"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
+                        </div>
 
+                    </div>
+                    <div class="ferramentas_contato">
+                        <h3>Contato</h3>
+                        <div class="contato">
+                            <a href="https://github.com/AnaJuliaMM" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github"alt="Github"></a>
+                            <a href="https://www.linkedin.com/in/anajulia-mm/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Github"alt="Github"></a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#portfolioFaculdade"><button class="buttons">Portfólio</button></a>
+       
+        
+        
+    </section>
+    <section id="portfolioFaculdade">
+        <div class="titulo_cc">
+            <h1>Portfólio</h1>
+            <p>Minha carreira como desenvolvedora se iniciou com a Faculdade de ADS,em 2023, assim,  acesse meu portfólio do primeiro semestre para conhecer o conteúdo que aprendi e os projetos que desenvolvi.</p>
         </div>
         <div class="disciplinas_conteiner">
             <div class="cc">Linguagem de Programação</div>
@@ -44,6 +90,7 @@
             <div class="cc">Banco de Dados</div>
             <div class="cc">Ciências de dados</div>
         </div>
+    </section>
    </main>
    <footer>
     <div>
@@ -54,7 +101,6 @@
     <p>Todos os direito reservados à Ana Julia Moura Martins</p>
 
    </footer>
-    
 </body>
 <script src="/JS/main1_index.js"></script>
 </html>

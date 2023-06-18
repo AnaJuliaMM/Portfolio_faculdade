@@ -33,7 +33,7 @@ body{
     width: 100%;
     position: relative;
 
-    background: linear-gradient(180deg, rgba(19, 1, 49, 0.44) 0%, rgba(14, 1, 50, 0) 100%);}
+    background: linear-gradient(180deg, rgba(52, 2, 85, 0.44) 0%, rgba(14, 1, 50, 0) 100%);}
 .nav_logo  div{
     display: flex;
     justify-content: center;
