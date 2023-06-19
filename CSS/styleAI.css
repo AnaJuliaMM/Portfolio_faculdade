@@ -147,10 +147,11 @@ section header{
     background: rgba(249, 149, 0, 0.908897);
 
     transition: 0.3s;
-    rotate: 45deg;
+    border-radius: 10px;
+    rotate: 0deg;
 }
 .numeracao:hover{
-    rotate: 0deg;
+    rotate: 25deg;
 }
 section header h1{
     font-size: 40px;

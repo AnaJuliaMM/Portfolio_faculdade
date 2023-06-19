@@ -333,11 +333,12 @@ header h1{
     background: rgba(249, 149, 0, 0.908897);
 
     transition: 0.3s;
-    rotate: 45deg;
+    rotate: 0deg;
+    border-radius: 10px;
 
 }
 .numeracao:hover, .js_numeracao:hover{
-    rotate: 0deg;
+    rotate: 20deg;
 }
 #css{
     flex-direction: column;

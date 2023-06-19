@@ -92,6 +92,7 @@ nav ul{
     width: 200px;
     font-size: 20px;
     border-radius: 15px;
+    cursor: pointer;
 
     --pink: #b783f8;
     color: var(--pink);
