@@ -1,6 +1,6 @@
 //Mudança de Janela
 var disciplinas = document.getElementsByClassName("cc")
-var paginas = ["01_linguagemProgramacao.html", "02_automacaoIndustrial.html", "03_redesComputadores.html", "04_bancoDados.html", "05_cienciaDados.html"]
+var paginas = ["/HTML/01_linguagemProgramacao.html", "./HTML/02_automacaoIndustrial.html", "./HTML/03_redesComputadores.html", "./HTML/04_bancoDados.html", "./HTML/05_cienciaDados.html"]
 disciplinas[0].addEventListener("click", function(){mudarJanela(0)} )
 disciplinas[1].addEventListener("click", function(){mudarJanela(1)} )
 disciplinas[2].addEventListener("click", function(){mudarJanela(2)} )
